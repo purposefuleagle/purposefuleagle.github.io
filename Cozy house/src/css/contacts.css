@@ -1,0 +1,140 @@
+.contacts{
+	min-height: 362px;
+	position: relative;
+	background: url(../../build/img/background-footer.png) top center no-repeat;
+	/*background-size: cover;*/
+}
+.contacts__wrap{
+	padding-top: 70px;
+	display: flex;
+	justify-content: flex-start;
+}
+.support__title{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.support__item{
+	margin-bottom: 10px;
+}
+.support__link{
+	font-family: "Times New Roman", sans-serif;
+	color: #f1cdb3;
+	font-size: 20px;
+	letter-spacing: 1.2px;
+	text-decoration: none;
+	transition: .4s ease-out;
+}
+.support__link:hover,
+.support__link:active{
+	color: #B29885;
+	}
+.contacts__support{
+	flex-basis: 32%;
+	margin-right: 160px;
+	/*outline: 2px solid #8e44ad;*/
+}
+.contacts__address{
+	flex-basis: 28%;
+	/*outline: 2px solid #16a085;*/
+}
+.support__img-email{
+	position: relative;
+	top: 11px;
+	margin-right: 10px;
+	width: 40px;
+	height: 35px;
+	fill: #f1cdb3;
+	/*outline: 2px solid #000;*/
+}
+.support__img-phone{
+	position: relative;
+	top: 12px;
+	margin-right: 10px;	
+	width: 40px;
+	height: 40px;
+	fill: #f1cdb3;
+	/*outline: 2px solid #000;*/
+}
+.address__title{
+	color: #fff;
+	margin-bottom: 20px;
+}
+.address__item{
+	margin-bottom: 10px;
+	font-family: "Times New Roman", sans-serif;
+	color: #f1cdb3;
+	font-size: 20px;
+	/*line-height: 2.25;*/
+	letter-spacing: 1.2px;
+}
+.address__img-mark{
+	width: 40px;
+	height: 36px;
+	fill: #f1cdb3;
+	top: 10px;
+	right: 5px;
+	position: relative;
+}
+
+@media only screen and (max-width : 992px) {
+		.contacts__wrap{
+			justify-content: space-between;
+		}
+		.contacts__support{
+			margin-right: 0;
+		}
+		.contacts__support{
+			flex-basis: 45%;
+		}
+		.contacts__address{
+			flex-basis: 45%;
+		}
+	}
+@media only screen and (max-width : 768px) {
+		.contacts__wrap{
+			padding-top: 40px;
+			flex-flow: column wrap;
+			justify-content: space-between;
+		}
+		.contacts__support{
+			flex-basis: 100%;
+			margin-bottom: 30px;
+		}
+		.support__item{
+			margin-bottom: 0;
+		}
+		.support__link{
+			font-size: 17px;
+		}
+		.support__title{
+			margin-bottom: 10px;
+			font-size: 25px;
+		}
+		.contacts__address{
+			flex-basis: 100%;
+		}
+		.address__title{
+			margin-bottom: 10px;
+			font-size: 25px;
+		}
+		.address__item{
+			font-size: 17px;
+			margin-bottom: 0;
+		}
+	}
+@media only screen and (max-width : 492px) {
+		.contacts__wrap{
+			padding-top: 0;
+			flex-flow: column wrap;
+			justify-content: space-between;
+		}
+		.support__title{
+			margin-bottom: 5px;
+		}
+		.contacts__support{
+			margin-bottom: 10px;
+		}
+		.address__title{
+			margin-bottom: 5px;
+		}
+	}
