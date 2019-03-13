@@ -19,7 +19,8 @@ const cssFiles = [
 ];
 
 const jsFiles = [
- './src/js/main.js'
+ './src/js/main.js',
+ './src/js/google-map.js'
 ];
 
 

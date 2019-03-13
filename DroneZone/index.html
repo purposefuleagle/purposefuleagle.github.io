@@ -22,6 +22,7 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 	<link rel="stylesheet" href="src/libs/plyr-master/dist/plyr.css">
+	<link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 	<link rel="stylesheet" href="build/css/all.css">
 </head>
 
@@ -153,9 +154,17 @@
 			</form>
 		</div>
 	</section>
+	<section class="contact">
+		<h1 class="visually-hidden">Map</h1>
+		<div class="contact__map" id="map">
+		</div>
+	</section>
 	<script src="src/libs/jquery/dist/jquery.min.js"></script>
 	<script src="src/libs/plyr-master/dist/plyr.js"></script>
 	<script src="src/js/video-player.js"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+	<script src='https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js'></script>
+<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 	<script src="build/js/common.js"></script>
 </body>
 </html>
