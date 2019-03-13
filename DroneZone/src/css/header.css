@@ -11,6 +11,21 @@
 	align-items: center;
 	margin-bottom: 210px;
 }
+.nav-fixed{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background: linear-gradient(75deg, #cb0035 0%, #e06900 50%);
+}
+.nav-fixed .header__logo,
+.nav-fixed .header__menu{
+ padding-top: 0;
+}
+.nav-fixed .header__logo{
+  padding-left: 10px;
+}
 .header__logo{
 	padding-top: 50px;
 }

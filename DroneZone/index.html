@@ -27,20 +27,20 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="js-header">
 		<div class="container">
-			<div class="header__wrap">
+			<div class="header__wrap" id="js-nav-wrap" >
 				<div class="header__logo">
 				<a href="#" class="header__link">Drone<span>Zone</span></a>
 				</div>
 				<nav class="header__menu">
-				<ul class="menu">
-				<li class="menu__item menu__item--active"><a href="#home" class="menu__link">Home</a></li>
-				<li class="menu__item"><a href="#about" class="menu__link">About</a></li>
-				<li class="menu__item"><a href="#pricing" class="menu__link">Pricing</a></li>
-				<li class="menu__item"><a href="#Our-drones" class="menu__link">Our drones</a></li>
-				<li class="menu__item"><a href="#Our-realizations" class="menu__link">Our realizations</a></li>
-				<li class="menu__item"><a href="#Contact" class="menu__link">Contact</a></li>
+				<ul class="menu" id="js-menu">
+				<li class="menu__item menu__item--active"><a href="#js-header" class="menu__link">Home</a></li>
+				<li class="menu__item"><a href="#js-about" class="menu__link">About</a></li>
+				<li class="menu__item"><a href="#js-pricing" class="menu__link">Pricing</a></li>
+				<li class="menu__item"><a href="#js-our-drones" class="menu__link">Our drones</a></li>
+				<li class="menu__item"><a href="#js-our-realizations" class="menu__link">Our realizations</a></li>
+				<li class="menu__item"><a href="#js-contact" class="menu__link">Contact</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -59,13 +59,13 @@
 					</svg>Watch video</a>
 			</div>
 			<div class="header__scroll-down scroll-down">
-					<a href="#about" class="scroll-down__link">
+					<a href="#" class="scroll-down__link" id="js-scroll-about">
 						<span class="scroll-down__icon"></span>scroll down
 					</a>
 			</div>
 		</div>
 	</header>
-	<section id="about" class="about">
+	<section id="js-about" class="about">
 		<div class="container">
 			<div class="about-wrap">
 				<div class="about__item">
@@ -92,7 +92,7 @@
 			<a href="#" class="about__btn btn btn--theme_blue">Ask for price</a>
 		</div>
 	</section>
-	<section class="pricing">
+	<section id="js-pricing" class="pricing">
 		<div class="container">
 			<div class="pricing__wrap">
 				<h2 class="pricing__title section-title">Nature from the air</h2>
@@ -109,7 +109,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="our-drones">
+	<section id="js-our-drones" class="our-drones">
 		<div class="container">
 			<div class="our-drones__wrap">
 				<div class="our-drones__item">
@@ -145,7 +145,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="our-realizations">
+	<section id="js-our-realizations" class="our-realizations">
 		<div class="container our-realizations__wrap">
 			<h1 class="our-realizations__title">Sign up for our newsletter</h1>
 			<form action="" class="our-realilzations__form-newsletter">
@@ -154,7 +154,7 @@
 			</form>
 		</div>
 	</section>
-	<section class="contact">
+	<section  id="js-contact" class="contact">
 		<h1 class="visually-hidden">Map</h1>
 		<div class="contact__map" id="map">
 		</div>
@@ -164,7 +164,7 @@
 	<script src="src/js/video-player.js"></script>
 	<script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 	<script src='https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js'></script>
-<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+	<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
 	<script src="build/js/common.js"></script>
 </body>
 </html>
