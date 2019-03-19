@@ -64,7 +64,18 @@ $(function(){
         }, 800);
   });
 
+
+// Mobile menu version 2
+$('.mobile-menu__btn').on('click',function(e) {
+  e.preventDefault();
+  $(this).toggleClass('mobile-menu__btn--active');
+  $('.menu').slideToggle();
 });
+
+
+});
+
+
 
 
  

@@ -1,7 +1,6 @@
 .our-drones{
 	position: relative;
 	background: #f6f6f6;
-	/*background: #7f8c8d;*/
 	min-height: 760px;
 }
 .our-drones__desc{
@@ -10,33 +9,30 @@
 	color: #5e6372;
 	margin-bottom: 50px;
 }
-
 .our-drones__item{
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	/*border: 1px solid red;*/
 }
 .our-drones__item:nth-child(2n){
 	display: flex;
 	flex-flow: row-reverse nowrap;
 }
 .our-drones__video-wrap{
-	/*border: 1px solid blue;*/
 	flex-basis: 50%;
-	/*padding-top: 100px;*/
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
 	justify-content: center;
+	
 }	
 .our-drones__video{
-	/*max-width: 500px;*/
+	/* max-width: 500px;*/
 	/*height: 50vh;*/
 	/*width: 50vw;*/
 	/*object-fit: fill;*/
 	/*object-fit: cover;*/
-	/*background: transparent url('video-image.jpg') 50% 50% / cover no-repeat ;*/
+	/*background: transparent url('video-image.jpg') 50% 50% / cover no-repeat ; */
 }
 .plyr__control--overlaid{
 	background: rgba(255,255,255,.1);
@@ -46,15 +42,50 @@
 	background-size: cover;
 }
 .our-drones__content{
-	/*padding-top: 170px;*/
-	/*padding-bottom: 180px;*/
-	/*border: 1px solid yellow;*/
 	flex-basis: 45%;
 	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: flex-start;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-content: center;
 }
 .our-drones__btn{
 	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px){
+	.our-drones__item,
+	.our-drones__item:nth-child(2n){
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.our-drones__content{
+		order: -1;
+	}
+	.our-drones__content{
+		justify-content: center;
+		max-width: 800px;
+	}
+	.our-drones__video-wrap{
+		max-width: 800px;
+		margin-bottom: 30px;
+	}
+}
+@media only screen and (max-width: 790px){
+	.our-drones__title{
+		font-size: 40px;
+	}
+	.our-drones__desc{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 610px){
+	.our-drones__title{
+		font-size: 30px;
+	}
+	.btn--theme_blue{
+		font-size: 16px;
+		padding: 6px 42px;
+	}
 }

@@ -19,13 +19,12 @@
 	flex-flow: column wrap;
 }
 .our-realilzations__form-newsletter{
-	/*position: relative;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .form-newsletter__email{
-	width: 304px;
+	max-width: 304px;
 	height: 50px;
 	border-radius: 25px;
 	padding-left: 30px;
@@ -53,4 +52,27 @@
 }
 .form-newsletter__email::placeholder{
 	color: #fff;
+}
+
+@media only screen and (max-width: 790px){
+	.our-realizations__title{
+		font-size: 40px;
+	}
+}
+@media only screen and (max-width: 610px){
+	.our-realizations__title{
+		font-size: 25px;
+	}
+	.form-newsletter__email{
+		width: 60%;
+		font-size: 16px;
+	}
+	.form-newsletter__email{
+		height: 45px;
+	}
+	.btn--size_small{
+		padding: 6px 32px;
+		right: 38px;
+		font-size: 16px;
+	}
 }

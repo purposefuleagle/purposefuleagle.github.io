@@ -7,14 +7,12 @@
 }
 .about-wrap{
 	display: flex;
-	justify-content: space-around;
 	align-items: flex-end;
-	flex-flow: row wrap;
+	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .about__item{
-	text-align: center;
-	flex-basis:25%;
-	max-width: 250px;
+	width: 20%;
 }
 .section-title{
 	font-family: "ProximaNova-Bold";
@@ -28,6 +26,7 @@
 	/*color: transparent;*/
 }
 .about__title{
+	text-align: center;
 	font-family: "ProximaNova-Bold";
 	font-size: 30px;
 	line-height: 36px;
@@ -37,7 +36,8 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	text-fill-color: transparent;
+	text-fill-color:
+	 transparent;
 }
 .about__desc{
 	font-size: 18px;
@@ -54,4 +54,35 @@
 .btn--theme_blue:hover{
 	background: #2E54B8;
 	color: #fff;
+}
+
+@media only screen and (max-width : 992px) {
+	.about-wrap{
+		justify-content: space-between;
+	}
+	.about__item{
+		flex-basis: 45%;
+	}
+	.about__item:nth-child(n+3){
+		margin-top: 30px;
+	}
+}
+@media only screen and (max-width : 610px) {
+	.about{
+		padding: 60px 0;
+	}
+	.about-wrap{
+		justify-content: center;
+	}
+	.about__item{
+		flex-basis: 100%;
+		max-width: 400px;
+		margin-top: 30px;
+	}
+	.about__btn{
+		margin-top: 50px;
+	}
+	.about__item:first-child{
+		margin-top: 0px;
+	}
 }
