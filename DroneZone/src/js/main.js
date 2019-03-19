@@ -69,7 +69,7 @@ $(function(){
 $('.mobile-menu__btn').on('click',function(e) {
   e.preventDefault();
   $(this).toggleClass('mobile-menu__btn--active');
-  $('.menu').slideToggle();
+  $('.header__menu').slideToggle();
 });
 
 

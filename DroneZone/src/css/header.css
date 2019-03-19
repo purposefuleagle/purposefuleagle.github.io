@@ -53,9 +53,6 @@
 .menu__item{
 	margin-right: 40px;
 }
-/* .menu__item:last-child{
-	margin-right: 0px;
-} */
 .menu__link{
 	font-family: "ProximaNova-Light";
 	display: block;
@@ -219,10 +216,14 @@
   .menu__item{
     margin-right: 25px;
   }
+  .header__wrap{
+    flex-flow: row wrap;
+  }
 }
 @media only screen and (max-width: 790px){
   .header__wrap{
-    margin-bottom: 130px;
+    margin-bottom: 80px;
+    z-index: 99;
   }
   .menu{
     justify-content: center;
@@ -242,10 +243,13 @@
   .scroll-down__link{
     bottom: 20px;
   }
-  .header__wrap{
-    /* position: fixed; */
-    z-index: 99;
-
+  .header__menu{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    display: none;
   }
   .menu__link:before,
   .menu__link:hover:before{
@@ -259,15 +263,16 @@
   .menu__link:hover{
     border-bottom: 2px solid #fff;
   }
-  .menu{
-    display: flex;
-    flex-flow: column wrap;
-    display: none;
-    background: rgba(240, 87, 40, .4);
-  }
   .menu__item{
+    display: block;
+    width: 80vw;
+    text-align: center;
     margin-right: 0;
     padding: 5px 0;
+    font-size: 20px;
+  }
+  .menu{
+    background: rgba(240, 87, 40, .4);
   }
   .header__wrap{
     justify-content: space-between;
@@ -343,9 +348,6 @@
   .header__title{
     font-size: 25px;
     margin-bottom: 10px;
-  }
-  .header__wrap{
-    margin-bottom: 100px;
   }
   .buttons .btn{
     display: block;
