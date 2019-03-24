@@ -1,0 +1,107 @@
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
+	@font-face {
+		font-family: $font-family;
+		font-weight: $weight;
+		font-style: $style;
+
+		@if $asset-pipeline == true {
+			src: font-url('#{$file-path}.eot');
+			src: font-url('#{$file-path}.eot?#iefix') format('embedded-opentype'), font-url('#{$file-path}.woff') format('woff'), font-url('#{$file-path}.ttf') format('truetype');
+		} @else {
+			src: url('#{$file-path}.eot');
+			src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype');
+		}
+	}
+}
+
+@mixin button($two-button:false) {
+  display: inline-block;
+	border: none;
+	color: $white;
+	text-decoration: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, .3);
+  // padding: 16px 75px;
+  padding: 16px 0;
+  width: 210px;
+	font-size: $font-size;
+	text-transform: uppercase;
+	font-weight: $semibold;
+	// letter-spacing: 3px;
+	border-radius: 10px;
+	text-align: center;
+  // position: relative;
+  line-height: 1;
+	outline: none;
+	transition: all .4s ease;
+  cursor: pointer;
+	&:focus, &:hover{
+    color: #fff;
+    border: 1px solid transparent;
+    // background-color: lighten($accent-color, 5%);
+    background-color: $accent-color;
+  }
+  @if $two-button == true{
+    &:first-child{
+      margin-right: 25px;
+    }
+  }
+}
+
+
+// @mixin btn($bg: $red, $two-button: false) {
+//   width: 225px;
+//   border-radius: 3px;
+//   background-color: $bg;
+//   border: 2px solid $bg;
+//   box-shadow: 0 2px 5px rgba(0,0,0,.25);
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 16px;
+//   padding: 18px 0;
+//   letter-spacing: 0.14px;
+//   text-decoration: none;
+//   display: inline-block;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: $white;
+//   box-sizing: border-box;
+//   transition-duration: 500ms;
+//   transition-property: background-color, border-color;
+//   @content;
+
+//   &:hover {
+//     background-color: darken($red, 10%);
+//     border-color: darken($red, 10%);
+//   }
+
+//   @if $two-button == true {
+
+//     &:first-child {
+//       margin-right: 25px;
+//     }
+
+//     &:last-child {
+//       background-color: transparent;
+//       border-color: $white;
+//     }
+
+//     &:hover {
+
+//       &:last-child {
+//         border-color: $red;
+//       }
+
+//     }
+
+//   }
+
+// }
+

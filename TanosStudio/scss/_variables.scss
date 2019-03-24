@@ -1,0 +1,44 @@
+//Colors
+$white: #fff;
+$black: #000;
+// $base-color: #3b434c;
+$font-color: #3b434c;
+// $brand-color: #e84545;
+$accent-color: #f7600e;
+// $nav-color: rgba($white, .75);
+
+//Typography
+$font: "Open Sans", sans-serif;
+// $font-extra: "OpenSansExtraBold", sans-serif;
+// $font-secondary: "OpenSansItalic", sans-serif;
+// $font-accent: "OpenSansSemiBold", sans-serif;
+
+$thin: 200;
+$light: 300;
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 800;
+
+$font-size: 16px;
+$font-size-secondary: 14px;
+$font-size-extra: 25px; 
+$h1-font-size: 70px;
+$h2-font-size: 35px;
+$h3-font-size: 25px;
+$h4-font-size: 16px;
+// $h5-font-size: 14px;
+$nav-font-size: 35px;
+
+$line-height: $font-size * 1.6;
+
+// Breakpoints
+$bp-small: 320px;
+$bp-small-2: 480px;
+$bp-small-3: 576px;
+$bp-medium-2: 640px;
+$bp-medium: 768px;
+$bp-large: 1200px;
+$bp-large-2: 992px;

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .a {
+        fill: #3c5b9b;
+      }
+    </style>
+  </defs>
+  <title>facebook</title>
+  <path class="a" d="M24,0A24,24,0,1,0,48,24,24,24,0,0,0,24,0Zm6.45,24H26V39H20V24H17V18h3V15.29C20,12.83,21.14,9,26.29,9l4.63,0v5.14H27.56a1.27,1.27,0,0,0-1.33,1.44V18H31Z"/>
+</svg>

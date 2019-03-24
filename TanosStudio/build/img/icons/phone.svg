@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="59" viewBox="0 0 35 59">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>phone</title>
+  <g>
+    <rect class="a" x="1" y="1" width="33" height="57" rx="2.83"/>
+    <circle cx="17.5" cy="51.5" r="1.5"/>
+    <path d="M25,7a1,1,0,0,1-1,1H11a1,1,0,0,1-1-1h0a1,1,0,0,1,1-1H24a1,1,0,0,1,1,1Z"/>
+  </g>
+</svg>
