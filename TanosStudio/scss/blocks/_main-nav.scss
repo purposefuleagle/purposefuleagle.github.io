@@ -51,6 +51,9 @@
 		line-height: 1;
 		color: $white;
 		margin-right: 15px;
+		&--active{
+			display: none;
+		}
 	}
 	&__line{
 		position: absolute;

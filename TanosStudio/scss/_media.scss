@@ -2,16 +2,64 @@
 
 // ≥992px
 @media only screen and (max-width : $bp-large-2) {
-
+	
 }
 
 // ≥768px
 @media only screen and (max-width : $bp-medium) {
-
+	.menu-button{
+		&__text{
+			display: none;
+		}
+	}
+	.header{
+		&__info{
+			padding-top: 30px;
+		}
+		&__title{
+			font-size: 50px;
+		}
+		&__description{
+			font-size: 20px;
+		}
+	}
+	.button{
+		width: 180px;
+	}
 }
 
 // ≥576px
 @media only screen and (max-width : $bp-small-3) {
-	
+	.menu-list{
+		&__item{
+			margin-bottom: 30px;
+		}
+		&__link{
+			font-size: 25px;
+		}
+	}
+	.social-list{
+		&__icon{
+			width: 35px;
+			height: 35px;
+		}
+	}
+	.header{
+		&__title{
+			font-size: 28px;
+		}
+		&__description{
+			font-size: 16px;
+			margin-bottom: 40px;
+		}
+	.button{
+		&--head{
+			margin: 15px auto;
+			display: block;
+			width: 160px;
+			font-size: 14px;
+			}
+		}
+	}
 }
 

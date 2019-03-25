@@ -1,7 +1,9 @@
-// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Source+Sans+Pro:300,400,600,700&subset=cyrillic');
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800');
+
+
 @import "mixins";
 
-@include font-face("Open Sans", "../../fonts/OpenSansRegular/OpenSansRegular", 400);
-@include font-face("Open Sans", "../../fonts/OpenSansSemiBold/OpenSansSemiBold", 600);
-@include font-face("Open Sans", "../../fonts/OpenSansItalic/OpenSansItalic", 400);
-@include font-face("Open Sans", "../../fonts/OpenSansExtraBold/OpenSansExtraBold", 800);
+@include font-face("Open Sans", "../fonts/OpenSansRegular/OpenSansRegular", 400);
+@include font-face("Open Sans", "../fonts/OpenSansSemiBold/OpenSansSemiBold", 600);
+@include font-face("Open Sans", "../fonts/OpenSansExtraBold/OpenSansExtraBold", 800);
+// @include font-face("Open Sans-ex", "../fonts/OpenSansItalic/OpenSansItalic", 400);
