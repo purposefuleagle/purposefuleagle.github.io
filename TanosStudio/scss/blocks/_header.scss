@@ -16,7 +16,18 @@
 	}
 	&__logo{
 		flex-basis: 15%;
-		z-index: 2;
+		z-index: 2;	
+	}
+	&__link{
+		font-family: $font;
+		font-weight: $normal;
+		color: $white;
+		text-decoration: none;
+		font-size: 24px;
+		span{
+			color: $accent-color;
+			font-weight: $extrabold;
+		}
 	}
 	&__mobile-nav{
 		flex-basis: 10%;

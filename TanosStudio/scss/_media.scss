@@ -23,6 +23,12 @@
 	.button{
 		width: 180px;
 	}
+	.about{
+
+		&__item{
+			flex-basis: 45%;
+		}
+	}
 }
 
 // ≥576px
@@ -56,6 +62,11 @@
 			width: 160px;
 			font-size: 14px;
 			}
+		}
+	}
+	.about{
+		&__item{
+			flex-basis: 100%;
 		}
 	}
 }
