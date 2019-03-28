@@ -1,5 +1,6 @@
 $(function() {
 
+	// Mobile hamburger menu
 	$(document).ready(function(){
 		var link = $('.main-nav__toggle');
 		var link_active = $('.menu-button');
@@ -12,4 +13,12 @@ $(function() {
 			menuText.toggleClass('menu-button__text--active');
 		});
 	});
+
+	// Slick-slider
+	$('.slider').slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
 });
