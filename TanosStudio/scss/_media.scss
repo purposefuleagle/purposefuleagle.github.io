@@ -1,8 +1,25 @@
 /*==========  Desktop First  ==========*/
-
 // ≥992px
 @media only screen and (max-width : $bp-large-2) {
-	
+	.field{
+
+		&__button{
+			width: 180px;
+		}
+	}
+	.works{
+		&__details{
+			padding: 0 25px;
+		}
+	}
+	.details{
+		&__title{
+			font-size: 20px;
+		}
+		&__button{
+			width: 180px;
+		}
+	}
 }
 
 // ≥768px
@@ -27,6 +44,26 @@
 
 		&__item{
 			flex-basis: 45%;
+		}
+	}
+	.field{
+
+		&__button{
+			font-size: 14px;
+		}
+		&__email{
+			margin-right: 15px;
+			width: 60%;
+		}
+	}
+	.works{
+		&__item{
+			flex-basis: 48%;
+		}
+	}
+	.details{
+		&__button{
+			font-size: $font-size-secondary;
 		}
 	}
 }
@@ -69,5 +106,23 @@
 			flex-basis: 100%;
 		}
 	}
+	.field{
+		&__email{
+			width: 100%;
+		}
+	}
+	.section-title{
+		font-size: $font-size-extra;
+	}
+	.works{
+		padding: 50px 0px;
+		&__item{
+			flex-basis: 100%;
+		}
+		&__details{
+			padding: 0 50px;
+		}
+	}
+
 }
 
