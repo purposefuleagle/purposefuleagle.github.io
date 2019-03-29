@@ -176,12 +176,12 @@ $slick-opacity-not-active: 0.25 !default;
 /* Dots */
 
 .slick-dotted.slick-slider {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .slick-dots {
     position: absolute;
-    bottom: -40px;
+    bottom: -90px;
     list-style: none;
     display: block;
     text-align: center;
@@ -195,8 +195,8 @@ $slick-opacity-not-active: 0.25 !default;
         padding: 0;
         cursor: pointer;
         button {
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             background-color:#7B7F84;
             border-radius: 50%;
             opacity: .7;
@@ -216,7 +216,7 @@ $slick-opacity-not-active: 0.25 !default;
             }
         }
              &.slick-active button{
-            background-color: #fff;
+            background-color: #f7600e;
             opacity: 1;
             }
     }

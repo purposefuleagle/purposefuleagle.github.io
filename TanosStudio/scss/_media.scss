@@ -1,4 +1,5 @@
 /*==========  Desktop First  ==========*/
+
 // ≥992px
 @media only screen and (max-width : $bp-large-2) {
 	.field{
@@ -90,6 +91,15 @@
 	}
 	.slick-next{
 		right: 10%;
+	}
+	.team{
+
+		&__info-wrap{
+			margin-bottom: 20px;
+		}
+	}
+	.slick-dots{
+		bottom: -60px;
 	}
 }
 

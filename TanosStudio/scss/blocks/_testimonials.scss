@@ -21,8 +21,13 @@
 }
 .slider{
 	&__item{
-		max-width: 870px;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: flex-start;
+		max-width: 930px;
 		margin: 0 auto;
+		padding: 0 30px;
 	}
 	&__img{
 		border-radius: 50%;
@@ -47,6 +52,3 @@
 		color: $white;
 	}
 }
-// .container{
-// 	background: red;
-// }
