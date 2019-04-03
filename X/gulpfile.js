@@ -83,3 +83,4 @@ if (gulpversion == 4) {
 	});
 	gulp.task('default', gulp.parallel('styles', 'scripts', 'browser-sync', 'watch'));
 }
+

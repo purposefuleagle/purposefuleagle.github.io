@@ -6,7 +6,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
@@ -385,9 +385,87 @@
       </div>
     </div>
   </section>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/common.js"></script>
+  <section class="contacts">
+    <div class="container">
+      <div class="contacts__info">
+        <h2 class="contacts__title section-title">Say <span>hello</span></h2>
+        <p class="contacts__description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+      </div>
+      <div class="contacts__wrap">
+        <div class="contacts__left">
+        <div class="contacts__information information">
+        <div class="information__info">
+          <h4 class="information__title">Additional info</h4>
+          <p class="information__detail">Borough High St 20024 London SE1 1BL London, United Kindom</p>
+          <a href="mailto:contact@designstudio.com" class="information__link">
+            <svg class="information__icon information__icon--message">
+              <use xlink:href="img/symbol/sprite.svg#icons--message">
+            </svg>
+            contact@designstudio.com
+          </a>
+          <a href="tel:00123456789" class="information__link">
+            <svg class="information__icon information__icon--phone">
+              <use xlink:href="img/symbol/sprite.svg#icons--cell-phone">
+            </svg>
+            00 123 456 789
+          </a>
+        </div>
+        <div class="information__schedule">
+          <h4 class="information__title">Business hours</h4>
+          <p class="information__detail">Mon - Fri: 8am to 6pm</p>
+          <p class="information__detail">Sat: 10am to 4pm</p>
+        </div>
+        <div class="information__social-list social-list">
+            <a href="https://www.facebook.com/tanatos" class="social-list__link social-list__link--facebook">
+              <svg class="social-list__icon social-list__icon--facebook">
+                <use xlink:href="img/symbol/sprite.svg#icons--facebook">
+              </svg></a>
+            <a href="#twitter" class="social-list__link social-list__link--twitter">
+               <svg class="social-list__icon social-list__icon--twitter">
+                <use xlink:href="img/symbol/sprite.svg#icons--twitter ">
+               </svg>
+             </a>
+             <a href="#googleplus" class="social-list__link social-list__link--googleplus">
+               <svg class="social-list__icon
+               social-list__icon--googleplus">
+                 <use xlink:href="img/symbol/sprite.svg#icons--google">
+               </svg>
+              </a>
+              <a href="#dribbble" class="social-list__link social-list__link--dribbble">
+                <svg class="social-list__icon social-list__icon--dribbble">
+                  <use xlink:href="img/symbol/sprite.svg#icons--dribbblee">
+                </svg>
+              </a>
+              <a href="#behance" class="social-list__link social-list__link--behance">
+                <svg class="social-list__icon social-list__icon--behance">
+                   <use xlink:href="img/symbol/sprite.svg#icons--behancee">
+                </svg>
+              </a>
+        </div>
+        </div>
+        </div>
+        <div class="contacts__right">
+        <form class="contacts__form form">
+        <div class="form__group">
+          <input type="text" class="form__field" placeholder="Your Name" required>
+        </div>
+        <div class="form__group">
+          <input type="email" class="form__field" placeholder="Your Email" required>
+        </div>
+        <div class="form__group">
+          <input type="text" class="form__field" placeholder="Subject" required>
+        </div>
+        <div class="form__group">
+          <textarea name="message" class="form__textarea" placeholder="Your message"></textarea>
+        </div>
+        <button class="button button_size--large button_theme--accent form__button">Send</button>
+      </form>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+  <script src="js/scripts.min.js"></script>
 </body>
 </html>
 

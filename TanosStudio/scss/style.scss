@@ -1,18 +1,20 @@
 // @charset "UTF-8";
 
+//Base
 @import "normalize";
 @import "variables";
 @import "mixins";
 @import "fonts";
 @import "core";
 @import "slick-slider";
-// @import "animations";
 
-@import "blocks/header";
+//Custom
+@import 'blocks/header';
 @import "blocks/main-nav";
 @import "blocks/about";
 @import "blocks/newsletter.scss";
 @import "blocks/works";
 @import "blocks/testimonials";
 @import "blocks/team";
+@import "blocks/contacts";
 @import "media";

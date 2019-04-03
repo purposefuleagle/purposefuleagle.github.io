@@ -101,6 +101,30 @@
 	.slick-dots{
 		bottom: -60px;
 	}
+	.information{
+
+		&__social-list{
+			justify-content: center;
+		}
+	}
+	.contacts{
+
+		&__wrap{
+			flex-direction: column;
+			justify-content: center;
+		}
+		&__left{
+			margin-bottom: 50px;
+		}
+	}
+	.button{
+
+		&_size--large{
+			width: 100%;
+		}
+	}
+	
+	
 }
 
 // ≥576px
@@ -164,6 +188,18 @@
 	.slider{
 		&__text{
 			font-size: 18px;
+		}
+	}
+	.team{
+		padding: 50px 0px;
+	}
+	.information{
+
+		&__info{
+			padding-left: 80px;
+		}
+		&__schedule{
+			padding-left: 80px;
 		}
 	}
 }
