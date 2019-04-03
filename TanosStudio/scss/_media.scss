@@ -202,5 +202,13 @@
 			padding-left: 80px;
 		}
 	}
+	.footer{
+		padding: 20px 0px;
+		&__wrap{
+			flex-direction: column;
+			align-items: center;
+
+		}
+	}
 }
 

@@ -1,0 +1,24 @@
+.footer{
+	background-color: #4f545a;
+	padding: 45px 0px;
+
+	&__wrap{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__copyright{
+		color: $white;
+		text-transform: uppercase;
+	}
+	&__title{
+		display: flex;
+		align-items: center;
+	}
+	&__text{
+		color: $white;
+		text-transform: uppercase;
+	}
+	&__logo{
+		margin-left: 5px;
+	}
+}

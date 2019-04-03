@@ -46,6 +46,22 @@ h1,h2,h3,h4,h5 {
 .wrap {
   @include min-max(320px, 100%, 0);
 }
+// Прижимаем footer к низу, а header к верху
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+header{
+	flex: 0 0 auto;
+}
+.content{
+	flex: 1 0 auto; 
+}
+footer{
+	flex: 0 0 auto;
+}
+//
 .container {  
   @include min-max(320px, 1200px, 15px);
 }
