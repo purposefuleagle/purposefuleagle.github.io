@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+ * {
+	box-sizing:border-box;
+}
+*::before, *::after {
+	box-sizing: inherit;
+}
+html{
+	height: 100%;
+}
+body {
+  font-family: $font;
+  line-height: 1.6;
+  font-size: $font-size;
+  overflow-x: hidden;
+	min-width: 320px;
+}
+input, textarea {
+  border: #666 1px solid;
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+ul,ol {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+p {
+	margin:0;
+}
+h1,h2,h3,h4,h5 {
+	margin-top:0;
+	margin-bottom:0;
+	font-weight:normal;
+}
+a{
+	text-decoration: none;
+}
+// .wrap {
+//   @include min-max(320px, 100%, 0);
+// }
+// .container {  
+//   @include min-max(320px, 1200px, 15px);
+// }
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+.visually-hidden {
+	display: none;
+}
+
+.container{
+	// border: 1px solid red;
+}

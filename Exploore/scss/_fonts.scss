@@ -1,0 +1,11 @@
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800');
+
+
+@import "mixins";
+
+@include font-face("Lato", "../fonts/LatoMedium/LatoMedium", 500);
+@include font-face("Lato", "../fonts/LatoMediumItalic/LatoMediumItalic", 500);
+@include font-face("Montserrat", "../fonts/MontserratRegular/MontserratRegular", 400);
+@include font-face("Montserrat", "../fonts/MontserratMedium/MontserratMedium", 500);
+@include font-face("Montserrat", "../fonts/MontserratBlack/MontserratBlack", 900);
+@include font-face("Montserrat", "../fonts/MontserratExtraBold/MontserratExtraBold", 800);
