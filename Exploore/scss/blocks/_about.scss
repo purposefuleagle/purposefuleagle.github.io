@@ -1,0 +1,64 @@
+.about{
+	position: relative;
+	padding: rem(85px 0);
+	background: url(../img/background/about-right-bg.jpg) no-repeat center right;
+	background-size: cover;
+	&::before{
+		content: "";
+		position: absolute;
+		width: 50%;
+		bottom: 0;
+		right: 0;
+		top: 0;
+		left: 0;
+		background: url(../img/background/about-bg.jpg) no-repeat center left;
+		background-size: cover;
+	}
+	&__wrap{
+		margin-left: rem(50px);
+	}
+	&__subtitle{
+		margin-bottom: 30px;
+	}
+	&__description{
+		font-family: $font-secondary;
+		font-weight: $medium;
+		font-size: rem(18px);
+		color: $black;
+		line-height: 1.4;
+		margin-bottom: 40px;
+		padding-right: rem(60px);
+	}
+}
+.section-title{
+	font-weight: $weight-black;
+	font-size: rem(37px);
+	line-height: 1.2;
+	color: $black;
+}	
+.section-subtitle{
+	font-weight: $medium;
+	font-size: rem(37px);
+	color: $black;
+	line-height: 1.2;
+}
+.advantages-list{
+	position: relative;
+	&__item{
+		font-family: $font-secondary;
+		font-weight: $medium;
+		color: $black;
+		font-size: rem(18px);
+		padding-left: rem(50px);
+		padding-right: rem(90px);
+		margin-bottom: rem(25px);
+	}
+	&__wrap-icon{
+		position: absolute;
+		padding-top: rem(5px);
+	}
+	&__icon{
+		font-size: rem(26px);
+		color: $brand-color;
+	}
+}

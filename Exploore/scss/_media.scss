@@ -55,6 +55,29 @@
 			}
 		}
 	}
+	.about{
+		&::before{
+			background: url(../img/background/about-bg.jpg) no-repeat 10%;
+			background-size: cover;
+		}
+		&__wrap{
+			margin-left: rem(30px);
+		}
+		&__description{
+			padding-right: 0;
+		}
+	}
+	.advantages-list{
+		&__item{
+			padding-right: 0;
+		}
+	}
+	.section-title{
+		font-size: rem(32px);
+	}
+	.section-subtitle{
+		font-size: rem(32px);
+	}
 }
 
 // ≥768px
@@ -74,6 +97,26 @@
 			margin-bottom: rem(30px);
 			font-size: rem(30px);
 		}
+	}
+	.about{
+		padding: rem(40px 0);
+		&__wrap{
+			margin-left: rem(5px);
+		}
+		&__description{
+			padding-right: 0;
+		}
+	}
+	.advantages-list{
+		&__item{
+			padding-right: 0;
+		}
+	}
+	.section-title{
+		font-size: rem(25px);
+	}
+	.section-subtitle{
+		font-size: rem(25px);
 	}
 }
 
@@ -130,7 +173,34 @@
 			margin-bottom: rem(10px);
 		}
 	}
+	.about{
+		&::before{
+			display: none;
+		}
+		padding: rem(40px 0 );
+		&__wrap{
+			margin-left: rem(5px);
+		}
+		&__description{
+			padding-right: 0;
+			text-align: center;
+		}
+	}
+	.advantages-list{
+		&__item{
+			padding-right: 0;
+		}
+	}
+	.section-title{
+		font-size: rem(25px);
+		text-align: center;
+	}
+	.section-subtitle{
+		font-size: rem(25px);
+		text-align: center;
+	}
 }
+
 
 
 /*==========  Mobile First  ==========*/
