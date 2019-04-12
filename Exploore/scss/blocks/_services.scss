@@ -1,0 +1,45 @@
+.services{
+	padding: rem(70px 0 90px);
+	&__title{
+		text-align: center;
+	}
+	&__subtitle{
+		text-align: center;
+		margin-bottom: rem(50px);
+	}
+	&__item{
+		position: relative;
+		padding-left: rem(100px);
+		padding-bottom: rem(30px);
+
+		&:last-child{
+			padding-bottom: 0;
+		}
+	}
+	&__heading{
+		font-weight: $medium;
+		font-size: rem(22px);
+		color: $black-light;
+		line-height: 2.43;
+		letter-spacing: 0.1px;
+	}
+	&__description{
+		font-family: $font-secondary;
+		font-weight: $medium;
+		font-size: rem(18px);
+		line-height: 1.47;
+		color: $base-color;
+	}
+	&__wrap-icon{
+		position: absolute;
+		top: rem(13px);
+		left: 0;
+	}
+	&__icon{
+		font-size: 50px;
+		color: $brand-color;
+	}
+}
+.fa-plane{
+	transform: rotate(-45deg);
+}

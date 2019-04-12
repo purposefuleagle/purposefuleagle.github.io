@@ -78,6 +78,16 @@
 	.section-subtitle{
 		font-size: rem(32px);
 	}
+	.services{
+		&__heading{
+			line-height: 1.6;
+			margin-bottom: rem(10px);
+		}
+		&__item{
+			position: relative;
+			padding-left: rem(80px);
+		}
+	}
 }
 
 // ≥768px
@@ -117,6 +127,14 @@
 	}
 	.section-subtitle{
 		font-size: rem(25px);
+	}
+	.services{
+		padding: rem(40px 0 20px);
+		&__item{
+			&:last-child{
+				padding-bottom: rem(30px);
+			}
+		}
 	}
 }
 
@@ -198,6 +216,12 @@
 	.section-subtitle{
 		font-size: rem(25px);
 		text-align: center;
+	}
+	.services{
+
+		&__heading{
+			font-size: rem(18px);
+		}
 	}
 }
 
