@@ -43,19 +43,22 @@
 	line-height: 1.2;
 }
 .advantages-list{
-	position: relative;
 	&__item{
+		position: relative;
+		padding-left: rem(50px);
+		padding-right: rem(90px);
+		padding-bottom: rem(25px);
+	}
+	&__text{
 		font-family: $font-secondary;
 		font-weight: $medium;
 		color: $black;
 		font-size: rem(18px);
-		padding-left: rem(50px);
-		padding-right: rem(90px);
-		margin-bottom: rem(25px);
 	}
 	&__wrap-icon{
 		position: absolute;
-		padding-top: rem(5px);
+		top: 5px;
+		left: 0;
 	}
 	&__icon{
 		font-size: rem(26px);

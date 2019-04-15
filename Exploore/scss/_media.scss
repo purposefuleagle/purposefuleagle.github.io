@@ -88,6 +88,11 @@
 			padding-left: rem(80px);
 		}
 	}
+	.package{
+		&__heading{
+			font-size: rem(21px);
+		}
+	}
 }
 
 // ≥768px
@@ -135,6 +140,16 @@
 				padding-bottom: rem(30px);
 			}
 		}
+	}
+	.budget{
+		padding: rem(40px 0 30px);
+		&::after{
+			display: none;
+		}
+	}
+	.package{
+		margin: rem(0 auto 20px);
+		width: 80%;
 	}
 }
 

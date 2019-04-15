@@ -1,0 +1,89 @@
+.budget{
+	padding: rem(90px 0 100px);
+	background: url(../img/background/budget-bg.jpg) no-repeat center top;
+	background-size: cover;
+	position: relative;
+	&::after{
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 480px;
+		background-color: $brand-color;
+	}
+	&__title{
+		text-align: center;
+	}
+	&__subtitle{
+		text-align: center;
+		margin-bottom: rem(50px);
+	}
+}
+.package{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	// margin-top: 300px;
+	background-color: $white;
+	border-radius: rem(13px);
+	max-width: 100%;
+	z-index: 2;
+	// width: 384px;
+	// height: 412px;
+	padding: rem(35px 0);
+	&__wrap-icon{
+		margin-bottom: rem(15px);
+	}
+	&__icon{
+		font-size: rem(67px);
+	}
+	&__heading{
+		font-weight: $extrabold;
+		color: $black;
+		font-size: rem(24px);
+		margin-bottom: rem(10px);
+	}
+	&__price{
+		font-size: rem(30px);
+		color: $black;
+		font-weight: $medium;
+		background-color: $accent-color;
+		height: rem(64px);
+		width: 103%;
+		text-align: center;
+		padding-top: rem(10px);
+		margin-bottom: rem(20px);
+	}
+}
+.advantages-list{
+	&__item{
+		&--small{
+			padding-left: rem(30px);
+			padding-right: 0;
+			padding-bottom: rem(10px);
+			&:last-child{
+				padding-bottom: 0;
+			}
+		}
+	}
+	&__icon{
+		&_size{
+			&--small{
+				font-size: rem(17px);
+			}
+		}
+	}
+	&__wrap-icon{
+		&--small{
+			top: 2px;
+		}
+	}
+	&__text{
+		&--small{
+			font-size: rem(17px);
+		}
+	}
+}
