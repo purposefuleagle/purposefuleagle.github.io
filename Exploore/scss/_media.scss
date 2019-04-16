@@ -3,7 +3,42 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	.status-bar{
+		&__item{
+			&_theme{
+				&--blue{
+					margin-right: rem(10px);
+					&::before{
+						width: rem(150px);
+					}
+					&::after{
+						left: 149px;
+					}
+				}
+			}
+		}
+		&__item{
+			&_theme{
+				&--gray{
+				
+					&::before{
+						width: rem(180px);
+					}
+					&::after{
+						left: 179px;
+					}
+				}
+			}
+		}
+		&__icon{
+			margin-left: rem(60px);
+			&_theme{
+				&--white{
+					margin-left: rem(15px);
+				}
+			}
+		}
+	}
 }
 
 // ≥992px
@@ -93,6 +128,25 @@
 			font-size: rem(21px);
 		}
 	}
+	.destination{
+		text-align: center;
+		&__wrap-img{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__description{
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&__button{
+			margin-bottom: rem(50px);
+		}
+	}
+	.status-bar{
+		width: 75%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 // ≥768px
@@ -150,6 +204,12 @@
 	.package{
 		margin: rem(0 auto 20px);
 		width: 80%;
+	}
+	.destination{
+		padding: rem(40px 0);
+	}
+	.status-bar{
+		width: 100%;
 	}
 }
 
@@ -236,6 +296,58 @@
 
 		&__heading{
 			font-size: rem(18px);
+		}
+	}
+	.destination{
+		&__img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.status-bar{
+		height: rem(80px);
+		&__item{
+			&_theme{
+				&--blue{
+					margin-right: rem(-15px);
+					&::before{
+						width: rem(100px);
+					}
+					&::after{
+						left: 100px;
+						border-top: 40px solid transparent;
+    				border-bottom: 40px solid transparent;
+						border-left: 24px solid $brand-color;
+					}
+				}
+			}
+		}
+		&__item{
+			&_theme{
+				&--gray{
+				
+					&::before{
+						width: rem(100px);
+					}
+					&::after{
+						left: 100px;
+					}
+				}
+			}
+		}
+		&__name{
+			font-size: rem(18px);
+		}
+		&__icon{
+			margin-left: rem(30px);
+			margin-right: rem(10px);
+			font-size: rem(35px);
+			&_theme{
+				&--white{
+					margin-left: rem(15px);
+					font-size: rem(30px);
+				}
+			}
 		}
 	}
 }
