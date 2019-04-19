@@ -147,6 +147,23 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+	.card{
+		&__title{
+			font-size: rem(22px);
+			padding: rem(0 10px);
+		}
+		&__price{
+			font-size: rem(30px);
+		}
+		&__description{
+			padding: rem(0 10px);
+		}
+		&__button{
+			&--position{
+				margin-bottom: rem(80px);
+			}
+		}
+	}
 }
 
 // ≥768px
@@ -211,8 +228,35 @@
 	.status-bar{
 		width: 100%;
 	}
+	.deals{
+		padding: rem(40px 0 0);
+		&::after{
+			display: none;
+		}
+		&__subtitle{
+			margin-bottom: rem(40px);
+		}
+	}
+	.card{
+		&__item{
+			width: 80%;
+			margin: rem(0 auto 30px);
+			&:last-child{
+				// margin-bottom: 0;
+			}
+			&--active{
+				transform: scale(1);
+				clip-path: none;
+				border: none;
+			}
+		}
+		&__button{
+			&--position{
+				margin-bottom: rem(20px);
+			}
+		}
+	}
 }
-
 // ≥576px
 @include media-breakpoint-down(xs) {
 	.header{
