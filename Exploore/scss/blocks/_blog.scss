@@ -1,0 +1,43 @@
+.blog{
+	padding: rem(100px 0 80px);
+	background: url(../img/background/blog-bg.jpg) no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	&__subtitle{
+		margin-bottom: rem(50px);
+	}
+}
+.post{
+
+	&__item{
+		position: relative;
+		overflow: hidden;
+		background: $white;
+		border-radius: rem(13px);
+	}
+	&__img{
+		max-height: rem(259px);
+	}
+	&__button{
+		position: relative;
+		top: rem(-25px);
+	}
+	&__title{
+		font-weight: $weight-black;
+		font-size: rem(25px);
+		line-height: 1.74;
+		letter-spacing: rem(0.1px);
+		color: $black;
+		margin-bottom: rem(5px);
+	}
+	&__description{
+		font-family: $font-secondary;
+		font-weight: $normal;
+		font-size: rem(18px);
+		line-height: 1.47;
+		letter-spacing: rem(0.5px);
+		color: $base-color;
+		max-width: rem(280px);
+		margin: rem(0 auto 40px);
+	}
+}

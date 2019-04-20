@@ -164,6 +164,15 @@
 			}
 		}
 	}
+	.post{
+		&__title{
+			font-size: rem(18px);
+			padding: rem(0 5px);
+		}
+		&__description{
+			font-size: rem(17px);
+		}
+	}
 }
 
 // ≥768px
@@ -241,9 +250,6 @@
 		&__item{
 			width: 80%;
 			margin: rem(0 auto 30px);
-			&:last-child{
-				// margin-bottom: 0;
-			}
 			&--active{
 				transform: scale(1);
 				clip-path: none;
@@ -254,6 +260,15 @@
 			&--position{
 				margin-bottom: rem(20px);
 			}
+		}
+	}
+	.blog{
+		padding: rem(40px 0);
+	}
+	.post{
+		&__item{
+			width:75%;
+			margin: rem(0 auto 20px);
 		}
 	}
 }
@@ -392,6 +407,19 @@
 					font-size: rem(30px);
 				}
 			}
+		}
+	}
+	.card{
+		&__item{
+			width: 90%;
+		}
+	}
+	.post{
+		&__item{
+			width: 90%;
+		}
+		&__description{
+			padding: rem(0 10px);
 		}
 	}
 }
