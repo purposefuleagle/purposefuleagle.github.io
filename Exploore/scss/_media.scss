@@ -173,6 +173,11 @@
 			font-size: rem(17px);
 		}
 	}
+	.discount{
+		&__wrap-img{
+			left: -80%;
+		}
+	}
 }
 
 // ≥768px
@@ -229,7 +234,7 @@
 	}
 	.package{
 		margin: rem(0 auto 20px);
-		width: 80%;
+		width: 90%;
 	}
 	.destination{
 		padding: rem(40px 0);
@@ -269,6 +274,21 @@
 		&__item{
 			width:75%;
 			margin: rem(0 auto 20px);
+		}
+	}
+	.discount{
+		padding-top: rem(40px);
+		&__wrap-img{
+			left: -60%;
+		}
+		&__title{
+			font-size: rem(30px);
+		}
+		&__offer{
+			margin-bottom: rem(140px);
+		}
+		&__price{
+			font-size: rem(40px);
 		}
 	}
 }
@@ -420,6 +440,58 @@
 		}
 		&__description{
 			padding: rem(0 10px);
+		}
+	}
+	.discount{
+		text-align: center;
+		padding-bottom: rem(110px);
+		&__title{
+			font-size: rem(25px);
+		}
+		&__subtitle{
+			font-size: rem(20px);
+		}
+		&__wrap-img{
+			position: absolute;
+			left: 0%;
+			margin-top: rem(380px);
+		}
+		&__offer{
+			max-width: rem(400px);
+			margin-top: rem(15px);
+			margin-left: auto;
+			margin-right: auto;
+			padding: rem(20px 15px 25px 20px);
+		}
+		&__img{
+			max-width: 100%;
+		}
+		&__price{
+			display: block;
+			font-size: rem(30px);
+			margin-top: rem(10px);
+			margin-right: 0;
+		}
+		&__button{
+			margin-top: rem(10px);
+		}
+	}
+	.list-icons{
+		justify-content: space-around;
+		margin: rem(15px 0);
+		&__item{
+			margin-right: 0;
+		}
+		&__title{
+			font-size: rem(18px);
+		}
+		&__icon{
+			font-size: rem(45px);
+			color: $brand-color;
+			&_small{
+				font-size: rem(40px);
+				margin-bottom: rem(5px);
+			}
 		}
 	}
 }
