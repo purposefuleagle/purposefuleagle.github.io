@@ -178,6 +178,11 @@
 			left: -80%;
 		}
 	}
+	.contact{
+		&__icon{
+			margin-bottom: rem(90px);
+		}
+	}
 }
 
 // ≥768px
@@ -304,6 +309,22 @@
 		}
 		&__name{
 			font-size: rem(22px);
+		}
+	}
+	.socials-list{
+		&__link{
+			margin-right: rem(5px);
+			width: rem(40px);
+			height: rem(40px);
+			border-radius: 50%;
+			line-height: rem(35px);
+			transition: all .4s ease;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+		&__icon{
+			font-size: rem(20px);
 		}
 	}
 }
