@@ -10,13 +10,23 @@
 		background: url(../img/background/contact-bg_1.jpg) no-repeat top center;
 		position: absolute;
 		background-size: cover;
-		width: 150%;
-		left: -20%;
+		left: 0;
 		right: 0;
 		bottom: 0;
 		top: 0;
 		height: 465px;
-		border-radius:0 0 50% 40%;
+		// Border background v.2
+		width: 120vw;
+ 		margin-left: -10vw;
+		border-radius: 0 0 100vw 100vw/0 0 20vh 20vh;
+		//Border background v.1
+		// width: 150%;
+		// left: -20%;
+		// right: 0;
+		// bottom: 0;
+		// top: 0;
+		// height: 465px;
+		// border-radius:0 0 50% 40%;
 	}
 	&__subtitle{
 		margin-bottom: rem(80px);
