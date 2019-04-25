@@ -1,22 +1,22 @@
 .contact{
 	padding: rem(130px 0 80px);
-	background: url(../img/background/contact-bg_1.jpg) no-repeat top center;
-	// height: rem(468px);
-	background-size: cover;
+	background: $white;
+	// top: -400px;
 	// border-radius: 100% 0% 50% 50% / 0% 53% 47% 100%  ;
-	z-index: 0;
-	background-attachment: scroll;
 	text-align: center;
 	position: relative;
 	&::before{
 		content:'';
+		background: url(../img/background/contact-bg_1.jpg) no-repeat top center;
 		position: absolute;
-		left: 0;
+		background-size: cover;
+		width: 150%;
+		left: -20%;
 		right: 0;
 		bottom: 0;
-		top: 350px;
-		background: $white;
-		clip-path: polygon(50% 20%, 100% 11%, 100% 100%, 48% 100%, 0 100%, 0 12%);
+		top: 0;
+		height: 465px;
+		border-radius:0 0 50% 40%;
 	}
 	&__subtitle{
 		margin-bottom: rem(80px);
