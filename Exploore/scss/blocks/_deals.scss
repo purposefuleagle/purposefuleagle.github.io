@@ -30,6 +30,7 @@
 		&--active{
 			position: relative;
 			z-index: 2;
+			box-shadow: none;
 			transform: scale(1.1);
 			clip-path: polygon(50% 0%, 100% 0, 100% 82%, 50% 100%, 0 83%, 0 0);
 			border: 1px solid rgba($black, .4);

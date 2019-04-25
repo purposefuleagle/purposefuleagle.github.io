@@ -1,0 +1,84 @@
+.reviews{
+	margin-top: rem(80px);
+	padding: rem(100px 0 90px);
+	background: url(../img/background/reviews-bg.jpg) no-repeat top center;
+	background-size: cover;
+	text-align: center;
+	position: relative;
+
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: rgba(0, 0, 0, .8);
+	}
+}
+.section-title{
+	&_theme{
+		&_white{
+			color: $white;
+		}
+	}
+}
+.section-subtitle{
+	&_theme{
+		&_white{
+			color: $white;
+		}
+	}
+}
+.testimonials{
+	&__description{
+		font-family: $font-secondary;
+		font-size: rem(18px);
+		line-height: 1.47;
+		font-style: italic;
+		color: $white;
+		letter-spacing: rem(0.5px);
+		max-width: rem(1045px);
+		margin: rem(60px auto 30px);
+		text-align: center;
+	}
+	&__icon-wrap{
+		margin-bottom: rem(50px);
+	}
+	&__icon{
+		font-size: rem(18px);
+		margin-right: rem(10px);
+		color:#f2da39;
+	}
+	&__photo{
+		position: relative;
+		width: rem(69px);
+		height: rem(69px);
+		overflow: hidden;
+		border-radius: 50%;
+	}
+	&__img{
+		// object-fit: contain;
+		max-width: 100%;
+		height: auto;
+	}
+	&__profile{
+		display: flex;
+		justify-content: center;
+	}
+	&__name{
+		font-size: rem(25px);
+		line-height: 1.45;
+		font-weight: $weight-black;
+		color: $white;
+	}
+	&__text{
+		margin-left: rem(18px);
+	}
+	&__profession{
+		font-size: rem(16px);
+		line-height: 1.45;
+		font-weight: $medium;
+		color: $white;
+	}
+}

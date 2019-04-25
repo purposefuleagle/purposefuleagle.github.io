@@ -291,6 +291,21 @@
 			font-size: rem(40px);
 		}
 	}
+	.reviews{
+		padding: rem(30px 0);
+	}
+	.testimonials{
+
+		&__description{
+			margin-top: rem(30px);
+		}
+		&__icon-wrap{
+			margin-bottom: rem(30px);
+		}
+		&__name{
+			font-size: rem(22px);
+		}
+	}
 }
 // ≥576px
 @include media-breakpoint-down(xs) {
@@ -454,7 +469,7 @@
 		&__wrap-img{
 			position: absolute;
 			left: 0%;
-			margin-top: rem(380px);
+			margin-top: rem(300px);
 		}
 		&__offer{
 			max-width: rem(400px);
@@ -492,6 +507,11 @@
 				font-size: rem(40px);
 				margin-bottom: rem(5px);
 			}
+		}
+	}
+	.testimonials{
+		&__description{
+			font-size: rem(17px);
 		}
 	}
 }
