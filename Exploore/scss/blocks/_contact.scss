@@ -5,6 +5,7 @@
 	// border-radius: 100% 0% 50% 50% / 0% 53% 47% 100%  ;
 	text-align: center;
 	position: relative;
+	overflow-x: hidden;
 	&::before{
 		content:'';
 		background: url(../img/background/contact-bg_1.jpg) no-repeat top center;
