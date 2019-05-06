@@ -30,7 +30,7 @@ gulp.task('sass', function () {
       .pipe(autoprefixer({
         browsers: ['last 2 version']
       }))
-      // .pipe(cleancss( {level: { 1: { sspecialComments: 0 } } })) // Opt., comment out when debugging
+      .pipe(cleancss( {level: { 1: { sspecialComments: 0 } } })) // Opt., comment out when debugging
       .pipe(sourceMaps.write())
       .pipe(gulp.dest('build/css'))
       .pipe(browserSync.reload({stream: true}));

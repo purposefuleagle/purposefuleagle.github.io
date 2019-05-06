@@ -1,0 +1,8 @@
+.button{
+  @include button();
+  &_size{
+    &_big{
+      padding: rem(23px 77px);
+    }
+  }
+}

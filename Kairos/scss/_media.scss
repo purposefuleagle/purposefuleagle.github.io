@@ -1,0 +1,104 @@
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	.header{
+		padding: rem(37px 0 400px);
+		overflow: hidden;
+		&__promo{
+			padding-top: rem(80px);
+			margin: 0 auto;
+			text-align: center;
+			max-width: rem(600px);
+		}
+		&__title{
+			&::before{
+				content: none;
+			}
+		}
+		&__mockup{
+			top: rem(30px);
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+		&__socials{
+			top: 60%;
+			right: -13%;
+		}
+		&__scroll-down{
+			bottom: rem(-350px);
+			right: rem(10px);	
+		}
+	}
+}
+// ≥992px
+@media only screen and (max-width : $bp-large-2) {
+	.header{
+		&__button{
+			display: none;
+		}
+		&__socials{
+			right: -23%;
+		}
+		&__scroll-down{
+			bottom: rem(-350px);
+			right: rem(-30px);	
+		}
+		&__title{
+			font-size: rem(60px);
+		}
+	}
+	.nav{
+		&__list{
+			justify-content: flex-end;
+		}
+	}
+	
+}
+
+// ≥768px
+@media only screen and (max-width : $bp-medium) {
+	.header{
+		&__socials{
+			display: none;
+		}
+		&__logo-wrap{
+			text-align: center;
+		}
+		&__title{
+			font-size: rem(50px);
+			line-height: 1.4;
+		}
+		&__subtitle{
+			font-size: rem(20px);
+		}
+	}
+	.mockup{
+		&__img{
+			width: rem(500px);
+		}
+	}
+}
+
+// ≥576px
+@media only screen and (max-width : $bp-small-3) {
+	.header{
+		
+		&__title{
+			font-size: rem(35px);
+		}
+		&__scroll-down{
+			bottom: rem(-350px);
+			right: rem(20px);	
+		}
+		&__mockup{
+			top: rem(50px);
+			left: 30%;
+		}
+	}
+	.mockup{
+		&__img{
+			width: rem(380px);
+		}
+	}
+}

@@ -1,0 +1,113 @@
+.header{
+	position: relative;
+	padding: rem(37px 0 115px);
+	background: url(../img/background/header-bg.jpg) no-repeat top center;
+	background-size: cover;
+
+	&__logo-img{
+		width: rem(130px);
+	}
+	&__button{
+		text-align: right;
+	}
+	&__promo{
+		padding-top: rem(200px);
+	}
+	&__title{
+		position: relative;
+		font-size: rem(68px);
+		line-height: rem(84px);
+		font-weight: $bold;
+		color: $white;
+		margin-bottom: rem(10px);
+		&::before{
+			content: '';
+			position: absolute;
+			width: rem(80px);
+			height: rem(2px);
+			background: $accent-color;
+			top: rem(-35px);
+			left: rem(5px);
+		}
+	}
+	&__subtitle{
+		font-family: $font-secondary;
+		font-size: rem(24px);
+		line-height: rem(40px);
+		color: rgba($white, .3);
+		margin-bottom: rem(50px);
+	}
+	&__mockup{
+		position: absolute;
+		top: rem(120px);
+	}
+	&__socials{
+		position: absolute;
+		top: 60%;
+		right: -39%;
+		transform: rotate(-90deg);
+	}
+	&__scroll-down{
+		position: absolute;
+		bottom: rem(-50px);
+		right: -15%;
+		
+	}
+}
+.nav{
+	&__list{
+		display: flex;
+		align-items: center;
+	}
+	&__item{
+		margin-right: rem(20px);
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&__link{
+		font-family: $font-secondary;
+		text-transform: uppercase;
+		font-size: rem(13px);
+		letter-spacing: rem(3px);
+		color: rgba($white, .5);
+		transition: all .4s ease;
+	}
+}
+.socials{
+	&__link{
+		margin-right: rem(15px);
+		font-family: $font-secondary;
+		text-transform: uppercase;
+		letter-spacing: rem(4px);
+		color: rgba($white, .3);
+		font-size: rem(12px);
+		transition: color .4s ease-in;
+		&:hover{
+			color: $white;
+		}
+	}
+}
+.scroll-down{
+	&__link{
+		display: block;
+		width: rem(56px);
+		height: rem(56px);
+		background: rgba($white, .1);
+		border-radius: 50%;
+		transition: all .4s linear;
+		position: relative;
+		&:hover{
+			background: $accent-color;
+		}
+	}
+	&__icon{
+		position: absolute;
+		fill: $white;
+		width: rem(10px);
+		height: rem(16px);
+		top: 50%;
+		right: 32%;
+		transform: translate(-50%, -50%);
+	}
+}
