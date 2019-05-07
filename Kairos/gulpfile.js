@@ -47,7 +47,8 @@ gulp.task('scripts', function () {
   // return gulp.src('js/**/*.js')
   return gulp.src([ 
     'libs/jquery/dist/jquery.min.js',
-    'libs/slick-1.8.1/slick/slick.min.js',
+    // 'libs/slick-1.8.1/slick/slick.min.js',
+    'libs/OwlCarousel2-2.3.4/dist/owl.carousel.min.js',
 		'js/common.js' // Always at the end
 		])
   .pipe(concat('scripts.min.js'))

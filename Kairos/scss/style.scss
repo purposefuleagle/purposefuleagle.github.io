@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 @import "variables";
 @import "mixins";
 @import "fonts";
@@ -8,7 +7,9 @@
 @import "core";
 @import "components/icomoon/icomoon";
 
-@import "blocks/header";
 @import "blocks/buttons";
+@import "blocks/header";
+@import "blocks/about";
+
 @import "media";
 

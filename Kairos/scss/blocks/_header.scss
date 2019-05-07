@@ -3,7 +3,7 @@
 	padding: rem(37px 0 115px);
 	background: url(../img/background/header-bg.jpg) no-repeat top center;
 	background-size: cover;
-
+	background-attachment: fixed;
 	&__logo-img{
 		width: rem(130px);
 	}
