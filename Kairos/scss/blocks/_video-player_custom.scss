@@ -1,0 +1,93 @@
+.plyr{
+	&--full-ui{
+		&.plyr{
+			&--video{
+				.plyr{
+					&__control{
+						&--overlaid{
+							z-index: 11;
+						}
+					}
+				}
+			}
+		}
+	}
+	&__poster{
+	}
+	&__control{
+		&--overlaid{
+			// left: 15%;
+			// top: 20%;
+			&.plyr{
+				&__tab-focus{
+					background: $white;
+				}
+			}
+			&:focus{
+				background: $white;
+				box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.5);							
+			}
+			&:hover{
+				box-shadow: 0 0 0 5px rgba($accent-color, 0.5);		
+			}
+			background: rgba($white, 1);
+			svg{
+				left: 39%;
+				top: rem(20px);
+				width: rem(60px);
+				height: rem(60px);
+			}
+		}
+	}
+	&--video{
+		.plyr{
+			&__control{
+				&--overlaid{
+					svg{
+						fill: #000;
+						&:hover{
+						}
+					}
+				}
+			}
+		}
+		.plyr{
+			&__tab-focus{
+				box-shadow: 0 0 0 5px rgba($white, 0.5);	
+			}
+		}
+		&.plyr{
+			&__tab-focus{
+				box-shadow: 0 0 0 5px rgba(26, 175, 255, 0.5);
+			}
+		}
+	}
+	&--video{
+		.plyr{
+			&__control{
+				&:hover{
+					background: rgba($accent-color, 1);
+					box-shadow: 0 0 0 5px rgba($accent-color, 0.5);		
+				}
+				svg{
+					// fill: #fff;
+				}
+				&.plyr{
+					&__tab-focus{
+						background: transparent;				
+					}
+				}
+			}
+		}
+	}
+	&--full{
+		&-ui{
+			input[type=range]{
+				color: $white;	
+			}
+		}
+	}
+}
+
+// .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true]
+// .plyr--full-ui input[type=range]

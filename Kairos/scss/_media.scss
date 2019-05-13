@@ -59,6 +59,15 @@
 	.section-title{
 		font-size: rem(50px);
 	}
+	.about{
+		padding: rem(100px 0 300px);
+	}
+	.about-how{
+		&__title{
+			margin-top: rem(70px);
+			margin-bottom: rem(20px);
+		}
+	}
 }
 
 // ≥768px
@@ -67,15 +76,15 @@
 		&__socials{
 			display: none;
 		}
-		&__logo-wrap{
-			text-align: center;
-		}
 		&__title{
 			font-size: rem(50px);
 			line-height: 1.4;
 		}
 		&__subtitle{
 			font-size: rem(20px);
+		}
+		&__hamburger{
+			text-align: right;
 		}
 	}
 	.mockup{
@@ -88,6 +97,58 @@
 	}
 	.section-subtitle{
 		font-size: rem(25px);
+	}
+	.about{
+		padding-bottom: rem(200px);
+	}
+	.about-how{
+		padding-bottom: rem(100px);
+		&__promo-wrap{
+			margin-top: rem(-200px);
+		}
+		&__title{
+			margin-top: rem(35px);
+			margin-bottom: 0;
+		}
+		&__process{
+			margin-top: rem(25px);
+		}
+	}
+	.plyr{
+		&__control{
+			&--overlaid{
+				svg{
+					left: 25%;
+					top: rem(7px);
+					width: rem(30px);
+					height: rem(30px);
+				}
+			}
+		}
+	}
+	.process{
+		&::before{
+			left: rem(20px);
+		}
+		&__item{
+			&_shape{
+				&_circle{
+					&::before{
+						width: rem(44px);
+						height: rem(44px);
+						line-height: rem(44px);
+						top: rem(5px);
+					}
+				}
+			}
+		}
+		&__title{
+			font-size: rem(24px);
+			margin-bottom: 0;
+		}
+	}
+	.nav{
+		display: none;
 	}
 }
 
@@ -113,7 +174,7 @@
 		}
 	}
 	.about{
-		padding: rem(50px 0 410px);
+		padding-top: rem(50px);
 		&__slider{
 			text-align: center;
 		}
@@ -129,5 +190,26 @@
 	}
 	.section-subtitle{
 		font-size: rem(20px);
+	}
+	.about{
+		padding-bottom: rem(200px);
+	}
+	.about-how{
+		padding-bottom: rem(80px);
+	}
+	.process{
+		&::before{
+			left: rem(35px);
+		}
+		&__item{
+			padding-right: 0;
+			&_shape{
+				&_circle{
+					&::before{
+						left: rem(15px);
+					}
+				}
+			}
+		}
 	}
 }

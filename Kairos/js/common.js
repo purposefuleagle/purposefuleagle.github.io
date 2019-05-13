@@ -72,5 +72,19 @@
 				// Parameters has to be in square bracket '[]'
 				aboutSlider.trigger('prev.owl.carousel');
 		})
-
-		})
+		// 	document.getElementsByClassName('plyr__control').onclick = function() {
+		// 	document.getElementsByClassName('status').style.display = 'none';
+		// }
+		
+	// 	function toggle_visibility(id) {
+	// 		var e = document.getElementById('status');
+	// 		if(e.style.display == 'block')
+	// 			 e.style.display = 'none';
+	// 		else
+	// 			 e.style.display = 'block';
+	// }
+		// $(".plyr__control").click(function() {
+		// 	$('.status').hide();
+		// });
+	})
+		

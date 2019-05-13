@@ -111,3 +111,40 @@
 		transform: translate(-50%, -50%);
 	}
 }
+.hamburger{
+	padding-top: rem(5px);
+	&__icon{
+		position: relative;
+		border: 0;
+		outline: 0;
+		width: rem(40px);
+		height: rem(40px);
+		background-color: transparent;	
+	}
+	&__line{
+		position: absolute;
+		width: rem(26px);
+		height: rem(2px);
+		background-color: $white;
+		left: 50%;
+		top: 50%;
+		margin-top: rem(-1px);
+		margin-left: rem(-13px);
+		&::before,
+		&::after{
+			content: '';
+			position: absolute;
+			width: rem(26px);
+			height: rem(2px);
+			margin-top: rem(-1px);
+			margin-left: rem(-13px);
+			background-color: $white;
+		}
+		&::before{
+			transform: translateY(-7px);
+		}
+		&::after{
+			transform: translateY(9px);
+		}
+	}
+}
