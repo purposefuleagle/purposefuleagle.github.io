@@ -151,9 +151,23 @@
 		display: none;
 	}
 	.features{
-		padding: rem(50px 0 0);
+		padding: rem(50px 0 );
 		&__item{
 			text-align: center;
+		}
+	}
+	.users{
+		&__title{
+			margin-top: rem(80px);
+			font-size: rem(39px);
+		}
+		&__slider{
+			margin-top: rem(40px);
+		}
+	}
+	.title-line{
+		&::before{
+			width: rem(320px);
 		}
 	}
 }
@@ -222,10 +236,25 @@
 		&__description{
 			margin-bottom: rem(75px);
 		}
+		&__item{
+			margin-bottom: rem(30px);
+		}
 	}
 	.section-line{
 		&::after{
 			bottom: rem(-35px);
+		}
+	}
+	.users{
+		&__title{
+			margin-top: rem(20px);
+			font-size: rem(25px);
+		}
+	}
+	.title-line{
+		&::before{
+			width: rem(200px);
+			top: rem(-20px);
 		}
 	}
 }

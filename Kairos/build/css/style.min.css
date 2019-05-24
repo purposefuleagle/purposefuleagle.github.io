@@ -6301,6 +6301,98 @@ i {
   color: #898989;
 }
 
+.users__title {
+  line-height: 3.5rem;
+  font-size: 2.875rem;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  position: relative;
+  margin-top: 8.75rem;
+}
+
+.users__slider {
+  margin-top: 5.3125rem;
+}
+
+.title-line::before {
+  content: '';
+  position: absolute;
+  width: 45rem;
+  height: 0.0625rem;
+  background-color: #d6d6d6;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  top: -4.0625rem;
+}
+
+.users-slider__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.users-slider__wrap-img {
+  margin-right: 1.5625rem;
+}
+
+.users-slider__img {
+  width: 4.9375rem !important;
+  height: 4.9375rem;
+  border-radius: 50%;
+}
+
+.users-slider__comment {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 2rem;
+  font-weight: 400;
+  color: #545454;
+  margin-bottom: 2.5rem;
+}
+
+.users-slider__author {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #000;
+  margin-right: 0.625rem;
+}
+
+.users-slider__email {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.users-slider .owl-dots {
+  width: 100%;
+  text-align: center;
+  margin-top: 1.875rem;
+}
+
+.users-slider .owl-dots .owl-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  margin-right: 0.625rem;
+  -webkit-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+
+.users-slider .owl-dots .owl-dot:hover {
+  background-color: #5b5095;
+}
+
+.users-slider .owl-dots .owl-dot.active {
+  background-color: #5b5095;
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 1199.98px) {
   .header {
@@ -6428,10 +6520,20 @@ i {
     display: none;
   }
   .features {
-    padding: 3.125rem 0 0;
+    padding: 3.125rem 0;
   }
   .features__item {
     text-align: center;
+  }
+  .users__title {
+    margin-top: 5rem;
+    font-size: 2.4375rem;
+  }
+  .users__slider {
+    margin-top: 2.5rem;
+  }
+  .title-line::before {
+    width: 20rem;
   }
 }
 
@@ -6484,7 +6586,18 @@ i {
   .features__description {
     margin-bottom: 4.6875rem;
   }
+  .features__item {
+    margin-bottom: 1.875rem;
+  }
   .section-line::after {
     bottom: -2.1875rem;
+  }
+  .users__title {
+    margin-top: 1.25rem;
+    font-size: 1.5625rem;
+  }
+  .title-line::before {
+    width: 12.5rem;
+    top: -1.25rem;
   }
 }

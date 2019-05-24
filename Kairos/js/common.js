@@ -60,6 +60,31 @@
 				}
 			}
 		});
+		var usersSlider = $('.users-slider');
+		usersSlider.owlCarousel({
+			loop:true,
+			dots: true,
+			margin:20,
+			autoHeight: true,
+			items: 1,
+			autoplayHoverPause: true,
+			responsive: { 
+				0: {
+					items: 1,
+					dots: true,
+					autoplayTimeout: 4000,
+					smartSpeed: 2000,
+					autoplaySpeed: 2000,
+				},
+				768: {
+					items: 2,
+					dots: true,
+					autoplayTimeout: 4000,
+					smartSpeed: 2000,
+					autoplaySpeed: 2000,
+				}
+			}
+		});
 		// Go to the next item
 		$('.about-slider__arrow_position_right').click(function() {
 				// console.log('Right')
