@@ -150,6 +150,12 @@
 	.nav{
 		display: none;
 	}
+	.features{
+		padding: rem(50px 0 0);
+		&__item{
+			text-align: center;
+		}
+	}
 }
 
 // ≥576px
@@ -180,7 +186,7 @@
 		}
 	}
 	.section-title{
-		font-size: rem(30px);
+		font-size: rem(25px);
 		line-height: 1.4;
 	}
 	.section-line{
@@ -210,6 +216,16 @@
 					}
 				}
 			}
+		}
+	}
+	.features{
+		&__description{
+			margin-bottom: rem(75px);
+		}
+	}
+	.section-line{
+		&::after{
+			bottom: rem(-35px);
 		}
 	}
 }

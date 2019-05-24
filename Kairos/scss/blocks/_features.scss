@@ -1,0 +1,30 @@
+.features{
+	padding: rem(200px 0);
+	background-color: $section-bg;
+	&__description{
+		margin-bottom: rem(170px);
+	}
+	&__wrap-icon{
+		margin-bottom: rem(10px);
+	}
+	&__icon{
+		color: $accent-color;
+		font-size: rem(45px);
+	}
+	&__item{
+		margin-bottom: rem(55px);
+	}
+	&__header{
+		font-size: rem(28px);
+		line-height: rem(44px);
+		font-weight: $bold;
+		margin-bottom: rem(20px);
+	}
+}
+.section-subtitle{
+	&_theme{
+		&_gray{
+			color: #898989;
+		}
+	}
+}
