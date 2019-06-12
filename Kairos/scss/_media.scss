@@ -68,6 +68,9 @@
 			margin-bottom: rem(20px);
 		}
 	}
+	.card{
+		margin: 0 auto;
+	}
 }
 
 // ≥768px
@@ -170,6 +173,12 @@
 			width: rem(320px);
 		}
 	}
+	.pricing{
+		padding: rem(50px 0);
+		&__subtitle{
+			margin-bottom: rem(30px);
+		}
+	}
 }
 
 // ≥576px
@@ -256,5 +265,36 @@
 			width: rem(200px);
 			top: rem(-20px);
 		}
+	}
+	.users-slider{
+		&__wrap-img{
+			margin-right: rem(15px);
+		}
+		&__comment{
+			margin-bottom: rem(20px);
+		}
+		&__author{
+			margin-right: rem(5px);
+		}
+	}
+	.card{
+		padding: rem(40px 30px);
+		&__price{
+			font-size: rem(50px);
+			margin-bottom: rem(30px);
+		}
+		&__subtitle{
+			margin-left: rem(-5px);
+		}
+	}
+	.button{
+		&_size{
+			&_big{
+				padding: rem(23px 50px);
+			}
+		}
+	}
+	.section-subtitle{
+		line-height: 1.6;
 	}
 }

@@ -1,0 +1,78 @@
+.pricing{
+	padding: rem(200px 0);
+	&__subtitle{
+		margin-bottom: rem(90px);
+	}
+}
+.card{
+	max-width: rem(370px);
+	padding: rem(60px 40px 66px);
+	&_theme{
+		&_accent{
+			background-color: $accent-color;
+			border-radius: rem(4px);
+			color: $white;
+		}
+	}
+	&__suptitle{
+		&_theme{
+			&_white{
+				color: $white;
+			}
+		}
+		font-size: rem(21px);
+		font-weight: $bold;
+		line-height: rem(28px);
+		color: $black;
+		margin-bottom: rem(10px);
+	}
+	&__price{
+		&_theme{
+			&_white{
+				color: $white;
+			}
+		}
+		font-size: rem(74px);
+		line-height: rem(80px);
+		font-weight: $bold;
+		color: $black;
+		margin-bottom: rem(50px);
+	}
+	&__subtitle{
+		&_theme{
+			&_white{
+				color: white;
+			}
+		}
+		font-family: $font-secondary;
+		font-size: rem(16px);
+		font-weight: $normal;
+		color: rgba($black, .7);
+		margin-left: rem(-10px);
+	}
+	&__list{
+		margin-bottom: rem(20px);
+	}
+	&__item{
+		&_theme{
+			&_white{
+				color: $white;
+			}
+		}
+		font-family: $font-secondary;
+		font-size: rem(17px);
+		line-height: rem(36px);
+		font-weight: $normal;
+		color: $black;
+	}
+	&__icon{
+		&_theme{
+			&_white{
+				fill: $white;
+			}
+		}
+		width: rem(12px);
+		height: rem(9px);
+		margin-right: rem(10px);
+	}
+}

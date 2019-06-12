@@ -5,4 +5,15 @@
       padding: rem(23px 77px);
     }
   }
+  &_theme{
+    &_white{
+      background-color: $white;
+      color: $black;
+      &:focus, 
+      &:hover{
+        background-color: darken($white, 10%);
+        color: $black;
+      }
+    }
+  }
 }
