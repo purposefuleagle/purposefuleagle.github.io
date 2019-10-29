@@ -1,0 +1,75 @@
+.user{
+	&__container{
+		display: grid;
+		grid-template-columns: minmax(290px, 690px) 270px; 
+		align-items: center;
+	}
+	&__info{
+		border-right: 1px solid #d4d4d4;
+		margin: 25px 0;
+		padding-right: 15px;
+	}
+	&__subscribe{
+		justify-self: end;
+	}
+}
+.subscribe{
+	&__button{
+	border-radius: 5px;
+	// width: 190px;
+	padding: 10px 20px;
+	color: $white;
+	font-weight: 800;
+	box-shadow: 0 3px 0 #94003b;
+	background: linear-gradient( 90deg, rgb(202,0,81) 0%, rgb(223,4,92) 100%);
+	border: 0;
+	cursor: pointer;
+	&:hover{
+		background: darken(rgb(223,4,92), 5%);
+	}
+	}
+}
+.profile{
+	display: grid;
+	grid-template-columns: 135px 1fr;
+	grid-column-gap: 20px;
+	align-items: center;
+	&__link{
+		display: block;
+		border-radius: 5px;
+		box-shadow: 0 0 4px 3px rgba($black, .22);
+	}
+	&__img{
+		display: block;
+		padding: 5px;
+		max-width: 100%;
+	}
+	&__title{
+		text-transform: uppercase;
+		font-size: 20px;
+		line-height: 1.2;
+		font-weight: 900;
+		color: rgb(64,64,64);
+		margin-bottom: 12px;
+	}
+	&__description{
+		font-size: 14px;
+		color: rgb(127, 127, 127);
+		line-height: 1.2;
+		max-width: 420px;
+		margin-bottom: 12px;
+	}
+	&__buttons{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+		justify-content: start;
+	}
+	&__button{
+		font-size: 15px;
+		color: rgb(202, 0, 81);
+		line-height: 1;
+		padding: 14px;
+		margin-left: -1px;
+	}
+}
+

@@ -1,0 +1,87 @@
+@media (max-width: 990px){
+	.header{
+		&__person{
+			margin-left: 0;
+		}
+		&__mail{
+			margin-right: 0;
+		}
+	}
+	.promo{
+		grid-template-areas:
+		'img-1 img-2 img-3'
+		'img-1 img-5 img-5'
+		'img-6 img-4 img-4';
+	}
+}
+@media (max-width: 680px){
+	.promo{
+		grid-template-areas:
+		'img-2 img-1'
+		'img-3 img-1'
+		'img-4 img-4'
+		'img-5 img-6';
+	}
+	.user{
+		&__container{
+			grid-template-columns: auto;
+		}
+		&__info{
+			padding-right: 0;
+			border-right: none;
+		}
+		.subscribe{
+			justify-self: center;
+			margin-bottom: 25px; 
+		}
+	}
+	.footer{
+		&__container{
+			grid-template-columns: auto;
+		}
+		&__menu{
+			justify-content: stretch;
+		}
+		&__left,
+		&__right{
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 580px){
+	.header{
+		&__container{
+			grid-template-columns: 140px auto 140px;
+			grid-gap: 5px;
+		}
+		&__logo{
+			grid-column: 1 / -1;
+			grid-row: 1 / 2;
+		}
+		&__mail{
+			grid-column: 3 / 4;
+		}
+	}
+}
+@media (max-width: 480px){
+	.promo{
+		grid-template-areas:
+		'img-2 img-1'
+		'img-3 img-1'
+		'img-5 img-5'
+		'img-4 img-4'
+		'img-6 img-6';
+	}
+	.profile{
+		&__photo{
+			grid-column: 1 / -1;
+			justify-self: center;
+		}
+		&__info{
+			grid-column: 1 / -1;
+		}
+		&__buttons{
+			justify-content: center;
+		}
+	}
+}

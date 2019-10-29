@@ -1,0 +1,53 @@
+.footer{
+	&__container{
+		border-top: 2px solid #ababab;
+		margin-top: -2px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 15px;
+	}
+	&__right{
+		text-align: right;
+	}
+	&__about-us{
+		font-size: 13px;
+		color: rgb(97,97,97);
+		line-height: 1.2;
+		margin: 25px 0;
+	}
+	&__menu{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+		margin: 25px 0;
+		justify-content: start;
+	}
+	&__copy{
+		font-size: 13px;
+		color: rgb(97,97,97);
+		line-height: 1.2;
+	}
+}
+.menu{
+	&__link{
+		font-size: 13px;
+		color: rgb(97,97,97);
+		line-height: 1.2;
+		font-weight: 700;
+		padding-right: 5px;
+		position: relative;
+		&:hover{
+			color: rgb(97,97,97);
+		}
+	}
+	&__item{
+		border-right: 1px solid rgb(97,97,97);
+		padding: 0 5px;
+
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			border-right: none;
+		}
+	}
+}

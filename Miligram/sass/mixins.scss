@@ -1,0 +1,87 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+  min-width: $min-width;
+  max-width: $max-width;
+  padding: 0 $padding;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+@mixin adaptive-video() {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0,0,0,0);
+  overflow: hidden;
+}
+
+@function px-to-rem($size, $basicSize: 16px) {
+  @return $size / $basicSize#{rem};
+}
+
+@mixin dynamicText($minSizePercent, $maxSize, $minSize, $minWidthPx, $maxWidth, $minWidth) {
+  font-size: calc(#{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) / (#{$maxWidth} - #{$minWidth}));
+}
+
+@mixin button($two-button:false) {
+  display: inline-block;
+	border: none;
+  color: $white;
+  font-family: $font-secondary;
+	text-decoration: none;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+  padding: rem(19px 35px);
+	font-size: rem(13px);
+	text-transform: uppercase;
+	font-weight: $bold;
+	letter-spacing: 4px;
+	border-radius: rem(4px);
+	text-align: center;
+  // position: relative;
+  line-height: 1;
+	outline: none;
+	transition: all .4s ease;
+  cursor: pointer;
+	&:focus, &:hover{
+    color: #fff;
+    border: 1px solid transparent;
+    background-color: darken($accent-color, 5%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+    outline: none;
+  }
+  @if $two-button == true{
+    &:first-child{
+      margin-right: 25px;
+    }
+  }
+}
