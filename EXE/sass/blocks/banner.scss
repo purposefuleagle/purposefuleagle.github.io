@@ -1,0 +1,33 @@
+.banner{
+	background: #23272A url(../../img/header/header_banner.jpg) no-repeat center top;
+	background-size: cover;
+	&__info{
+		padding: rem(265px 0);
+	}
+	&__title{
+		font-size: rem(80px);
+		font-weight: 800;
+		color: $white;
+		text-transform: uppercase;
+		line-height: 1;	
+	}
+	&__little{
+		font-size: rem(43px);
+		text-transform: uppercase;
+		display: block;
+	}
+	&__accent{
+		color: $accent-color;
+	}
+	&__subtitle{
+		margin-top: 20px;
+		font-size: rem(18px);
+		color: $font-color;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+	&__buttons{
+		margin-top: rem(30px);
+	}
+}
+

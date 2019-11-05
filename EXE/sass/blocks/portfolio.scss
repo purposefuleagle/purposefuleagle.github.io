@@ -1,0 +1,162 @@
+.portfolio{
+	padding: rem(80px 0 160px);
+	background-color: $bg-section;
+	&__info{
+		position: relative;
+		padding: rem(30px 25px 80px);
+		border: 5px solid transparent;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		opacity: 0;
+		transition: opacity .5s, border-color .5s;
+	}
+	&__icon{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: rem(15px);
+		height: rem(15px);
+		fill: $white;
+	}
+	&__title{
+		color: $white;
+		font-family: 'Raleway';
+		font-size: rem(30px);
+		font-weight: 700;
+		line-height: rem(28px);
+		text-transform: uppercase;
+		margin-bottom: rem(25px);
+		position: relative;
+		
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: rem(-25px);
+			display: block;
+			width: rem(70px);
+			height: rem(2px);
+			background-color: $bg-line;
+		}
+	}
+	&__buttons{
+		position: absolute;
+		right: rem(30px);
+		bottom: rem(30px);
+	}
+	&__zoom,
+	&__link{
+		position: relative;
+		border: none;
+		border-radius: 50%;
+		width: rem(42px);
+		height: rem(42px);
+		background-color: $bg-color;
+		appearance: none;
+		padding: 0;
+		margin: 0 2px;
+		display: inline-block;
+		transition: background-color .4s;
+
+		&:hover,
+		&:active{
+			background-color: $accent-color;
+		}
+	}
+	&__description{
+		color: $font-color;
+		font-family: 'Roboto';
+		font-size: rem(14px);
+		font-weight: 400;
+		line-height: rem(20px);
+	}
+	&__name{
+		color: $white;
+		font-family: 'Raleway';
+		font-size: rem(24px);
+		font-weight: 700;
+		line-height: rem(20px);
+		text-transform: uppercase;
+		margin-bottom: rem(20px);
+	}
+	&__text{
+		color: $white-shade;
+		font-family: 'Roboto';
+		font-size: rem(12px);
+		font-weight: 400;
+		line-height: rem(20px);
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: rem(50px);
+
+		&::after{
+			content: '';
+			position: absolute;
+			display: block;
+			width: rem(70px);
+			height: rem(2px);
+			background-color: $accent-color;
+			left: 0;
+			bottom: rem(-25px);
+		}
+	}
+	&__item{
+		position: relative;
+		min-height: 270px;
+		height: 100%;
+		&::before{
+			content: '';
+			position: absolute;
+			background: rgba(17, 17, 17, .85 );
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			opacity: 0;
+			transition: opacity .5s;
+		}
+		&:hover{
+
+			&::before{
+				z-index: 1;
+				opacity: 1;
+			}
+			.portfolio__info{
+				border-color: $accent-color;
+				z-index: 2;
+				opacity: 1;
+			}
+		}
+		&_text{
+			max-width: rem(265px);
+			&::before{
+				display: none;
+			}
+		}
+		&_work{
+			&_one{
+				background: url(../../img/portfolio/portfolio_work_1.jpg) center no-repeat;
+				background-size: cover;
+			}
+			&_two{
+				background: url(../../img/portfolio/portfolio_work_2.jpg) center no-repeat;
+				background-size: cover;
+			}
+			&_three{
+				background: url(../../img/portfolio/portfolio_work_3.jpg) center no-repeat;
+				background-size: cover;
+			}
+			&_four{
+				background: url(../../img/portfolio/portfolio_work_4.jpg) center no-repeat;
+				background-size: cover;
+			}
+			&_five{
+				background: url(../../img/portfolio/portfolio_work_5.jpg) center no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}

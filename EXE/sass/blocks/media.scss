@@ -1,0 +1,28 @@
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+	.menu{
+		&__hamburger{
+			display: block;
+		}
+		&__list{
+			display: none;
+		}
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+}
