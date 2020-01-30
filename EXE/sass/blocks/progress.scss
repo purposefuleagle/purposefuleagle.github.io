@@ -1,0 +1,63 @@
+.progress{
+	&__item{
+		position: relative;
+		margin-bottom: rem(20px);
+	}
+	&__name{
+		font-family: 'Raleway';
+		font-size: rem(14px);
+		font-weight: 700;
+		color: $white;
+		text-transform: uppercase;
+		margin-bottom: rem(15px);
+	}
+	&__element{
+		border: 1px solid rgba(255, 255, 255, .25);
+		border-radius: rem(3px);
+		padding: rem(2px);
+	}
+	&__line{
+		background-color: $white;
+		height: rem(4px);
+		width: 0;
+		position: relative;
+
+		&_percent{
+			&_photoshop{
+				width: 95%;
+			}
+			&_wordpress{
+				width: 50%;
+			}
+			&_ecommerce{
+				width: 72%;
+			}
+			&_photography{
+				width: 16%;
+			}
+		}
+	}
+	&__tooltip{
+		font-family: 'Roboto';
+		font-size: rem(11px);
+		font-weight: 700;
+		position: absolute;
+		top: rem(-32px);
+		right: rem(-15px);
+		width: rem(31px);
+		color: $white;
+		background-color: $bg-color;
+		text-align: center;
+		border-radius: rem(3px);
+
+		&::before{
+			content: '';
+			border: 4px solid transparent;
+			border-top: 4px solid $bg-color;
+			position: absolute;
+			bottom: rem(-7px);
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

@@ -1,0 +1,125 @@
+.about {
+	padding: 100px 0;
+	// height: 100vh;
+	// .about__title
+	&__title {
+	
+	}
+
+	// .about__subtitle
+
+	&__subtitle {
+		
+	}
+
+	// .about__features
+
+	&__features {
+		margin-top: rem(100px);
+	}
+
+	// .about__button
+
+	&__button {
+		text-align: center;
+		margin-top: rem(70px);
+	}
+}
+
+.features {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	text-align: center;
+	// .features__item
+
+	&__item {
+		flex-basis: 23%;
+		margin-bottom: 30px;
+	}
+
+	// .features__wrap-icon
+
+	&__wrap-icon {
+		width: rem(183px);
+		height: rem(183px);
+		border-radius: 50%;
+		background-color: $bg-circle;
+		margin: 0 auto;
+		position: relative;
+		transition: .5s all linear;
+		margin-bottom: rem(75px);
+		&:hover{
+			background-color: $accent-color;
+
+			.features{
+				&__icon{
+						fill: $white;
+				}
+			}
+		}
+	}
+
+	// .features__icon
+
+	&__icon {
+		width: rem(60px);
+		height: rem(60px);
+		fill: $extra-color;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: .3s fill ease;
+	}
+
+	// .features__title
+
+	&__title {
+		font-family: $font-secondary;
+		font-weight: 700;
+		font-size: rem(25px);
+		line-height: 1.6;
+		letter-spacing: rem(0.5px);
+		color: $black;
+		margin-bottom: rem(35px);
+	}
+
+	// .features__description
+
+	&__description {
+		font-family: $font-secondary;
+		font-weight: 400;
+		line-height: 1.6;
+		color: $font-color;
+		font-size: rem(18px);
+	}
+}
+.button {
+	display: inline-block;
+	font-family: $font;
+	font-weight: 700;
+	padding: rem(12px 51px);
+	font-size: rem(14px);
+	color: $white;
+	line-height: 1.6;
+	letter-spacing: rem(0.5px);
+	background-color: $accent-color;
+	border-radius: rem(22px);
+	transition: background-color .4s ease;
+
+	&--big{
+	font-family: $font-secondary;
+	font-size: rem(18px);
+	text-transform: uppercase;
+	letter-spacing: rem(3px);
+	height: rem(71px);
+	padding: rem(0px 30px);
+	width: 100%;
+	border-radius: 0px 0px 5px 5px;
+	}
+
+	&:hover, &:active, &:focus{
+		background-color: darken($accent-color, 5%);
+	}
+}

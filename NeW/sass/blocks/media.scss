@@ -1,0 +1,182 @@
+// < 1200px
+@media (max-width: $bp-extra-large) {
+
+}
+
+// < 992px
+@media (max-width: $bp-large) { 
+	.features{
+		&__item{
+			flex-basis: 45%;
+		}
+	}
+	.skills-block{
+		&__item{
+			flex-basis: 100%;
+			align-items: center;
+		}
+	}
+	.pricing-block{
+		flex-wrap: wrap;
+		&__item{
+			flex-basis: 100%;
+			text-align: center;
+			margin-bottom: rem(40px);
+		}
+	}
+}
+
+// < 768px
+@media (max-width: $bp-medium) {
+	.about{
+		padding-top: rem(50px);
+	}
+	.section-title{
+		font-size: rem(45px);
+		margin-bottom: rem(34px);
+	}
+	.skills{
+		padding-top: rem(50px);
+		&__subtitle{
+			margin-bottom: rem(60px);
+		}
+	}
+	.skills-block{
+		&__title{
+			font-size: rem(45px);
+		}
+		&__description{
+			font-size: rem(16px);
+			line-height: 2;
+		}
+	}
+}
+
+// < 576px
+@media (max-width: $bp-small) {  
+	.features{
+		&__item{
+			flex-basis: 100%;
+		}
+	}
+	.skills-block{
+		&__item{
+			flex-direction: column;
+			text-align: center;
+			margin-bottom: rem(42px);
+		}
+		&__wrap-icon{
+			margin-right: 0;
+			margin-bottom: rem(10px);
+		}
+		&__title{
+			font-size: rem(30px);
+		}
+		&__text{
+			flex-basis: 50%;
+		}
+	}
+}
+
+
+
+
+
+
+/*==========  Desktop First  ==========*/
+
+// // ≥1200px
+// @include media-breakpoint-down(lg) {
+
+// }
+
+// // ≥992px
+// @include media-breakpoint-down(md) {
+
+// }
+
+// // ≥768px
+// @include media-breakpoint-down(sm) {
+
+// }
+
+// // ≥576px
+// @include media-breakpoint-down(xs) {
+
+// }
+
+
+// // Экстрамалые девайсы («телефоны», < 576px)
+// @media (max-width: 576px) { ... }
+
+// // Малые девайсы («ландшафтные», < 768px)
+// @media (max-width: 768px) { ... }
+
+// // Средние девайсы («таблетки», < 992px) 
+// @media (max-width: 992px) { ... }
+
+// // Большие девайсы (большие десктопы, < 1200px)
+// @media (max-width: 1200px) { ... }
+
+
+
+// /*==========  Mobile First  ==========*/
+
+// // ≤576px
+// @include media-breakpoint-up(sm) {
+
+// }
+
+// // ≤768px
+// @include media-breakpoint-up(md) {
+
+// }
+
+// // ≤992px
+// @include media-breakpoint-up(lg) {
+
+// }
+
+// // ≤1200px
+// @include media-breakpoint-up(xl) {
+	
+// }
+
+//  **********
+
+// // Малые девайсы («ландшафтные телефоны», >= 576px)
+// @media (min-width: 576px) { ... }
+
+// // Средние девайсы («таблетки», >= 768px)
+// @media (min-width: 768px) { ... }
+
+// // Большие девайсы (десктопы, >= 992px)
+// @media (min-width: 992px) { ... }
+
+// // Экстрабольшие девайсы (большие десктопы, >= 1200px)
+// @media (min-width: 1200px) { ... }
+
+
+
+//  OTHER
+
+// @include media-breakpoint-only(xs) { ... }
+// @include media-breakpoint-only(sm) { ... }
+// @include media-breakpoint-only(md) { ... }
+// @include media-breakpoint-only(lg) { ... }
+// @include media-breakpoint-only(xl) { ... }
+
+// Экстрамалые девайсы («портретные телефоны», < 576px)
+// @media (max-width: 575.98px) { ... }
+
+// // Малые девайсы («ландшафтные», >= 575px)
+// @media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// // Средние девайсы («таблетки», >= 768px) 
+// @media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// // Большие девайсы (большие десктопы, >= 992px)
+// @media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// // Большие девайсы (большие десктопы, >= 1200px)
+// @media (min-width: 1200px) { ... }

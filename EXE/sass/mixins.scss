@@ -145,6 +145,8 @@ $rem-px-only: false !default;
   font-size: calc(#{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) / (#{$maxWidth} - #{$minWidth}));
 }
 
+// Button
+
 @mixin button($two-button:false) {
   display: inline-block;
 	border: none;
@@ -168,7 +170,7 @@ $rem-px-only: false !default;
     &_accent{
       border: 2px solid $accent-color;
       &:focus, &:hover{
-        color: #fff;
+        color: $white;
         background-color: darken($accent-color, 10%);
         border-color: darken($accent-color, 10%);
         outline: none;
@@ -179,10 +181,20 @@ $rem-px-only: false !default;
       background-color: $extra-color;
       color: $white;
       &:focus, &:hover{
-        color: #fff;
+        color: $white;
         background-color: darken($extra-color, 10%);
         border-color: darken($extra-color, 10%);
         outline: none;
+      }
+    }
+    &_gray{
+      border: 2px solid $bg-color;
+      background-color: $bg-color;
+      color: $white;
+      &:focus, &:hover{
+        color: $white;
+        background-color: darken($bg-color, 5%);
+        border-color: darken($bg-color, 5%);
       }
     }
   }

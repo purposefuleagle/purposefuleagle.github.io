@@ -1,0 +1,27 @@
+.clients{
+	background-color: $bg-section;
+	padding: rem(80px 0);
+
+	&__info{
+		margin: 0 auto;
+		max-width: rem(549px);
+		text-align: center;
+	}
+	&__title{
+		font-family: $font;
+		font-size: rem(30px);
+		font-weight: 700;
+		line-height: 1;
+		text-transform: uppercase;
+		color: $white;
+		margin-bottom: rem(25px);
+	}
+	&__description{
+		font-family: $font-secondary;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1.43;
+		color: $font-color;
+		margin-bottom: rem(50px);
+	}
+}
