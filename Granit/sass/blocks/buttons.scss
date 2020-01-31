@@ -1,0 +1,17 @@
+.button {
+	display: inline-block;
+	padding: rem(15px 30px);
+	background-color: $accent-color;
+	font-size: rem(12px);
+	font-weight: 500;
+	line-height: 1.83;
+	color: $button-color;
+	transition: background-color .4s linear;
+
+	&:hover,
+	&:focus,
+	&:active{
+		background-color: darken($accent-color, 12%);
+	}
+}
+
