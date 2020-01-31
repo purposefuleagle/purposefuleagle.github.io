@@ -1,0 +1,36 @@
+.header {
+	// .header__row
+
+	&__row {
+		position: relative;
+		min-height: rem(130px);
+		display: flex;
+		justify-content: space-between;
+		padding-top: rem(30px);
+		padding-bottom: rem(60px);
+		// align-items: center;
+	}
+
+	// .header__logo
+
+	&__logo {
+		flex-basis: 25%;
+	}
+
+	// .header__callback
+
+	&__callback {
+		flex-basis: 55%;
+	}
+
+	// .header__menu
+
+	&__menu {
+		position: absolute;
+		top: rem(100px);
+		width: 100%;
+	}
+}
+
+
+

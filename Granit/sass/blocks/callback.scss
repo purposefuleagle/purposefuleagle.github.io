@@ -1,0 +1,55 @@
+.callback {
+	display: flex;
+	justify-content: flex-end;
+	// .callback__text
+
+	&__text {
+		text-align: right;
+		margin-right: rem(30px);
+	}
+
+	// .callback__number
+
+	&__number {
+		font-family: $font;
+		font-weight: 700;
+		color: $primary-color;
+		line-height: 1.2;
+		font-size: rem(18px);
+	}
+
+	// .callback__subtitle
+
+	&__subtitle {
+		font-family: $font;
+		font-weight: 400;
+		font-size: rem(11px);
+		line-height: 2;
+		color: $subtitle-color;
+		}
+
+	// .callback__wrap-button
+
+	&__wrap-button {
+	}
+
+	// .callback__button
+
+	&__button {
+		display: inline-block;
+		font-family: $font;
+		font-weight: 500;
+		line-height: 1.83;
+		font-size: rem(12px);
+		color: $primary-color;
+		border: 2px solid $primary-color;
+		cursor: pointer;
+		padding: rem(8px 24px);
+		transition: border-color .3s linear;
+		&:hover,
+		&:focus,
+		&:active{
+			border-color: $accent-color;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+//Colors
+$white: #fff;
+$black: #000;
+$accent-color: #ffcc00;
+$brand-color: #ff0000; 
+$extra-color: #626262;
+// $base-color: #626262;
+$subtitle-color: #969696;
+$primary-color: #292929 ;
+// $secondary-color: #292929 ;
+$button-color: #0d0d0d;
+$font-color: #87949e;
+
+
+$bg-color:#f1f1f1;
+$bg-section: #f9f9fa;
+$bg-circle: #edeff1;
+//Typography
+$font: "Gotham-Pro", sans-serif;
+
+
+
+$font-size: 14px; 
+$font-size-secondary: 14px; 
+$font-size-extra: 15px; 
+$h1-font-size: 75px; 
+$h2-font-size: 37px; 
+$h3-font-size: 25px;
+$h4-font-size: 16px;
+$h5-font-size: 14px;
+$nav-font-size: 16px;
+
+// $line-height: $font-size * 1.6;
+$line-height: 1.43;
+
+// Breakpoints
+$bp-small-3: 320px;
+$bp-small-2: 480px;
+$bp-small: 576px;
+$bp-medium-2: 640px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-extra-large: 1200px;
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1300px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1240px);
+
+$gutter: $grid-gutter-width;

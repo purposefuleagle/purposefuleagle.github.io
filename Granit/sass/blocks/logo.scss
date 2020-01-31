@@ -1,0 +1,40 @@
+.logo {
+
+	// .logo__link
+
+	&__link {
+		display: flex;
+		align-items: center;
+	}
+
+	// .logo__img
+
+	&__img {
+		width: rem(38px);
+		height: rem(40px);
+		margin-right: rem(12px);
+	}
+
+	// .logo__title
+
+	&__title {
+		font-family: $font;
+		font-weight: 700;
+		font-size: rem(20px);
+		line-height: 1;
+		text-transform: uppercase;
+		color: $primary-color;
+	}
+
+	// .logo__subtitle
+
+	&__subtitle {
+		display: inline-block;
+		text-transform: none;
+		font-family: $font;
+		font-weight: 100;
+		font-size: rem(11px);
+		color: $subtitle-color;
+		line-height: 1;
+	}
+}
