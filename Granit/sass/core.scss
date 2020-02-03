@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-/**
- * Основные стили
- **/
- * {
+
+
+/* ------------ Base style ------------ */
+
+* {
 	box-sizing:border-box;
 }
 *::before, *::after {
- box-sizing: inherit;
+	box-sizing: inherit;
 }
 html {
 	height: 100%;
@@ -50,6 +51,15 @@ a{
 		text-decoration: none;
 	}
 }
+.container{
+	@include min-max(320px, 1140px, 30px);
+}
+.visually-hidden{
+	@include visually-hidden;
+}
+
+
+/* ------------ Footer bottom ------------ */
 
 // Прижимаем footer к низу, а header к верху
 .wrapper{
@@ -67,17 +77,21 @@ a{
 	flex: 0 0 auto;
 }
 
-// Адаптанция изображений
+/* ------------ Adaptive image ------------ */
+
 .img-responsive {
 	@include adaptive-img;
 }
 
-.container{
-	@include min-max(320px, 1140px, 30px);
+/* ------------ Adaptive video ------------ */
+
+
+.video-responsive{
+	@include adaptive-video;
 }
 
-.visually-hidden{
-	@include visually-hidden;
-}
+
+
+
 
 

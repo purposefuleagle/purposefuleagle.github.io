@@ -1,4 +1,4 @@
-//Colors
+/* ------------ Colors ------------ */
 $white: #fff;
 $black: #000;
 $accent-color: #ffcc00;
@@ -9,17 +9,17 @@ $subtitle-color: #969696;
 $primary-color: #292929 ;
 // $secondary-color: #292929 ;
 $button-color: #0d0d0d;
+$price-color: #0f0f0f;
 $font-color: #87949e;
-
-
 $bg-color:#f1f1f1;
 $bg-section: #f9f9fa;
 $bg-circle: #edeff1;
-//Typography
+
+/* ------------ Typography ------------ */
 $font: "Gotham-Pro", sans-serif;
 
 
-
+/* ------------ Typography size ------------ */
 $font-size: 14px; 
 $font-size-secondary: 14px; 
 $font-size-extra: 15px; 
@@ -33,7 +33,7 @@ $nav-font-size: 16px;
 // $line-height: $font-size * 1.6;
 $line-height: 1.43;
 
-// Breakpoints
+/* ------------ Breakpoints ------------ */
 $bp-small-3: 320px;
 $bp-small-2: 480px;
 $bp-small: 576px;
@@ -42,6 +42,7 @@ $bp-medium: 768px;
 $bp-large: 992px;
 $bp-extra-large: 1200px;
 
+/* ------------ Customization Bootstrap ------------ */
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;

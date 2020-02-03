@@ -1,0 +1,14 @@
+.section{
+	padding: rem(75px 0);
+}
+.section-title {
+	text-align: center;
+	font-family: $font;
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-size: rem(20px);
+	font-weight: 700;
+	color: $primary-color;
+	margin-bottom: rem(60px);
+}
+

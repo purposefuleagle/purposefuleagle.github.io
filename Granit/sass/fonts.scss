@@ -1,4 +1,4 @@
-// font-weight helper:
+/* ------------ Font-weight helper ------------ */
 
 // 100 Extra Light or Ultra Light;
 // 200 Light or Thin; 300 Book or Demi;
@@ -9,7 +9,8 @@
 // 800 Black or Extra Bold or Heavy;
 // 900 Extra Black or Fat or Ultra Black
 
-// Letter spacing
+
+/* ------------ Letter spacing helper ------------ */
 
 // Формула для расчета значения в пикселях: 
 // X * S / 1000 = P 
@@ -18,6 +19,9 @@
 // Формула для расчета letter-spacing в em:
 // X / 1000 = Y Где X — значение интервала в Photoshop, а Y-то же значение, выраженное в em для CSS.
 
+
+
+/* ------------ Import mixin font ------------ */
 
 // @import "_mixins/font-face";
 
@@ -32,9 +36,14 @@
 // 	}
 // }
 
+
+/* ------------ Import font ------------ */
+
 // @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=cyrillic');
 
-// Font Gotham-Pro
+
+/* ------------ Font Gotham-Pro ------------ */
+
 @include font("Gotham-Pro", "../fonts/GothamProLight/GothamProLight", 100);
 @include font("Gotham-Pro", "../fonts/GothamProRegular/GothamProRegular", 400);
 @include font("Gotham-Pro", "../fonts/GothamProMedium/GothamProMedium", 500);

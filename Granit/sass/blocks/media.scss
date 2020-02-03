@@ -1,4 +1,7 @@
-// < 1200px
+/*==========  Desktop First  ==========*/
+
+/* ------------ < 1200px ------------ */
+
 @media (max-width: $bp-extra-large) {
 	.menu{
 		&__link{
@@ -6,7 +9,8 @@
 		}
 	}
 }
-// > 770px
+/* ------------ > 770px ------------ */
+
 @media (min-width: 770px) { 
 	.menu{
 		&__link{
@@ -16,7 +20,8 @@
 	
 }
 
-// > 1200px
+/* ------------ > 1120px ------------ */
+
 @media (min-width: 1120px) { 
 	.menu{
 		&__link{
@@ -25,7 +30,8 @@
 	}
 }
 
-// < 992px
+/* ------------ < 992px ------------ */
+
 @media (max-width: $bp-large) { 
 	.menu{
 		&__link{
@@ -37,10 +43,21 @@
 			display: block;
 		}
 	}
+	.products-list-cards{
+		flex-wrap: wrap;
+		justify-content: center;
+		&__item{
+			flex-basis: 55%;
+			margin-bottom: rem(25px);
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
-
-
+/* ------------ < 768px ------------ */
 
 // < 768px
 @media (max-width: $bp-medium) {
@@ -69,6 +86,12 @@
 	.menu{
 		display: none;
 	}
+	.section{
+		padding: rem(45px 0);
+	}
+	.section-title{
+		margin-bottom: rem(45px);
+	}
 	.promo{
 		padding: rem(50px 0);
 		&__info{
@@ -78,7 +101,13 @@
 			font-size: rem(30px);
 		}
 	}
+	.products-list-cards{
+		&__item{
+			flex-basis: 80%;
+		}
+	}
 }
+/* ------------ < 576px ------------ */
 
 // < 576px
 @media (max-width: $bp-small) {
@@ -127,12 +156,22 @@
 			justify-content: space-between;
 		}
 	}
+	.products-list-cards{
+		&__item{
+			flex-basis: 90%;
+		}
+	}
+	.section{
+		padding: rem(35px 0);
+	}
+	.section-title{
+		margin-bottom: rem(35px);
+	}
 }
 
 
 
-
-
+/* ------------ MEDIA FAQ ------------ */
 
 /*==========  Desktop First  ==========*/
 
@@ -171,7 +210,7 @@
 
 
 
-// /*==========  Mobile First  ==========*/
+/*==========  Mobile First  ==========*/
 
 // // ≤576px
 // @include media-breakpoint-up(sm) {
@@ -190,7 +229,7 @@
 
 // // ≤1200px
 // @include media-breakpoint-up(xl) {
-	
+
 // }
 
 //  **********
@@ -207,9 +246,7 @@
 // // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 // @media (min-width: 1200px) { ... }
 
-
-
-//  OTHER
+/*==========  OTHER  ==========*/
 
 // @include media-breakpoint-only(xs) { ... }
 // @include media-breakpoint-only(sm) { ... }
