@@ -55,6 +55,17 @@
 			}
 		}
 	}
+	.advantages-card{
+		flex-wrap: wrap;
+		&__item{
+			margin-right: 0;
+			margin-bottom: rem(20px);
+			flex-basis: 55%;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 /* ------------ < 768px ------------ */
@@ -102,6 +113,11 @@
 		}
 	}
 	.products-list-cards{
+		&__item{
+			flex-basis: 80%;
+		}
+	}
+	.advantages-card{
 		&__item{
 			flex-basis: 80%;
 		}
@@ -166,6 +182,11 @@
 	}
 	.section-title{
 		margin-bottom: rem(35px);
+	}
+	.advantages-card{
+		&__item{
+			flex-basis: 90%;
+		}
 	}
 }
 
