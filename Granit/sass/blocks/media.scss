@@ -78,7 +78,18 @@
 				margin-bottom: 0;
 			}
 		}
-	}	
+	}
+	.services-card{
+		flex-wrap: wrap;
+		&__item{
+			flex-basis: 60%;
+			margin-bottom: rem(25px);
+			margin-right: 0;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 /* ------------ < 768px ------------ */
@@ -131,6 +142,11 @@
 		}
 	}
 	.advantages-card{
+		&__item{
+			flex-basis: 80%;
+		}
+	}
+	.services-card{
 		&__item{
 			flex-basis: 80%;
 		}
