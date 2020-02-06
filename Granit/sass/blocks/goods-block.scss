@@ -1,0 +1,125 @@
+.goods-block {
+	display: flex;
+	justify-content: center;
+	// .goods-block__sale
+	&__sale{
+		.goods-block{
+			&__offer{
+				display: block;
+			}
+			&__new-price{
+				display: inline-block;
+			}
+			&__price{
+				color: $brand-color;
+			}
+		}
+	}
+	// .goods-block__item
+	&__item {
+		padding: rem(20px 10px);
+		border: 2px solid $bg-card;
+		flex-basis: 23%;
+		text-align: center;
+		margin-right: rem(20px);
+		transition: all .4s linear;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		&:hover{
+			border-color: $white;
+			box-shadow: 0 0 10px 5px rgba($black, .4);
+		}
+	}
+
+	// .goods-block__img-wrap
+
+	&__img-wrap {
+		position: relative;
+		margin: rem(0 auto 15px);
+		width: rem(180px);
+		height: rem(155px);
+		overflow: hidden;
+	}
+
+	// .goods-block__img
+
+	&__img {
+
+	}
+
+	// .goods-block__offer
+
+	&__offer {
+		display: none;
+		// display: inline-block;
+		position: absolute;
+		top: rem(10px);
+		left: rem(10px);
+		background-color: $brand-color;
+		font-family: $font;
+		font-size: rem(10px);
+		line-height: 1.2;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: $white;
+		padding: rem(8px);
+	}
+
+	// .goods-block__link
+
+	&__link {
+		font-family: $font;
+		font-size: rem(13px);
+		font-weight: 400;
+		line-height: 1.2;
+		color: $primary-color;
+		padding-bottom: rem(2px);
+		// border-bottom: 1px solid rgba($black, .2);
+		// text-decoration-line: underline;
+		// text-decoration-style: solid;
+		// text-decoration-color: rgba($black, .2);
+		transition: all .3s ease;
+		background-image: linear-gradient(#fff 50%, rgba($black, .5) 50%);
+		background-position: 0 12px;
+		background-size: 2px 2px;
+		background-repeat: repeat-x;
+		&:hover{
+			background-image: none;
+		}
+	}
+
+	// .goods-block__price
+
+	&__price {
+		font-family: $font;
+		font-size: rem(16px);
+		line-height: 1.2;
+		font-weight: 500;
+		color:$black;
+		margin-top: rem(20px);
+		margin-bottom: rem(25px);
+	}
+	
+	// .goods-block__new-price
+
+	&__new-price {
+		display: none;
+		position: relative;
+		top: rem(-2px);
+		font-family: $font;
+		font-size: rem(10px);
+		line-height: 1;
+		text-decoration: line-through;
+		font-weight: 400;
+		color: $subtitle-color;
+		margin-right: 10px;
+	}
+
+	// .goods-block__button
+
+	&__button {
+	}
+}
