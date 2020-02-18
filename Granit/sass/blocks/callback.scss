@@ -1,6 +1,24 @@
 .callback {
 	display: flex;
 	justify-content: flex-end;
+
+	&--light{
+		flex-direction: column;
+		align-items: flex-end;
+		.callback{
+			&__text{
+				color: $white;
+				margin-right: 0;
+				margin-bottom: rem(20px);
+			}
+			&__number{
+				color: $white;
+			}
+			&__subtitle{
+				color: $white;
+			}
+		}
+	}
 	// .callback__text
 
 	&__text {
@@ -11,7 +29,7 @@
 	// .callback__number
 
 	&__number {
-		font-family: $font;
+		font-family: $font;		
 		font-weight: 700;
 		color: $primary-color;
 		line-height: 1.2;
@@ -46,6 +64,13 @@
 		cursor: pointer;
 		padding: rem(8px 24px);
 		transition: border-color .3s linear;
+		background: none;
+
+		&--light{
+			color: $white;
+			border-color: $white;
+		}
+
 		&:hover,
 		&:focus,
 		&:active{

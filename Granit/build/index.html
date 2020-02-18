@@ -27,7 +27,7 @@
 						<span class="callback__subtitle">Бесплатный звонок по России</span>
 					</div>
 					<div class="callback__wrap-button">
-						<a href="#" class="callback__button">Обратный звонок</a>
+						<button class="callback__button">Обратный звонок</button>
 					</div>
 				</div>
 				<button class="icon-menu icon-menu_active">
@@ -50,6 +50,7 @@
 	</header>
 	<!-- /.header -->
 	<main class="content">
+		<h1 class="visually-hidden">"Granit" - Доставка нерудных материалов</h1>
 		<!-- ========== promo ========== -->
 		<section class="promo">
 			<div class="container">
@@ -150,7 +151,7 @@
 			<div class="container">
 				<h2 class="section-title goods__title">Популярные товары</h2>
 				<div class="goods-block">
-					<div class="goods-block__item goods-block__sale">
+					<div class="goods-block__item goods-block--visible">
 						<div class="goods-block__img-wrap">
 							<img src="img/goods/goods_1.jpg" alt="goods" class="goods-block__img">
 							<span class="goods-block__offer">Акция</span>
@@ -159,7 +160,7 @@
 						<p class="goods-block__price"><span class="goods-block__new-price">1 500 р./т</span> 1 350 р./т </p>
 						<a href="#" class="button button--medium goods-block__button">Купить</a>
 					</div>
-					<div class="goods-block__item goods-block__sale">
+					<div class="goods-block__item goods-block--visible">
 						<div class="goods-block__img-wrap"><img src="img/goods/goods_2.jpg" alt="goods" class="goods-block__img"><span class="goods-block__offer">Акция</span></div>
 						<a href="#" class="goods-block__link">Гранитный щебень 5-20 мм</a>
 						<p class="goods-block__price"><span class="goods-block__new-price">1 100 р./т</span> 1 700 р./т </p>
@@ -202,12 +203,61 @@
 			</div>
 		</section>
 		<!-- /.services -->
+		<!-- ========== contacts ========== -->
+		<section class="contacts">
+			<h2 class="visually-hidden">Контакты</h2>
+			<div class= "map" id="map" class="contacts__map">
+				<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4485.948036987675!2d37.88379646776045!3d55.79368905282904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414acb7b6cd15da7%3A0xf53c1edea22fff52!2z0YPQuy4g0JTRkdC80LjQvSDQm9GD0LMsIDQsINCR0LDQu9Cw0YjQuNGF0LAsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTQzOTE0!5e0!3m2!1sru!2sua!4v1581190819445!5m2!1sru!2sua" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
+			</div>
+			<div class="contacts-info">
+				<h3 class="contacts-info__title">Контакты</h3>
+				<div class="contacts-info__phone">
+					<p class="contacts-info__number">8 800 034-23-34
+					<p class="contacts-info__number">8 495 034-23-34</p>
+				</div>
+				<p class="contacts-info__text">
+					Московская обл. г. Балашиха, пер. Столовой, д.23, кор. 34
+				</p>
+				<a href="#" class="contacts-info__mail">
+					<svg class="contacts-info__icon">
+						<use xlink:href="img/symbol/sprite.svg#icons--message"></use>
+					</svg>
+					Info@stroika.ru
+				</a>
+			</div>
+		</section>
+		<!-- /.contacts -->
 	</main>
+	<!-- ========== footer ========== -->
 	<footer class="footer">
-		<!-- <div class="container">Footer</div> -->
-
+		<div class="container">
+			<div class="footer__wrapper">
+				<div class="logo logo--light footer__logo">
+					<a href="#" class="logo__link">
+						<img src="img/icons/logo_light.svg" alt="Granit logo" class="logo__img">
+						<div class="logo__text">
+							<p class="logo__title">Granit</p>
+							<span class="logo__subtitle">Доставка нерудных материалов</span>
+						</div>
+					</a>
+					<p class="footer__copyright">© 2020. Гранит</p>
+				</div>
+				<div class="callback callback--light footer__callback">
+					<div class="callback__text">
+						<p class="callback__number">8 800 342-13-33</p>
+						<span class="callback__subtitle">Бесплатный звонок по России</span>
+					</div>
+					<div class="callback__wrap-button">
+						<button class="callback__button callback__button--light">Обратный звонок</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
+	<!-- /.footer -->
 </div>
 <script src="js/all.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0a54iXTAJxdCSlGwbMJoB1FHTrB1J1WE&callback=initMap" async defer></script>
 </body>
+
 </html>

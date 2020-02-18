@@ -1,8 +1,9 @@
 .goods-block {
 	display: flex;
 	justify-content: center;
-	// .goods-block__sale
-	&__sale{
+	// .goods-block--visible
+
+	&--visible{
 		.goods-block{
 			&__offer{
 				display: block;

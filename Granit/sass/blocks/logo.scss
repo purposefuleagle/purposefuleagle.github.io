@@ -1,5 +1,15 @@
 .logo {
 
+	&--light{
+		.logo{
+			&__title{
+				color: $white;
+			}
+			&__subtitle{
+				color: $white;
+			}
+		}
+	}
 	// .logo__link
 
 	&__link {
