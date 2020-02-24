@@ -1,0 +1,16 @@
+.production-list {
+
+	// .production-list__item
+
+	&__item {
+		font-family: $font;
+		font-weight: 400;
+		font-size: rem(14px);
+		line-height: 1.2;
+
+		color: $primary-color;
+	}
+	&__item:not(:last-child){
+		margin-bottom: rem(25px);
+	}
+}

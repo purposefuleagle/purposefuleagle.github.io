@@ -1,0 +1,74 @@
+.production-block {
+	display: flex;
+	justify-content: space-between;
+	// .production-block__item
+
+	&__item {
+		display: flex;
+
+		flex-basis: 31.5%;
+
+		padding: rem(30px 30px 25px);
+
+		// min-height: rem(290px);
+
+		border: 1px solid $border-color;
+		box-shadow: 0px 1px 1px rgba($black, .1);
+
+		transition: all .4s linear;
+
+		&:hover{
+			box-shadow: 0px 0px 10px rgba($black, .5);
+		}
+	}
+
+	// .production-block__img
+
+	&__img {
+		margin-right: rem(35px);
+	}
+
+	// .production-block__icon
+
+	&__icon {
+		&--blank-page{
+			width: rem(53px);
+			height: rem(62px);
+		}
+		&--road-map{
+			width: rem(62px);
+			height: rem(62px);
+		}
+		&--e-reader{
+			width: rem(45px);
+			height: rem(62px);
+		}
+	}
+
+	// .production-block__text
+
+	&__text {
+	}
+
+	// .production-block__wrapper
+
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .production-block__title
+
+	&__title {
+		margin-bottom: rem(20px);
+
+		font-family: $font;
+		font-weight: 700;
+		font-size: rem(16px);
+		line-height: 1.2;
+
+		text-transform: uppercase;
+
+		color: $primary-color;
+	}
+}
