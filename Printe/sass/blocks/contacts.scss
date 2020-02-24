@@ -1,0 +1,39 @@
+.contacts {
+	// border: 1px solid red;
+		max-width: rem(250px);
+
+		&__top {
+			text-align: right;
+			margin-bottom: rem(20px);
+		}
+
+		// .contacts__link
+
+		&__link {
+			text-align: center;
+		}
+
+		// .contacts__bottom
+
+		&__bottom {
+		}
+
+		// .contacts__icon
+
+		&__icon {
+		}
+
+		// .contacts__icon-facebook
+
+		&__icon-facebook {
+
+			vertical-align: bottom;
+			width: rem(20px);
+			height: rem(20px);
+		}
+
+		// .contacts__dropdown
+
+		&__dropdown {
+		}
+}

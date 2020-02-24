@@ -1,0 +1,21 @@
+.main-nav {
+
+	// .main-nav__mobile-menu
+
+	&__mobile-menu {
+	}
+
+	// .main-nav__wrapper
+
+	&__wrapper {
+		padding: rem(17px 0);
+
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .main-nav__list
+
+	&__list {
+	}
+}

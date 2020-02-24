@@ -1,0 +1,18 @@
+.user-profile {
+	// border: 1px solid red;
+		max-width: rem(140px);
+		// .user-profile__icon
+
+		&__icon {
+			vertical-align: middle;
+			margin-right: rem(10px);
+
+			width: rem(12px);
+			height: rem(13px);
+		} 
+
+		// .user-profile__link
+
+		&__link {
+		}
+}

@@ -1,0 +1,34 @@
+.basket {
+	// border: 1px solid red;
+	position: relative;
+	max-width: rem(50px);
+	// .basket__count
+
+	&__count {
+		position: absolute;
+		right: rem(-14px);
+		top: rem(-7px);
+		display: inline-block;
+
+		text-align: center;
+		line-height: 2;
+
+		width: rem(30px);
+		height: rem(30px);
+		border-radius: 50%;
+		background-color: $accent-color;
+
+		font-family: $font;
+		font-weight: 700;
+		font-size: rem(14px);
+		color: $white;
+	}
+	// .basket__button
+
+	// .basket__icon
+
+	&__icon {
+		width: rem(44px);
+		height: rem(44px);
+	}
+}

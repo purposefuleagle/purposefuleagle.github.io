@@ -1,0 +1,38 @@
+.header-top {
+	background: $white;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, .1);
+
+	padding-top: rem(15px );
+	// .header-top__wrapper
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .header-top__logo
+
+	&__logo {
+		
+	}
+
+	// .header-top__info-company
+
+	&__info-company {
+	}
+
+	// .header-top__user-profile
+
+	&__user-profile {
+	}
+
+	// .header-top__contacts
+
+	&__contacts {
+	}
+
+	// .header-top__basket
+
+	&__basket {
+	}
+}
