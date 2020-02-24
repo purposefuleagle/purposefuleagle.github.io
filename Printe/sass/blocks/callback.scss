@@ -1,0 +1,41 @@
+.callback {
+	position: fixed;
+	right: 2%;
+	top: 70%;
+
+	cursor: pointer;
+
+	width: rem(108px);
+	height: rem(108px);
+	background-color: $accent-color;
+	border-radius: 50%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	// .callback__img
+
+	&__img {
+	}
+
+	// .callback__icon
+
+	&__icon {
+		width: rem(23px);
+		height: rem(23px);
+	}
+
+	// .callback__text
+
+	&__text {
+		font-family: $font;
+		font-weight: 500;
+		font-size: rem(14px);
+		line-height: 1.2;
+
+		color: $white;
+
+		text-align: center;
+	}
+}
