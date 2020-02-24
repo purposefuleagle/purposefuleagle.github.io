@@ -1,0 +1,9 @@
+.link{
+	display: inline-block;
+	font-family: $font;
+	font-size: rem(14px);
+	font-weight: 400;
+	text-decoration: underline;
+	line-height: 1.2;
+	color: $primary-color;
+}

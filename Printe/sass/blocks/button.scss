@@ -1,0 +1,24 @@
+.button{
+	display: inline-block;
+
+	font-family: $font;
+	font-weight: 700;
+	line-height: 1;
+	font-size: rem(16px);
+
+	cursor: pointer;
+	padding: rem(14px 40px);
+
+	background-color: $accent-color;
+	border-radius: rem(2px);
+
+	color: $white;
+	
+	transition: .4s all ease;
+
+	&:hover,
+	&:active,
+	&:focus{
+		background-color: darken($accent-color, 5%);
+	}
+}

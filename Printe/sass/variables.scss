@@ -1,0 +1,44 @@
+/* ------------ Colors ------------ */
+$white: #fff;
+$black: #000;
+$accent-color: #1ab0ce;
+$primary-color: #3a4047;
+$line-color: #e8edf2;
+
+/* ------------ Typography ------------ */
+$font: "Clear-Sans", "Arial", sans-serif;
+$font-secondary: "Roboto", "Arial", sans-serif;
+
+
+/* ------------ Typography size ------------ */
+$font-size: 14px; 
+$font-size-secondary: 14px; 
+$font-size-extra: 15px; 
+$h1-font-size: 75px; 
+$h2-font-size: 37px; 
+$h3-font-size: 25px;
+$h4-font-size: 16px;
+$h5-font-size: 14px;
+$nav-font-size: 16px;
+
+// $line-height: $font-size * 1.6;
+$line-height: 1.43;
+
+/* ------------ Breakpoints ------------ */
+$bp-small-3: 320px;
+$bp-small-2: 480px;
+$bp-small: 576px;
+$bp-medium-2: 640px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-extra-large: 1200px;
+
+/* ------------ Customization Bootstrap ------------ */
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1300px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px, xxl: 1240px);
+
+$gutter: $grid-gutter-width;
