@@ -1,125 +1,123 @@
 .callback {
-	position: fixed;
-	right: 2%;
-	bottom: 5%;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	
+  // .callback__inner
 
-	// .callback__inner
+  &__inner {
+    position: relative;
+    width: rem(108px);
+    height: rem(108px);
+    background-color: $accent-color;
+    border-radius: 50%;
 
-	&__inner{
-		position: relative;
-		width: rem(108px);
-		height: rem(108px);
-		background-color: $accent-color;
-		border-radius: 50%;
+    transition: all 0.5s;
 
-		transition: all .5s;
+    &:hover {
+      background-color: darken($accent-color, 5%);
+    }
 
-		&:hover{
-			background-color: darken($accent-color, 5%);
-		}
+    &:hover::before,
+    &:hover::after {
+      content: "";
+      position: absolute;
+      left: rem(-20px);
+      right: rem(-20px);
+      top: rem(-20px);
+      bottom: rem(-20px);
 
-		&:hover::before,
-		&:hover::after
-		{
-			content: '';
-			position: absolute;
-			left: rem(-20px);
-			right: rem(-20px);
-			top: rem(-20px);
-			bottom: rem(-20px);
+      border-radius: 50%;
+      border: 1px solid $accent-color;
 
-			border-radius: 50%;
-			border: 1px solid $accent-color;
+      animation: inner 1.8s linear infinite;
 
-			animation: inner 1.8s linear infinite;
+      opacity: 0;
+    }
 
-			opacity: 0;
-		}
+    &:hover::after {
+      animation-delay: 0.5s;
+    }
 
-		&:hover::after{
-			animation-delay: .5s;
-		}
+    &:hover {
+      .callback__text {
+        opacity: 1;
+        transform: translate(-50%, -50%) scaleX(1);
+        transition: all 0.5s ease-in-out;
+      }
+      .callback__icon {
+        transition: all 0.5s ease-in-out;
+        transform: scale(0);
+      }
+    }
+  }
 
-		&:hover{
-			.callback__text{
-				opacity: 1;
-				transform: translate(-50%, -50%) scaleX(1);
-				transition: all .5s ease-in-out;
-			}
-			.callback__icon{
-				transition: all .5s ease-in-out;
-				transform: scale(0);
-			}
-		}
-	}
+  // .callback__img
 
-	// .callback__img
+  &__img {
+    // opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-	&__img {
-		// opacity: 0;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+    animation: phone 0.9s ease-in-out infinite;
+  }
 
-		animation: phone .9s ease-in-out infinite;
-	}
+  // .callback__icon
 
-	// .callback__icon
+  &__icon {
+    width: rem(50px);
+    height: rem(50px);
 
-	&__icon {	
-		width: rem(50px);
-		height: rem(50px);
+    transition: all 0.5s ease-in-out;
+  }
 
-		transition: all .5s ease-in-out;
-	}
+  // .callback__text
 
-	// .callback__text
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scaleX(-1);
 
-	&__text {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%) scaleX(-1);
+    transition: all 0.5s ease-in-out;
 
-		transition: all .5s ease-in-out;
+    opacity: 0;
 
-		opacity: 0;
+    font-family: $font;
+    font-weight: 500;
+    font-size: rem(14px);
+    line-height: 1.3;
 
-		font-family: $font;
-		font-weight: 500;
-		font-size: rem(14px);
-		line-height: 1.3;
+    color: $white;
 
-		color: $white;
-
-		text-align: center;
-	}
+    text-align: center;
+  }
 }
 
 @keyframes phone {
-	0%, 100%{
-		transform: translate(-50%, -50%) rotate(-20deg);
-	}
-	50%{
-		transform: translate(-50%, -50%) rotate(21deg);
-	}
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(21deg);
+  }
 }
 
 @keyframes inner {
-	0% {
-		transform: scale(0.5);
-		opacity: 0;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1.2);
-		opacity: 0;
-	}
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }

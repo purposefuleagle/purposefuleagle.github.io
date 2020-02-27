@@ -1,24 +1,44 @@
-.button{
-	display: inline-block;
+.button {
+  display: inline-block;
 
-	font-family: $font;
-	font-weight: 700;
-	line-height: 1;
-	font-size: rem(16px);
+  font-family: $font;
+  font-weight: 700;
+  line-height: 1;
+  font-size: rem(16px);
 
-	cursor: pointer;
-	padding: rem(14px 40px);
+  cursor: pointer;
+  padding: rem(14px 40px);
 
-	background-color: $accent-color;
-	border-radius: rem(2px);
+  background-color: $accent-color;
+  border-radius: rem(2px);
 
-	color: $white;
-	
-	transition: .4s all ease;
+  color: $white;
 
-	&:hover,
-	&:active,
-	&:focus{
-		background-color: darken($accent-color, 5%);
-	}
+  transition: 0.4s all ease;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: darken($accent-color, 5%);
+  }
+
+  &--transparent {
+    font-size: rem(14px);
+    font-weight: 400;
+
+    padding: rem(10px 22px);
+
+    border: 2px solid $accent-color;
+    background-color: transparent;
+    color: $accent-color;
+
+    transition: all 0.4s ease-in;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $accent-color;
+      color: $white;
+    }
+  }
 }

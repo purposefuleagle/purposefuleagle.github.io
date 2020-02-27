@@ -1,245 +1,296 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<title>Print</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="initial-scale=1.0, width=device-width">
-	<link rel="stylesheet" href="css/style.min.css" type="text/css" />
+  <title>Print</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link rel="stylesheet" href="css/style.min.css" type="text/css" />
 </head>
+
 <body>
-<div class="wrapper">
-	<!-- ========== header ========== -->
-	<header class="header">
-		<div class="header-top">
-			<div class="container header-top__wrapper">
-				<div class="header-top__logo logo">
-					<a href="#" class="logo__link">
-						<img src="img/icons/Logo.svg" alt="Printe - Ваша типография" class="logo__img">
-					</a>
-				</div>
-				<div class="header-top__info-company info-company">
-					<p class="info-company__title">Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!</p>
-					<span class="info-company__work-schedule">Работаем с 9 до 18, вс и сб выходные</span>
-				</div>
-				<div class="header-top__user-profile user-profile">
-					<svg class="user-profile__icon">
-						<use xlink:href="img/symbol/sprite_custom.svg#icons--user"></use>
-					</svg> 
-					<a href="#" class="user-profile__link link">
-						Личный кабинет
-					</a>
-				</div>
-				<div class="header-top__contacts contacts">
-					<div class="contacts__top">
-						<a href="mailto:maket@test-vertka.ua" class="contacts__link link">maket@test-vertka.ua</a>
-					</div>
-					<div class="contacts__bottom">
-						<ul class="contacts__dropdown dropdown-phone">
-							<li class="dropdown-phone__item">
-								<a href="" class="contacts__link-social">
-									<svg class="contacts__icon-facebook">
-										<use xlink:href="img/symbol/sprite_custom.svg#icons--facebook"></use>
-									</svg>
-								</a>
-								<a class="dropdown-phone__link" href="tel:0994455418">
-									<svg class="dropdown-phone__icon-phone">
-										<use xlink:href="img/symbol/sprite_custom.svg#icons--phone"></use>
-									</svg>
-									(044) 345-40-42
-								</a>
-								<button class="dropdown-phone__button">
-									<svg class="dropdown-phone__icon-arrow">
-										<use xlink:href="img/symbol/sprite_custom.svg#icons--arrow_down_v_2"></use>
-									</svg>
-								</button>
-								<ul class="submenu-phone">
-									<li class="submenu-phone__item submenu-phone__item--mts">
-										<a href="tel:0994455418" class="submenu-phone__link ">
-											(099) 445-54-18
-										</a>
-									</li>
-									<li class="submenu-phone__item submenu-phone__item--kyivstar">
-										<a href="tel:0994455418" class="submenu-phone__link">
-											(096) 497-78-03
-										</a>
-									</li>
-									<li class="submenu-phone__item submenu-phone__item--lifecell">
-										<a href="tel:0994455418" class="submenu-phone__link">
-										(099) 445-54-18
-										</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="header-top__basket basket">
-					<span class="basket__count">3</span>
-					<a href="#" class="basket__button">
-						<svg class="basket__icon">
-							<use xlink:href="img/symbol/sprite_custom.svg#icons--shopping-cart"></use>
-						</svg>
-					</a>
-				</div>
-			</div> 
-		</div>
-		<!-- /.header-top --> 
-		<div class="header-bottom">
-			<div class="container"> 
-				<nav class="header-bottom__main-nav main-nav">
-					<button class="main-nav__mobile-menu mobile-menu">
-						<span class="mobile-menu__line"></span>
-					</button>
-					<div class="main-nav__wrapper">
-						<ul class="main-nav__list site-list">
-							<li class="site-list__item">
-								<a href="#" class="site-list__link">Главная</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#" class="site-list__link">Продукция</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#" class="site-list__link">Доставка и оплата</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#" class="site-list__link">Новости</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#" class="site-list__link">База знаний</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#" class="site-list__link">О нас</a>
-							</li>
-							<li class="site-list__item">
-								<a href="#" class="site-list__link">Контакты</a>
-							</li>
-						</ul>
-						<ul class="main-nav__list search-list">
-							<li class="search-list__item">
-								<a href="#" class="search-list__link">
-									<svg class="search-list__icon">
-										<use xlink:href="img/symbol/sprite_custom.svg#icons--search"></use>
-									</svg>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</div>
-		<!-- /.header-bottom -->
-	</header>
-	<!-- /.header -->
-	<main class="content">
-		<!-- ========== banner ========== -->
-		<section class="banner">
-			<div class="container">
-				<div class="banner__info">
-					<h1 class="banner__title">Оперативная печать полиграфии от 1 дня!</h1>
-					<p class="banner__subtitle">Доставка в любой город Украины</p>
-					<a href="#" class="banner__button button button--small">Сделать заказа</a>
-				</div>
-			</div>
-		</section>
-		<!-- ========== production ========== -->
-		<section class="production">
-			<div class="container">
-				<h2 class="production__title section-title">Продукция</h2>
-				<div class="production-block">
-					<div class="production-block__item">
-						<div class="production-block__img">
-							<svg class="production-block__icon production-block__icon--blank-page">
-								<use xlink:href="img/symbol/sprite_custom.svg#icons--blank-page"></use>
-							</svg>
-						</div>
-						<div class="production-block__text">
-							<h3 class="production-block__title">Офисная продукция</h3>
-							<ul class="production-list">
-								<li class="production-list__item">Визитки</li>
-								<li class="production-list__item">Конверты</li>
-								<li class="production-list__item">Папки</li>
-								<li class="production-list__item">Книги</li>
-								<li class="production-list__item">Блокноты</li>
-								<li class="production-list__item">Фирменные бланки</li>
-							</ul>
-						</div>
-					</div>
-					<div class="production-block__item">
-						<div class="production-block__img">
-							<svg class="production-block__icon production-block__icon--road-map">
-								<use xlink:href="img/symbol/sprite_custom.svg#icons--road-map"></use>
-							</svg>
-						</div>
-						<div class="production-block__text">
-							<h3 class="production-block__title">Рекламная продукция</h3>
-							<div class="production-block__wrapper">
-								<ul class="production-list">
-									<li class="production-list__item">Листовки</li>
-									<li class="production-list__item">Флаера</li>
-									<li class="production-list__item">Буклеты</li>
-									<li class="production-list__item">Календари</li>
-									<li class="production-list__item">Блокноты</li>
-								</ul>
-								<ul class="production-list">
-									<li class="production-list__item">Плакаты</li>
-									<li class="production-list__item">Баннеры</li>
-									<li class="production-list__item">Магниты</li>
-									<li class="production-list__item">Наклейки </li>
-								</ul>
-							</div>
-						</div> 
-					</div>
-					<div class="production-block__item">
-						<div class="production-block__img">
-							<svg class="production-block__icon production-block__icon--e-reader">
-								<use xlink:href="img/symbol/sprite_custom.svg#icons--e-reader"></use>
-							</svg>
-						</div>
-						<div class="production-block__text">
-							<h3 class="production-block__title">Для бизнеса</h3>
-							<ul class="production-list">
-								<li class="production-list__item">Каталоги</li>
-								<li class="production-list__item">Журналы</li>
-								<li class="production-list__item">Дисконтные карты</li>
-								<li class="production-list__item">Бейджи</li>
-								<li class="production-list__item">Гарантиныйные наклейки</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- /.production -->
-		<!-- ========== about ========== -->
-		<section class="about">
-			<div class="container">
-				<h2 class="about__title section-title">О нас</h2>
-				<p class="about__subtitle">Оперативная печать полиграфии от 1 дня!</p>
-				<p class="about__description">Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от вредного излучения, оно проникает и на глубину 1 м.</p>
-				<p class="about__description"> Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы предотвратите потерю важных минеральных веществ, которые покидают тело вместе с потом, а загар при этом ляжет ровнее. Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч и т.д. Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.</p>
-			</div>
-		</section>
-		<!-- /.about -->
-	</main>
-	<!-- ========== footer ========== -->
-	<footer class="footer">
-	</footer>
-	<!-- /.footer -->
-	<!-- ========== callback ========== -->
-	<div class="callback">
-		<div class="callback__inner">
-			<div class="callback__img">
-				<svg class="callback__icon">
-					<use xlink:href="img/symbol/sprite_custom.svg#icons--phone_white"></use>
-				</svg>
-			</div>
-			<div class="callback__text">
-				Перезвоните мне сейчас!
-			</div>
-		</div>
-	</div>
-	<!-- /.callback -->
-</div>
-<script src="js/all.min.js"></script>
+  <div class="wrapper">
+    <!-- ========== header ========== -->
+    <header class="header">
+      <div class="header-top">
+        <div class="container header-top__wrapper">
+          <div class="header-top__logo logo">
+            <a href="#" class="logo__link">
+              <img src="img/icons/Logo.svg" alt="Printe - Ваша типография" class="logo__img" />
+            </a>
+          </div>
+          <div class="header-top__info-company info-company">
+            <p class="info-company__title">
+              Качественная оперативная цифровая, широкоформатная и сувенирная
+              полиграфия!
+            </p>
+            <span class="info-company__work-schedule">Работаем с 9 до 18, вс и сб выходные</span>
+          </div>
+          <div class="header-top__user-profile user-profile">
+            <svg class="user-profile__icon">
+              <use xlink:href="img/symbol/sprite_custom.svg#icons--user"></use>
+            </svg>
+            <a href="#" class="user-profile__link link">
+              Личный кабинет
+            </a>
+          </div>
+          <div class="header-top__contacts contacts">
+            <div class="contacts__top">
+              <a href="mailto:maket@test-vertka.ua" class="contacts__link link">maket@test-vertka.ua</a>
+            </div>
+            <div class="contacts__bottom">
+              <ul class="contacts__dropdown dropdown-phone">
+                <li class="dropdown-phone__item">
+                  <a href="" class="contacts__link-social">
+                    <svg class="contacts__icon-facebook">
+                      <use xlink:href="img/symbol/sprite_custom.svg#icons--facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="dropdown-phone__link" href="tel:0994455418">
+                    <svg class="dropdown-phone__icon-phone">
+                      <use xlink:href="img/symbol/sprite_custom.svg#icons--phone"></use>
+                    </svg>
+                    (044) 345-40-42
+                  </a>
+                  <button class="dropdown-phone__button">
+                    <svg class="dropdown-phone__icon-arrow">
+                      <use xlink:href="img/symbol/sprite_custom.svg#icons--arrow_down_v_2"></use>
+                    </svg>
+                  </button>
+                  <ul class="submenu-phone">
+                    <li class="submenu-phone__item submenu-phone__item--mts">
+                      <a href="tel:0994455418" class="submenu-phone__link ">
+                        (099) 445-54-18
+                      </a>
+                    </li>
+                    <li class="submenu-phone__item submenu-phone__item--kyivstar">
+                      <a href="tel:0994455418" class="submenu-phone__link">
+                        (096) 497-78-03
+                      </a>
+                    </li>
+                    <li class="submenu-phone__item submenu-phone__item--lifecell">
+                      <a href="tel:0994455418" class="submenu-phone__link">
+                        (099) 445-54-18
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-top__basket basket">
+            <span class="basket__count">3</span>
+            <a href="#" class="basket__button">
+              <svg class="basket__icon">
+                <use xlink:href="img/symbol/sprite_custom.svg#icons--shopping-cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /.header-top -->
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="header-bottom__main-nav main-nav">
+            <button class="main-nav__mobile-menu mobile-menu">
+              <span class="mobile-menu__line"></span>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Главная</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Продукция</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Доставка и оплата</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Новости</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">База знаний</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">О нас</a>
+                </li>
+                <li class="site-list__item">
+                  <a href="#" class="site-list__link">Контакты</a>
+                </li>
+              </ul>
+              <ul class="main-nav__list search-list">
+                <li class="search-list__item">
+                  <a href="#" class="search-list__link">
+                    <svg class="search-list__icon">
+                      <use xlink:href="img/symbol/sprite_custom.svg#icons--search"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- /.header-bottom -->
+    </header>
+    <!-- /.header -->
+    <main class="content">
+      <!-- ========== banner ========== -->
+      <section class="banner">
+        <div class="container">
+          <div class="banner__info">
+            <h1 class="banner__title">
+              Оперативная печать полиграфии от 1 дня!
+            </h1>
+            <p class="banner__subtitle">Доставка в любой город Украины</p>
+            <a href="#" class="banner__button button button--small">Сделать заказа</a>
+          </div>
+        </div>
+      </section>
+      <!-- ========== production ========== -->
+      <section class="production">
+        <div class="container">
+          <h2 class="production__title section-title">Продукция</h2>
+          <div class="production-block">
+            <div class="production-block__item">
+              <div class="production-block__img">
+                <svg class="production-block__icon production-block__icon--blank-page">
+                  <use xlink:href="img/symbol/sprite_custom.svg#icons--blank-page"></use>
+                </svg>
+              </div>
+              <div class="production-block__text">
+                <h3 class="production-block__title">Офисная продукция</h3>
+                <ul class="production-list">
+                  <li class="production-list__item">Визитки</li>
+                  <li class="production-list__item">Конверты</li>
+                  <li class="production-list__item">Папки</li>
+                  <li class="production-list__item">Книги</li>
+                  <li class="production-list__item">Блокноты</li>
+                  <li class="production-list__item">Фирменные бланки</li>
+                </ul>
+              </div>
+            </div>
+            <div class="production-block__item">
+              <div class="production-block__img">
+                <svg class="production-block__icon production-block__icon--road-map">
+                  <use xlink:href="img/symbol/sprite_custom.svg#icons--road-map"></use>
+                </svg>
+              </div>
+              <div class="production-block__text">
+                <h3 class="production-block__title">Рекламная продукция</h3>
+                <div class="production-block__wrapper">
+                  <ul class="production-list">
+                    <li class="production-list__item">Листовки</li>
+                    <li class="production-list__item">Флаера</li>
+                    <li class="production-list__item">Буклеты</li>
+                    <li class="production-list__item">Календари</li>
+                    <li class="production-list__item">Блокноты</li>
+                  </ul>
+                  <ul class="production-list">
+                    <li class="production-list__item">Плакаты</li>
+                    <li class="production-list__item">Баннеры</li>
+                    <li class="production-list__item">Магниты</li>
+                    <li class="production-list__item">Наклейки</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="production-block__item">
+              <div class="production-block__img">
+                <svg class="production-block__icon production-block__icon--e-reader">
+                  <use xlink:href="img/symbol/sprite_custom.svg#icons--e-reader"></use>
+                </svg>
+              </div>
+              <div class="production-block__text">
+                <h3 class="production-block__title">Для бизнеса</h3>
+                <ul class="production-list">
+                  <li class="production-list__item">Каталоги</li>
+                  <li class="production-list__item">Журналы</li>
+                  <li class="production-list__item">Дисконтные карты</li>
+                  <li class="production-list__item">Бейджи</li>
+                  <li class="production-list__item">
+                    Гарантиныйные наклейки
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /.production -->
+      <!-- ========== about ========== -->
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title section-title">О нас</h2>
+          <p class="about__subtitle">
+            Оперативная печать полиграфии от 1 дня!
+          </p>
+          <p class="about__description">
+            Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не
+            спасает от вредного излучения, оно проникает и на глубину 1 м.
+          </p>
+          <p class="about__description">
+            Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или
+            выпейте чай с лимоном. Считается, что тем самым вы предотвратите
+            потерю важных минеральных веществ, которые покидают тело вместе с
+            потом, а загар при этом ляжет ровнее. Находясь на солнце, следует
+            больше двигаться — плавать, делать гимнастику, играть в мяч и т.д.
+            Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать
+            ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.
+          </p>
+        </div>
+      </section>
+      <!-- /.about -->
+      <!-- ========== news ========== -->
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title section-title">Новости</h2>
+          <div class="news-cards">
+            <div class="news-cards__item">
+              <time class="news-cards__date" datetime="2018-03-14">14 марта 2018</time>
+              <a class="news-cards__naming">
+                Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+              </a>
+            </div>
+            <div class="news-cards__item">
+              <time class="news-cards__date" datetime="2018-03-14">14 марта 2018</time>
+              <a class="news-cards__naming">
+                Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+              </a>
+            </div>
+            <div class="news-cards__item">
+              <time class="news-cards__date" datetime="2018-03-14">14 марта 2018</time>
+              <a class="news-cards__naming">
+                Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="button button--transparent news-cards__button">Смотреть все новости</a>
+        </div>
+      </section>
+      <!-- /.news -->
+    </main>
+    <!-- ========== footer ========== -->
+    <footer class="footer"></footer>
+    <!-- /.footer -->
+    <!-- ========== callback ========== -->
+    <div class="callback">
+      <div class="callback__inner">
+        <div class="callback__img">
+          <svg class="callback__icon">
+            <use xlink:href="img/symbol/sprite_custom.svg#icons--phone_white"></use>
+          </svg>
+        </div>
+        <div class="callback__text">
+          Перезвоните мне сейчас!
+        </div>
+      </div>
+    </div>
+    <!-- /.callback -->
+  </div>
+  <script src="js/all.min.js"></script>
 </body>
+
 </html>
