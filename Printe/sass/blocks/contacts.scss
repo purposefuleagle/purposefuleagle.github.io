@@ -1,39 +1,55 @@
 .contacts {
-	// border: 1px solid red;
-		max-width: rem(250px);
+  // border: 1px solid red;
+  max-width: rem(250px);
 
-		&__top {
-			text-align: right;
-			margin-bottom: rem(20px);
-		}
+  // .contacts--footer
 
-		// .contacts__link
+  &--footer {
+    display: flex;
+    flex-direction: column;
 
-		&__link {
-			text-align: center;
-		}
+    .contacts {
+      &__bottom {
+        order: -1;
+        margin-bottom: rem(20px);
+      }
+      &__top {
+        margin-bottom: 0;
+      }
+    }
+  }
 
-		// .contacts__bottom
+  &__top {
+    text-align: right;
+    margin-bottom: rem(20px);
+  }
 
-		&__bottom {
-		}
+  // .contacts__link
 
-		// .contacts__icon
+  &__link {
+    text-align: center;
+  }
 
-		&__icon {
-		}
+  // .contacts__bottom
 
-		// .contacts__icon-facebook
+  &__bottom {
+  }
 
-		&__icon-facebook {
+  // .contacts__icon
 
-			vertical-align: bottom;
-			width: rem(20px);
-			height: rem(20px);
-		}
+  &__icon {
+  }
 
-		// .contacts__dropdown
+  // .contacts__icon-facebook
 
-		&__dropdown {
-		}
+  &__icon-facebook {
+    vertical-align: bottom;
+    width: rem(20px);
+    height: rem(20px);
+  }
+
+  // .contacts__dropdown
+
+  &__dropdown {
+  }
 }

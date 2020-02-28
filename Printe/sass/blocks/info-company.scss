@@ -1,26 +1,46 @@
 .info-company {
-	// border: 1px solid red;
-		max-width: rem(375px);
-		text-align: center;
-		// .info-company__title
+  // border: 1px solid red;
+  max-width: rem(375px);
+  text-align: center;
 
-		&__title {
-			margin-bottom: rem(10px);
+  // .info-company--footer
 
-			font-family: $font;
-			line-height: 1.2;
-			font-size: rem(16px);
-			font-weight: 400;
-			color: $primary-color;
-		}
+  &--footer {
+    max-width: rem(261px);
+    text-align: left;
 
-		// .info-company__work-schedule
+    .info-company {
+      &__title {
+        font-family: $font-secondary;
+        font-size: rem(14px);
+        line-height: 1.5;
+      }
+      &__work-schedule {
+        font-family: $font-secondary;
+        font-weight: 400;
+      }
+    }
+  }
 
-		&__work-schedule {
-			font-family: $font;
-			line-height: 1.2;
-			font-size: rem(14px);
-			font-weight: 700;
-			color: $primary-color;
-		}
+  // .info-company__title
+
+  &__title {
+    margin-bottom: rem(10px);
+
+    font-family: $font;
+    line-height: 1.2;
+    font-size: rem(16px);
+    font-weight: 400;
+    color: $primary-color;
+  }
+
+  // .info-company__work-schedule
+
+  &__work-schedule {
+    font-family: $font;
+    line-height: 1.2;
+    font-size: rem(14px);
+    font-weight: 700;
+    color: $primary-color;
+  }
 }
