@@ -1,0 +1,34 @@
+.user-cart {
+  // border: 1px solid red;
+  flex-grow: 0;
+  position: relative;
+
+  // .user-cart__count
+
+  &__count {
+    position: absolute;
+    right: rem(-14px);
+    top: rem(-7px);
+    display: inline-block;
+
+    text-align: center;
+    line-height: 2;
+
+    width: rem(30px);
+    height: rem(30px);
+    border-radius: 50%;
+    background-color: $accent-color;
+
+    font-family: $font;
+    font-weight: 700;
+    font-size: rem(14px);
+    color: $white;
+  }
+
+  // .user-cart__icon
+
+  &__icon {
+    width: rem(50px);
+    height: rem(50px);
+  }
+}

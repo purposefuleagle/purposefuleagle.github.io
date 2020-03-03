@@ -9,17 +9,14 @@
 // 800 Black or Extra Bold or Heavy;
 // 900 Extra Black or Fat or Ultra Black
 
-
 /* ------------ Letter spacing helper ------------ */
 
-// Формула для расчета значения в пикселях: 
-// X * S / 1000 = P 
+// Формула для расчета значения в пикселях:
+// X * S / 1000 = P
 // Где X — значение интервала в Photoshop, S — размер шрифта в пикселях (при работе в 72 dpi), и P — значение интервала для CSS.
 
 // Формула для расчета letter-spacing в em:
 // X / 1000 = Y Где X — значение интервала в Photoshop, а Y-то же значение, выраженное в em для CSS.
-
-
 
 /* ------------ Import mixin font ------------ */
 
@@ -36,11 +33,9 @@
 // 	}
 // }
 
-
 /* ------------ Import font ------------ */
 
 // @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&subset=cyrillic');
-
 
 /* ------------ Font Clear Sans ------------ */
 
@@ -51,3 +46,5 @@
 
 /* ------------ Font Roboto ------------ */
 @include font("Roboto", "../fonts/RobotoRegular/RobotoRegular", 400);
+@include font("Roboto", "../fonts/RobotoMedium/RobotoMedium", 500);
+@include font("Roboto", "../fonts/RobotoBold/RobotoBold", 700);

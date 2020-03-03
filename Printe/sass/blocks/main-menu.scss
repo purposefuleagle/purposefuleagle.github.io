@@ -1,0 +1,47 @@
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid $date-color;
+  // .main-menu__item
+
+  &__item {
+    padding: rem(15px 20px);
+  }
+
+  // .main-menu__link
+
+  &__link {
+    position: relative;
+    font-family: $font;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 1.2;
+    color: $primary-color;
+    transition: all 0.3s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+
+      // width: 0;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+
+      transform: scale(0);
+
+      background-color: $accent-color;
+      transition: all 0.5s;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $accent-color;
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+}

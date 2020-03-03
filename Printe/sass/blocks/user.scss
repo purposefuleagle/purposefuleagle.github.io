@@ -1,0 +1,39 @@
+.user {
+  background-color: darken($secondary-bg, 10%);
+  padding: rem(10px 20px 15px);
+
+  // .user__item
+
+  &__item {
+  }
+
+  // .user__link
+
+  &__link {
+    display: flex;
+    align-items: center;
+  }
+
+  // .user__icon
+
+  &__icon {
+    width: rem(20px);
+    height: rem(20px);
+    margin-right: rem(15px);
+  }
+
+  // .user__text
+
+  &__text {
+    font-family: $font;
+    font-weight: 500;
+    font-size: rem(16px);
+    line-height: 1.2;
+    color: darken($accent-color, 5%);
+  }
+
+  // .user__icon-arrow
+
+  &__icon-arrow {
+  }
+}

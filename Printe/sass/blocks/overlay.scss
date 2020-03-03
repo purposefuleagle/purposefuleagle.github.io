@@ -1,0 +1,14 @@
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($black, 0.8);
+  cursor: pointer;
+  z-index: 101;
+}
+.overlay--active {
+  display: block;
+}

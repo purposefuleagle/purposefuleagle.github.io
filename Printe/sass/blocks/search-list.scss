@@ -1,19 +1,18 @@
 .search-list {
+  // .search-list__item
 
-	// .search-list__item
+  &__item {
+  }
 
-	&__item {
-	}
+  // .search-list__link
 
-	// .search-list__link
+  &__link {
+  }
 
-	&__link {
-	}
+  // .search-list__icon
 
-	// .search-list__icon
-
-	&__icon {
-		width: rem(18px);
-		height: rem(18px)
-	}
+  &__icon {
+    width: rem(18px);
+    height: rem(18px);
+  }
 }

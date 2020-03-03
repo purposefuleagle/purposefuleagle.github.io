@@ -1,0 +1,53 @@
+.phone {
+  // .phone__item
+
+  &__item {
+    padding: rem(20px 20px 10px);
+  }
+
+  // .phone__link
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  // .phone__icon
+
+  &__icon {
+    width: rem(25px);
+    height: rem(25px);
+
+    margin-right: rem(15px);
+  }
+
+  // .phone__nubmer
+
+  &__nubmer {
+    font-family: $font;
+    font-weight: 500;
+    font-size: rem(15px);
+    line-height: 1.2;
+    color: $primary-color;
+
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  // .phone__schedule
+
+  &__schedule {
+    font-family: $font;
+    font-weight: 400;
+    font-size: rem(14px);
+    line-height: 1.2;
+    color: lighten($primary-color, 15%);
+    margin-left: auto;
+  }
+}

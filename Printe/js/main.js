@@ -1,209 +1,132 @@
-/* ------------ Add map ------------ */
+/* ------------  ------------ */
+let mobileOpen = document.querySelector('.icon-menu');
+let mobileClose = document.querySelector('.mobile-nav__close');
+let mobileNav = document.querySelector('.mobile-nav');
+let infoButton = document.querySelector('.info__item');
+let submenu = document.querySelector('.submenu-info');
+let infoIcon = document.querySelector('.info__icon--arrow');
+let overlay = document.querySelector('.overlay');
+let phoneDropdown = document.querySelector('.dropdown-phone__link');
+let phonePopUp = document.querySelector('.submenu-phone');
 
-let map;
-function initMap() {
-	/* Map position */
-	let myPosition = {
-		lat: 55.787622, lng: 37.603122
-	}
-	let myLocation = {
-		lat: 55.8094339, lng: 37.6626004
-	}
-	/* Map desing */
-	let desing = [
-		{
-			"featureType": "all",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"saturation": 36
-				},
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 40
-				}
-			]
-		},
-		{
-			"featureType": "all",
-			"elementType": "labels.text.stroke",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 16
-				}
-			]
-		},
-		{
-			"featureType": "all",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 20
-				}
-			]
-		},
-		{
-			"featureType": "administrative",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 17
-				},
-				{
-					"weight": 1.2
-				}
-			]
-		},
-		{
-			"featureType": "landscape",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 20
-				}
-			]
-		},
-		{
-			"featureType": "poi",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 21
-				}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 17
-				}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 29
-				},
-				{
-					"weight": 0.2
-				}
-			]
-		},
-		{
-			"featureType": "road.arterial",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 18
-				}
-			]
-		},
-		{
-			"featureType": "road.local",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 16
-				}
-			]
-		},
-		{
-			"featureType": "transit",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 19
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 17
-				}
-			]
-		}
-	]
-	/* Map options */
-	let myOptions = {
-		center: myLocation,
-		zoom: 12,
-		styles: desing
-	}
-	/* New map */
-	map = new google.maps.Map(document.getElementById('map'), myOptions);
+infoButton.addEventListener('click', toggleString);
 
-	/* Map marker */
-	let marker = new google.maps.Marker({
-		position: myPosition,
-		map: map,
-		icon: 'img/icons/mark.svg'
-	});
-
+function toggleString() {
+  submenu.classList.toggle('submenu-info--active');
+  infoIcon.classList.toggle('info__icon--arrow_active');
 }
 
+mobileOpen.addEventListener('click', menuOpen);
+
+function menuOpen() {
+  mobileNav.classList.add('mobile-nav--active');
+  overlay.classList.add('overlay--active');
+}
+
+mobileClose.addEventListener('click', menuClose);
+
+function menuClose() {
+  mobileNav.classList.remove('mobile-nav--active');
+  overlay.classList.remove('overlay--active');
+}
+
+overlay.addEventListener('click', overalyClose);
+
+function overalyClose() {
+  mobileNav.classList.remove('mobile-nav--active');
+  overlay.classList.remove('overlay--active');
+}
+
+phoneDropdown.addEventListener('click', hidePopUp);
+
+function hidePopUp(e) {
+  e.preventDefault();
+  phonePopUp.classList.toggle('submenu-phone--active');
+}
+
+/* ES5 */
+// let phonesDropdown = document.querySelectorAll('.button-item'),
+//  index, button
+
+// for (index = 0; index < phonesDropdown.length; index++) {
+//   button = phonesDropdown[index];
+//   button.addEventListener('click', clickHandler);
+//   // button.addEventListener('dblclick', doubleClickHandler);
+// }
+
+// function clickHandler(event) {
+//   console.log('click', this.innerText);
+//   event.preventDefault();
+//   phonePopUp.classList.toggle('submenu-phone--active');
+// }
+
+/*  */
+
+/* ES6 */
+
+// const buttonItems = document.querySelectorAll('.button-item');
+
+// for (let buttonItem of buttonItems) {
+//   buttonItem.addEventListener('click', (event) => event.preventDefault() )
+// }
+
+/*  */
+
+// function doubleClickHandler(event) {
+//   console.log('doubleclick', this.innerText);
+//   this.removeEventListener('click', clickHandler);
+//   this.removeEventListener('dblclick', doubleClickHandler);
+// }
+
+// for (let phoneDropdown of phonesDropdown) {
+//   phoneDropdown.addEventListener('click', event => {
+//     event.preventDefault();
+//     this.classList.toggle('submenu-phone--active');
+//   });
+// }
+
+// phonesDropdown.addEventListener('click', showPopUp);
+
+// function showPopUp(e) {
+//   e.preventDefault();
+//   phonePopUp.classList.toggle('submenu-phone--active');
+// }
+// if (phonePopUp.classList.contains('submenu-phone--active')) {
+//   function showPopUp(e) {
+//     e.preventDefault();
+//     phonePopUp.classList.remove('submenu-phone--active');
+//   }
+// } else {
+//   function showPopUp(e) {
+//     e.preventDefault();
+//     phonePopUp.classList.add('submenu-phone--active');
+//   }
+// }
+
+// phoneDropdown.addEventListener('mouseenter', hidePopUp);
+
+// function hidePopUp() {
+//   phonePopUp.style.display = 'none';
+// }
+
+// mobileNav.classList.toggle('mobile-nav--active');
+// mobileNav.classList.contains('mobile-nav--active')
+
+// let mobileMenu = () => mobileNav.classList.add('.mobile-nav--active');
+
+// console.log(mobileNav.parentElement);
+// console.log(mobileNav.closest('.header-mobile'));
+
+// console.log(mobileNav.classList);
 
 // const array = [5, 4, 3, 2, 1];
 
-// for(let i = 0; i < array.length; i++) {
-// 	const it = array[i];
-// 	console.log(it);
+// for (let i = 0; i < array.length; i++) {
+//   const it = array[i];
+//   console.log(it);
 // }
 
-// array.forEach((it) => {	
+// array.forEach((it) => {
 // 	console.log(it);
 // })
 

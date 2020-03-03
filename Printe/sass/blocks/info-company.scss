@@ -8,6 +8,16 @@
   &--footer {
     max-width: rem(261px);
     text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+
+    margin-left: rem(40px);
+
+    .info-company {
+      &__title {
+        margin-bottom: rem(20px);
+      }
+    }
 
     .info-company {
       &__title {

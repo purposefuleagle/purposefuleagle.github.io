@@ -2,19 +2,24 @@
   display: none;
   position: absolute;
   top: rem(15px);
-  right: rem(-18px);
+  right: rem(-15px);
 
   margin-top: rem(25px);
-  padding: rem(30px);
+  padding: rem(30px 10px 30px 30px);
 
   max-width: rem(219px);
   width: 100%;
   background-color: $white;
+  box-shadow: 0px 3px 10px rgba($black, 0.8);
   z-index: 9;
+
+  &--active {
+    display: block;
+  }
   // .submenu-phone__item
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     width: 0;
     height: 0;
@@ -35,43 +40,50 @@
   // .submenu-phone__item--mts
   &__item--mts {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: rem(-2px);
       left: 0;
       width: rem(30px);
       height: rem(30px);
-      background: url("../img/icons/png/sprites.png") no-repeat -10px -57px;
+      background: url('../img/icons/png/sprites.png') no-repeat -10px -57px;
     }
   }
   // .submenu-phone__item--kyivstar
   &__item--kyivstar {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: rem(-2px);
       left: 0;
       width: rem(27px);
       height: rem(27px);
-      background: url("../img/icons/png/sprites.png") no-repeat -10px -10px;
+      background: url('../img/icons/png/sprites.png') no-repeat -10px -10px;
     }
   }
   // .submenu-phone__item--lifecell
   &__item--lifecell {
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: rem(-2px);
       left: 0;
       width: rem(26px);
       height: rem(26px);
-      background: url("../img/icons/png/sprites.png") no-repeat -57px -10px;
+      background: url('../img/icons/png/sprites.png') no-repeat -57px -10px;
     }
   }
 
   // .submenu-phone__link
 
   &__link {
+    font-family: $font;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: rem(16px);
+
+    color: $primary-color;
+
     padding-left: rem(36px);
   }
 }

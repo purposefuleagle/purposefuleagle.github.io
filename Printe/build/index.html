@@ -7,18 +7,242 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width" />
   <link rel="stylesheet" href="css/style.min.css" type="text/css" />
 </head>
+<style>
+</style>
 
 <body>
   <div class="wrapper">
     <!-- ========== header ========== -->
     <header class="header">
+      <!-- ========== header-mobile ========== -->
+      <div class="header-mobile header-mobile--fixed">
+        <div class="header-mobile__item-left">
+          <div class="header-mobile__nav">
+            <div class="header-mobile__nav-wrapper">
+              <button class="header-mobile__icon-menu icon-menu">
+                <span class="icon-menu__line"></span>
+              </button>
+              <nav class="mobile-nav">
+                <div class="mobile-nav__top">
+                  <a href="/" class="mobile-nav__logo">
+                    <img src="img/icons/Logo.svg" alt="Printe - Ваша типография">
+                  </a>
+                  <div class="mobile-nav__close">
+                    <svg class="mobile-nav__icon">
+                      <use xlink:href="img/symbol/sprite_custom.svg#icons--close"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="mobile-nav__body">
+                  <ul class="mobile-nav__list user">
+                    <li class="user__item">
+                      <a href="#" class="user__link">
+                        <svg class="user__icon">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--user"></use>
+                        </svg>
+                        <span class="user__text">Личный кабинет</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list main-menu">
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link">Главная</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link">Продукция</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link">Доставка и оплата</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link">Новости</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link">База знаний</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link">О нас</a>
+                    </li>
+                    <li class="main-menu__item">
+                      <a href="#" class="main-menu__link">Контакты</a>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list phone">
+                    <li class="phone__item">
+                      <a href="tel:0994455418" class="phone__link">
+                        <svg class="phone__icon">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--phone"></use>
+                        </svg>
+                        <span class="phone__nubmer">
+                          (044) 345-40-42
+                        </span>
+                        <span class="phone__schedule">
+                          9:00 - 21:00
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list cart">
+                    <li class="cart__item">
+                      <a href="#" class="cart__link">
+                        <svg class="cart__icon">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--shopping-cart_primary"></use>
+                        </svg>
+                        Корзина
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="mobile-nav__list info">
+                    <li class="info__item">
+                      <div class="info__inner-flex">
+                        <button class="info__button">
+                          <svg class="info__icon info__icon--info">
+                            <use xlink:href="img/symbol/sprite.svg#icons--info"></use>
+                          </svg>
+                          <span class="info__text">О компании</span>
+                        </button>
+                        <svg class="info__icon info__icon--arrow">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--arrow"></use>
+                        </svg>
+                      </div>
+                      <ul class="submenu-info">
+                        <li class="submenu-info__item">
+                          Работаем с 9 до 18, <br>вс и сб выходные
+                        </li>
+                        <li class="submenu-info__item">
+                          <a href="mailto:maket@test-vertka.ua"
+                            class="submenu-info__link link link--underline">maket@test-vertka.ua</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <!-- navigation-info v.2 -->
+                  <!-- <div class="mobile-nav__list navigation-info">
+                    <div class="navigation-info__link">
+                      <div class="navigation-info__inner-flex">
+                        <svg class="navigation-info__icon">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--search"></use>
+                        </svg>
+                        <span class="navigation-info__label">Магазины с кэшбеком</span>
+                      </div>
+                      <svg class="navigation-info__arrow">
+                        <use xlink:href="img/symbol/sprite_custom.svg#icons--arrow"></use>
+                      </svg>
+                    </div>
+                    <a href="#" class="navigation-info__link">
+                      <svg class="navigation-info__icon">
+                        <use xlink:href="img/symbol/sprite_custom.svg#icons--search"></use>
+                      </svg>
+                      <span class="navigation-info__label">Приведи друга</span>
+                    </a>
+                  </div> -->
+                  <!-- /. navigation-info v.2 -->
+
+
+                  <!--  -->
+                  <!-- <div class="mobile-nav__list socials"></div> -->
+                  <!-- <ul class="mobile-nav__list">
+                    <li class="mobile-nav__item">
+                      <a href="#" class="mobile-nav__link"></a>
+                    </li>
+                  </ul> -->
+                  <!-- / -->
+
+                </div>
+              </nav>
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="header-mobile__inner-logo">
+            <a href="/" class="header-mobile__logo">
+              <img src="img/icons/Logo.svg" alt="Printe - Ваша типография">
+            </a>
+          </div>
+        </div>
+        <!-- <div class="header-mobile__item-center"></div> -->
+        <!-- header-mobile__item-right -->
+        <div class="header-mobile__item-right">
+          <!-- header-mobile__search version_1 -->
+          <!-- <div class="header-mobile__search">
+            <div class="header-mobile__search-wrapper">
+              <svg class="header-mobile__search-icon">
+                <use xlink:href="img/symbol/sprite.svg#icons--search-form"></use>
+              </svg>
+              <div class="search-mobile search-mobile--active">
+                <div class="search-mobile__overlay"></div>
+                <div class="header-search">
+                  <span class="header-search__control">
+                    <svg class="header-search__icon">
+                      <use xlink:href="img/symbol/sprite.svg#icons--search-form"></use>
+                    </svg>
+                  </span>
+                  <div class="header-search__wrapper">
+                    <input type="text" class="header-search__input" placeholder="Я ищу...">
+                  </div>
+                  <span class="header-search__control">
+                    <svg class="header-search__icon">
+                      <use xlink:href="img/symbol/sprite.svg#icons--close"></use>
+                    </svg>
+                  </span>
+                  <div class="header-search__list">
+                    <div class="header-search__item header-search__item--selected">Aliexpress</div>
+                    <div class="header-search__item">Fishki</div>
+                    <div class="header-search__item">F.ua</div>
+                    <div class="header-search__item">ASOS</div>
+                    <div class="header-search__item">Alibaba</div>
+                    <div class="header-search__item">Hotline</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <!-- /.header-mobile__search version_1 -->
+          <!-- header-mobile__search version_2 -->
+          <div class="header-mobile__search-form search-form">
+            <span class="search-form__control">
+              <svg class="search-form__icon">
+                <use xlink:href="img/symbol/sprite_custom.svg#icons--search"></use>
+              </svg>
+            </span>
+            <div class="search-form__wrapper">
+              <input type="text" name="search" placeholder="Я ищу..." class="search-form__input">
+              <button class="search-form__button button button--search">Найти</button>
+            </div>
+          </div>
+          <!-- /.header-mobile__search version_2 -->
+          <div class="header-mobile__user-cart user-cart">
+            <a href="#" class="user-cart__button">
+              <span class="user-cart__count">3</span>
+              <svg class="user-cart__icon">
+                <use xlink:href="img/symbol/sprite_custom.svg#icons--shopping-cart"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- /.header-mobile__item-right -->
+      </div>
+      <!-- /.header-mobile -->
       <div class="header-top">
         <div class="container header-top__wrapper">
           <div class="header-top__logo logo">
-            <a href="#" class="logo__link">
+            <a href="/" class="logo__link">
               <img src="img/icons/Logo.svg" alt="Printe - Ваша типография" class="logo__img" />
             </a>
           </div>
+          <!-- <form action="" class="header-top__search-form search-form">
+            <div class="search-form__inner">
+              <div class="search-form__input-wrapper search-form__input-wrapper_state_active">
+                <input type="text" name="search" placeholder="Я ищу..." class="search-form__input">
+              </div>
+            </div>
+            <button class="search-form__submit button" type="submit">Найти</button>
+            <button class="search-form__clear" aria-label="Очистить поиск">
+              <svg class="search-form__icon-clear">
+                <use xlink:href="img/symbol/sprite_custom.svg#icons--search"></use>
+              </svg>
+            </button>
+
+          </form> -->
           <div class="header-top__info-company info-company">
             <p class="info-company__title">
               Качественная оперативная цифровая, широкоформатная и сувенирная
@@ -27,16 +251,16 @@
             <span class="info-company__work-schedule">Работаем с 9 до 18, вс и сб выходные</span>
           </div>
           <div class="header-top__user-profile user-profile">
-            <svg class="user-profile__icon">
-              <use xlink:href="img/symbol/sprite_custom.svg#icons--user"></use>
-            </svg>
             <a href="#" class="user-profile__link link">
-              Личный кабинет
+              <svg class="user-profile__icon">
+                <use xlink:href="img/symbol/sprite_custom.svg#icons--user"></use>
+              </svg>
+              <span class="user-profile__link-text">Личный кабинет</span>
             </a>
           </div>
           <div class="header-top__contacts contacts">
             <div class="contacts__top">
-              <a href="mailto:maket@test-vertka.ua" class="contacts__link link">maket@test-vertka.ua</a>
+              <a href="mailto:maket@test-vertka.ua" class="contacts__link link link--underline">maket@test-vertka.ua</a>
             </div>
             <div class="contacts__bottom">
               <ul class="contacts__dropdown dropdown-phone">
@@ -51,12 +275,10 @@
                       <use xlink:href="img/symbol/sprite_custom.svg#icons--phone"></use>
                     </svg>
                     (044) 345-40-42
-                  </a>
-                  <button class="dropdown-phone__button">
                     <svg class="dropdown-phone__icon-arrow">
                       <use xlink:href="img/symbol/sprite_custom.svg#icons--arrow_down_v_2"></use>
                     </svg>
-                  </button>
+                  </a>
                   <ul class="submenu-phone">
                     <li class="submenu-phone__item submenu-phone__item--mts">
                       <a href="tel:0994455418" class="submenu-phone__link ">
@@ -92,10 +314,10 @@
       <div class="header-bottom">
         <div class="container">
           <nav class="header-bottom__main-nav main-nav">
-            <button class="main-nav__mobile-menu mobile-menu">
-              <span class="mobile-menu__line"></span>
-            </button>
             <div class="main-nav__wrapper">
+              <!-- <button class="main-nav__icon-menu icon-menu">
+                <span class="icon-menu__line"></span>
+              </button> -->
               <ul class="main-nav__list site-list">
                 <li class="site-list__item">
                   <a href="#" class="site-list__link">Главная</a>
@@ -276,94 +498,96 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__col">
-            <div class="footer__logo logo">
-              <a href="#" class="logo__link">
-                <img src="img/icons/Logo.svg" alt="Printe - Ваша типография" class="logo__img">
-              </a>
-            </div>
-            <div class="footer__copyrigth">
-              2018 — Все права защищены
-            </div>
-          </div>
-          <div class="footer__col">
-            <div class="info-company info-company--footer">
-              <p class="info-company__title">
-                Качественная оперативная цифровая, широкоформатная и сувенирная
-                полиграфия!
-              </p>
-              <span class="info-company__work-schedule">Работаем с 9 до 18, вс и сб выходные</span>
-            </div>
-          </div>
-          <div class="footer__col">
-            <nav class="footer__nav">
-              <ul class="footer__nav-list">
-                <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Главная</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Продукция</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Доставка и оплата</a>
-                </li>
-              </ul>
-              <ul class="footer__nav-list">
-                <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">Новости</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">База знаний</a>
-                </li>
-                <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">О нас</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <div class="footer__col">
-            <div class="footer__contacts contacts contacts--footer">
-              <div class="contacts__top">
-                <a href="#" class="contacts__link link">Контакты</a>
+          <div class="footer__info">
+            <div class="footer__col">
+              <div class="footer__logo logo">
+                <a href="#" class="logo__link">
+                  <img src="img/icons/Logo.svg" alt="Printe - Ваша типография" class="logo__img">
+                </a>
+                <div class="footer__copyrigth">
+                  2018 — Все права защищены
+                </div>
               </div>
-              <div class="contacts__bottom">
-                <ul class="contacts__dropdown dropdown-phone">
-                  <li class="dropdown-phone__item">
-                    <a href="" class="contacts__link-social">
-                      <svg class="contacts__icon-facebook">
-                        <use xlink:href="img/symbol/sprite_custom.svg#icons--facebook"></use>
-                      </svg>
-                    </a>
-                    <a class="dropdown-phone__link" href="tel:0994455418">
-                      <svg class="dropdown-phone__icon-phone">
-                        <use xlink:href="img/symbol/sprite_custom.svg#icons--phone"></use>
-                      </svg>
-                      (044) 345-40-42
-                    </a>
-                    <button class="dropdown-phone__button">
-                      <svg class="dropdown-phone__icon-arrow">
-                        <use xlink:href="img/symbol/sprite_custom.svg#icons--arrow_down_white"></use>
-                      </svg>
-                    </button>
-                    <ul class="submenu-phone">
-                      <li class="submenu-phone__item submenu-phone__item--mts">
-                        <a href="tel:0994455418" class="submenu-phone__link ">
-                          (099) 445-54-18
-                        </a>
-                      </li>
-                      <li class="submenu-phone__item submenu-phone__item--kyivstar">
-                        <a href="tel:0994455418" class="submenu-phone__link">
-                          (096) 497-78-03
-                        </a>
-                      </li>
-                      <li class="submenu-phone__item submenu-phone__item--lifecell">
-                        <a href="tel:0994455418" class="submenu-phone__link">
-                          (099) 445-54-18
-                        </a>
-                      </li>
-                    </ul>
+            </div>
+            <div class="footer__col">
+              <div class="info-company info-company--footer">
+                <p class="info-company__title">
+                  Качественная оперативная цифровая, широкоформатная и сувенирная
+                  полиграфия!
+                </p>
+                <span class="info-company__work-schedule">Работаем с 9 до 18, вс и сб выходные</span>
+              </div>
+            </div>
+          </div>
+          <div class="footer__navigation">
+            <div class="footer__col">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Главная</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Продукция</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Доставка и оплата</a>
                   </li>
                 </ul>
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">Новости</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">База знаний</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="#" class="footer__nav-link">О нас</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="footer__col">
+              <div class="footer__contacts contacts contacts--footer">
+                <div class="contacts__top">
+                  <a href="#" class="contacts__link link link--underline">Контакты</a>
+                </div>
+                <div class="contacts__bottom">
+                  <ul class="contacts__dropdown dropdown-phone">
+                    <li class="dropdown-phone__item">
+                      <a href="" class="contacts__link-social">
+                        <svg class="contacts__icon-facebook">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--facebook"></use>
+                        </svg>
+                      </a>
+                      <a class="dropdown-phone__link" href="tel:0994455418">
+                        <svg class="dropdown-phone__icon-phone">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--phone"></use>
+                        </svg>
+                        (044) 345-40-42
+                        <svg class="dropdown-phone__icon-arrow">
+                          <use xlink:href="img/symbol/sprite_custom.svg#icons--arrow_down_white"></use>
+                        </svg>
+                      </a>
+                      <ul class="submenu-phone">
+                        <li class="submenu-phone__item submenu-phone__item--mts">
+                          <a href="tel:0994455418" class="submenu-phone__link ">
+                            (099) 445-54-18
+                          </a>
+                        </li>
+                        <li class="submenu-phone__item submenu-phone__item--kyivstar">
+                          <a href="tel:0994455418" class="submenu-phone__link">
+                            (096) 497-78-03
+                          </a>
+                        </li>
+                        <li class="submenu-phone__item submenu-phone__item--lifecell">
+                          <a href="tel:0994455418" class="submenu-phone__link">
+                            (099) 445-54-18
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>

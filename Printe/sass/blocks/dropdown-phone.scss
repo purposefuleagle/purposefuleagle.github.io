@@ -1,51 +1,41 @@
 .dropdown-phone {
-	position: relative;
+  position: relative;
 
-		// .dropdown-phone__item
+  // .dropdown-phone__item
 
-		&__item {
-		}
+  &__item {
+  }
 
-		// .dropdown-phone__link
+  // .dropdown-phone__link
 
-		&__link {
-			margin-right: rem(5px);
+  &__link {
+    margin-right: rem(5px);
 
-			font-family: $font;
-			font-size: rem(16px);
-			font-weight: 700;
-			line-height: 1.2;
-			color: $primary-color;
-		}
+    font-family: $font;
+    font-size: rem(16px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: $primary-color;
+  }
 
-		// .dropdown-phone__icon-phone
+  // .dropdown-phone__icon-phone
 
-		&__icon-phone {
-			margin-right: rem(5px);
-			margin-left: rem(20px);
+  &__icon-phone {
+    margin-right: rem(5px);
+    margin-left: rem(20px);
 
-			vertical-align: bottom;
-			width: rem(20px);
-			height: rem(20px);
-		}
+    vertical-align: bottom;
+    width: rem(20px);
+    height: rem(20px);
+  }
 
-		&__button{
-			display: inline-block;
-			outline: none;
+  // .dropdown-phone__icon-arrow
 
-			padding: 0;
+  &__icon-arrow {
+    margin-left: rem(10px);
+    vertical-align: bottom;
 
-			border: 0;
-			background-color: transparent;
-
-			cursor: pointer;
-		}
-		// .dropdown-phone__icon-arrow
-
-		&__icon-arrow {
-			vertical-align: bottom;
-			
-			width: rem(20px);
-			height: rem(20px);
-		}
+    width: rem(20px);
+    height: rem(20px);
+  }
 }

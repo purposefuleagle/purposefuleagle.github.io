@@ -1,38 +1,41 @@
 .header-top {
-	background: $white;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, .1);
+  background: $white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 
-	padding-top: rem(15px );
-	// .header-top__wrapper
+  padding-top: rem(15px);
+  // .header-top__wrapper
 
-	&__wrapper {
-		display: flex;
-		justify-content: space-between;
-	}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 
-	// .header-top__logo
+  &__search-form {
+    // display: none;
+  }
 
-	&__logo {
-		
-	}
+  // .header-top__logo
 
-	// .header-top__info-company
+  &__logo {
+  }
 
-	&__info-company {
-	}
+  // .header-top__info-company
 
-	// .header-top__user-profile
+  &__info-company {
+  }
 
-	&__user-profile {
-	}
+  // .header-top__user-profile
 
-	// .header-top__contacts
+  &__user-profile {
+  }
 
-	&__contacts {
-	}
+  // .header-top__contacts
 
-	// .header-top__basket
+  &__contacts {
+  }
 
-	&__basket {
-	}
+  // .header-top__basket
+
+  &__basket {
+  }
 }

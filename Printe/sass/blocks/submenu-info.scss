@@ -1,0 +1,23 @@
+.submenu-info {
+  display: none;
+  padding-left: rem(38px);
+  // .submenu-info__item
+  &--active {
+    display: block;
+  }
+
+  &__item {
+    font-family: $font;
+    font-weight: 400;
+    font-size: rem(14px);
+    line-height: 1.5;
+    color: $primary-color;
+    margin: rem(10px 0);
+  }
+
+  // .submenu-info__link
+
+  &__link {
+    font-weight: 700;
+  }
+}

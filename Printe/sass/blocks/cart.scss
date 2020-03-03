@@ -1,0 +1,35 @@
+.cart {
+  // .cart__item
+
+  &__item {
+    padding: rem(10px 20px);
+  }
+
+  // .cart__link
+
+  &__link {
+    font-family: $font;
+    font-weight: 400;
+    font-size: rem(18px);
+    line-height: 1.2;
+    color: $primary-color;
+
+    transition: all 0.3s ease;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  // .cart__icon
+
+  &__icon {
+    width: rem(25px);
+    height: rem(25px);
+
+    margin-right: rem(10px);
+    vertical-align: bottom;
+  }
+}

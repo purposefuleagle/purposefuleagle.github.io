@@ -1,0 +1,70 @@
+.search-form {
+  // border: 1px solid red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  // width: 100%;
+  // .search-form__control
+
+  &__control {
+    position: absolute;
+    // cursor: pointer;
+    top: 30%;
+    // transform: translateY(-50%);
+    left: rem(20px);
+  }
+  // .search-form__icon
+
+  &__icon {
+    width: rem(16px);
+    height: rem(16px);
+  }
+
+  // .search-form__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex: 1;
+    // width: 100%;
+  }
+
+  // .search-form__input
+
+  &__input {
+    font-family: $font;
+    font-size: rem(16px);
+    color: $primary-color;
+    font-weight: 400;
+
+    width: 100%;
+    max-width: calc(100% - 6.875rem);
+    height: rem(40px);
+
+    padding-left: rem(45px);
+    padding-right: rem(15px);
+
+    border-radius: 4px 0 0 4px;
+
+    border: 2px solid $accent-color;
+    border-right-width: 0;
+
+    background-color: $white;
+    transition: all 0.4s ease;
+
+    &::placeholder {
+      font-family: $font;
+      font-size: rem(16px);
+      color: $primary-color;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 10px rgba($black, 0.3);
+    }
+  }
+
+  // .search-form__button
+
+  &__button {
+  }
+}
