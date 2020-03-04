@@ -1,0 +1,47 @@
+/* ------------ Colors ------------ */
+// $white: #fff;
+// $black: #000;
+$primary-color: #fff;
+$secondary-color: #000;
+$placeholder-color: #4f4f4f;
+
+/* ------------ Typography ------------ */
+$font: 'Raleway', 'Arial', sans-serif;
+
+/* ------------ Typography size ------------ */
+$font-size: 14px;
+
+// $line-height: $font-size * 1.6;
+$line-height: 1.2;
+
+/* ------------ Breakpoints ------------ */
+$bp-small-3: 320px;
+$bp-small-2: 480px;
+$bp-small: 576px;
+$bp-medium-2: 640px;
+$bp-medium: 768px;
+$bp-large: 992px;
+$bp-extra-large: 1200px;
+
+/* ------------ Customization Bootstrap ------------ */
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1300px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1240px
+);
+
+$gutter: $grid-gutter-width;

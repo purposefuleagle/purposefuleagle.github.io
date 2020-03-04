@@ -1,0 +1,35 @@
+.header-top {
+  background-color: $secondary-color;
+
+  // .header-top__wrapper
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: rem(11px 0);
+  }
+
+  // .header-top__logo
+
+  &__logo {
+  }
+
+  // .header-top__logo-link
+
+  &__logo-link {
+  }
+
+  // .header-top__icon-menu
+
+  &__icon-menu {
+  }
+
+  // .header-top__icon
+
+  &__icon {
+    width: rem(32px);
+    height: rem(16px);
+  }
+}
