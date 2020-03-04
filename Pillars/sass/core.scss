@@ -56,7 +56,7 @@ a {
   }
 }
 .container {
-  @include min-max(320px, 1025px, 30px);
+  @include min-max(320px, 1055px, 15px);
 }
 .visually-hidden {
   @include visually-hidden;
@@ -74,6 +74,7 @@ a {
   flex: 0 0 auto;
 }
 .content {
+  padding-top: rem(48px);
   flex: 1 0 auto;
 }
 .footer {

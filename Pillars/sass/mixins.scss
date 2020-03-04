@@ -3,7 +3,7 @@
 @mixin clearfix() {
   &:before,
   &:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
   }
@@ -17,13 +17,12 @@
     font-weight: $weight;
     font-style: $style;
     src: url('#{$file-path}.eot?#iefix');
-    src: url('#{$file-path}.eot') format("embedded-opentype"),
-         url('#{$file-path}.woff') format("woff"),
-         url('#{$file-path}.woff2') format("woff2"), 
-         url('#{$file-path}.ttf') format("truetype");
+    src: url('#{$file-path}.eot') format('embedded-opentype'),
+      url('#{$file-path}.woff') format('woff'),
+      url('#{$file-path}.woff2') format('woff2'),
+      url('#{$file-path}.ttf') format('truetype');
   }
 }
-
 
 // @mixin font($f-name, $f-url , $f-weight: normal, $f-style: normal){
 // 	@font-face{
@@ -102,11 +101,11 @@ $rem-fallback: false !default;
 $rem-px-only: false !default;
 
 @function rem-separator($list, $separator: false) {
-  @if $separator == "comma" or $separator == "space" {
+  @if $separator == 'comma' or $separator == 'space' {
     @return append($list, null, $separator);
   }
 
-  @if function-exists("list-separator") == true {
+  @if function-exists('list-separator') == true {
     @return list-separator($list);
   }
 
@@ -128,11 +127,18 @@ $rem-px-only: false !default;
   $separator: rem-separator($values);
 
   @each $value in $values {
-    @if type-of($value) == "number" and unit($value) == "rem" and $to == "px" {
+    @if type-of($value) == 'number' and unit($value) == 'rem' and $to == 'px' {
       $result: append($result, $value / 1rem * $rem-baseline, $separator);
-    } @else if type-of($value) == "number" and unit($value) == "px" and $to == "rem" {
+    } @else if
+      type-of($value) ==
+      'number' and
+      unit($value) ==
+      'px' and
+      $to ==
+      'rem'
+    {
       $result: append($result, $value / $rem-baseline * 1rem, $separator);
-    } @else if type-of($value) == "list" {
+    } @else if type-of($value) == 'list' {
       $value-separator: rem-separator($value);
       $value: rem-convert($to, $value...);
       $value: rem-separator($value, $value-separator);
@@ -154,7 +160,7 @@ $rem-px-only: false !default;
 }
 
 @mixin rem($properties, $values...) {
-  @if type-of($properties) == "map" {
+  @if type-of($properties) == 'map' {
     @each $property in map-keys($properties) {
       @include rem($property, map-get($properties, $property));
     }
@@ -172,9 +178,17 @@ $rem-px-only: false !default;
 
 /* ------------ Dynamic text mixin ------------ */
 
-@mixin dynamicText($minSizePercent, $maxSize, $minSize, $minWidthPx, $maxWidth, $minWidth) {
+@mixin dynamicText(
+  $minSizePercent,
+  $maxSize,
+  $minSize,
+  $minWidthPx,
+  $maxWidth,
+  $minWidth
+) {
   font-size: calc(
-    #{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) / (#{$maxWidth} - #{$minWidth})
+    #{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) /
+      (#{$maxWidth} - #{$minWidth})
   );
 }
 
@@ -183,44 +197,51 @@ $rem-px-only: false !default;
 @mixin button($two-button: false) {
   display: inline-block;
   border: none;
-  color: $white;
+  color: $primary-color;
   font-family: $font;
   text-decoration: none;
-  background-color: $accent-color;
-  padding: rem(19px 33px);
-  font-size: rem(13px);
-  text-transform: uppercase;
+  background-color: $secondary-color;
+  border: 2px solid transparent;
+  padding: rem(14px 20px);
+  max-width: rem(330px);
+  width: 100%;
+  // min-width: rem(288px);
+  font-size: rem(24px);
   font-weight: 800;
-  border-radius: rem(5px);
   text-align: center;
-  // position: relative;
-  line-height: 1;
+  line-height: 1.2;
   outline: none;
-  transition: all 0.5s ease;
+  transition: all 0.4s linear;
   cursor: pointer;
 
-  &--theme {
-    &_accent {
-      border: 2px solid $accent-color;
-      &:focus,
-      &:hover {
-        color: $white;
-        background-color: darken($accent-color, 10%);
-        border-color: darken($accent-color, 10%);
-        outline: none;
-      }
-    }
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: 2px solid $secondary-color;
   }
-  &--last {
-    background: none;
-    border: 2px solid $white;
-    padding: rem(19px 36px);
-    &:focus,
-    &:hover {
-      color: #fff;
-      background-color: darken($accent-color, 10%);
-      border-color: darken($accent-color, 10%);
-      outline: none;
+  &:active {
+    border-color: transparent;
+  }
+  &--small {
+    padding: rem(13px 20px);
+    font-size: rem(18px);
+    line-height: rem(21px);
+    max-width: rem(244px);
+    width: 100%;
+  }
+  &--white {
+    color: $secondary-color;
+    background-color: $primary-color;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      border: 2px solid $primary-color;
+      background-color: $secondary-color;
+    }
+    &:active {
+      border-color: transparent;
     }
   }
 

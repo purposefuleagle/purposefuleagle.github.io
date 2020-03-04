@@ -39,5 +39,6 @@
 
 /* ------------ Raleway ------------ */
 
-@include font('Raleway ', '../fonts/RalewayRegular/RalewayRegular', 400);
-@include font('Raleway ', '../fonts/RalewayBold/RalewayBold', 700);
+@include font('Raleway', '../fonts/RalewayLight/RalewayLight', 200);
+@include font('Raleway', '../fonts/RalewayRegular/RalewayRegular', 400);
+@include font('Raleway', '../fonts/RalewayBold/RalewayBold', 700);

@@ -1,14 +1,24 @@
 .header-top {
   background-color: $secondary-color;
 
+  // .header-top--fixed
+
+  &--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    min-height: rem(48px);
+  }
+
   // .header-top__wrapper
 
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: rem(11px 0);
+    min-height: rem(48px);
   }
 
   // .header-top__logo
@@ -24,6 +34,7 @@
   // .header-top__icon-menu
 
   &__icon-menu {
+    cursor: pointer;
   }
 
   // .header-top__icon
@@ -32,4 +43,78 @@
     width: rem(32px);
     height: rem(16px);
   }
+}
+
+.header {
+}
+.header-top {
+  // .header-top__wrapper
+
+  &__wrapper {
+  }
+
+  // .header-top__logo
+
+  &__logo {
+  }
+
+  // .header-top__logo-link
+
+  &__logo-link {
+  }
+
+  // .header-top__services-inner
+
+  &__services-inner {
+    display: none;
+  }
+
+  // .header-top__services-link
+
+  &__services-link {
+  }
+
+  // .header-top__contacts
+
+  &__contacts {
+    display: none;
+  }
+
+  // .header-top__contacts-number
+
+  &__contacts-number {
+    font-variant-numeric: lining-nums;
+    // font-variant-numeric: oldstyle-nums;
+  }
+
+  // .header-top__feedback-inner
+
+  &__feedback-inner {
+    display: none;
+  }
+
+  // .header-top__feedback-button
+
+  &__feedback-button {
+  }
+
+  // .header-top__icon-menu
+
+  &__icon-menu {
+  }
+
+  // .header-top__icon
+
+  &__icon {
+  }
+}
+.header-top--fixed {
+}
+.container {
+}
+.button {
+}
+.button--white {
+}
+.button--small {
 }

@@ -3,16 +3,71 @@
 /* ------------ < 576px------------ */
 
 @media (min-width: $bp-small) {
+  .header-top {
+    &__wrapper {
+      text-align: center;
+      justify-content: center;
+    }
+    &__logo {
+      flex-grow: 1;
+      text-align: center;
+    }
+    &__feedback-inner {
+      flex-grow: 1;
+      display: block;
+      text-align: right;
+    }
+    &__icon-menu {
+      flex-grow: 1;
+      order: -1;
+      text-align: left;
+    }
+  }
+  .promo {
+    &__info {
+      padding: rem(110px 0 30px);
+    }
+  }
 }
 
 /* ------------ < 768px------------ */
 
 @media (min-width: $bp-medium) {
+  .header-top {
+    &__contacts {
+      display: block;
+      flex-grow: 1;
+    }
+    &__services-inner {
+      display: block;
+      flex-grow: 1;
+    }
+    &__icon-menu {
+      display: none;
+    }
+  }
 }
 
 /* ------------ < 992px------------ */
 
 @media (min-width: $bp-large) {
+  .header-top {
+    &__wrapper {
+      text-align: center;
+      justify-content: center;
+    }
+    &__logo {
+      text-align: left;
+    }
+    &__feedback-inner {
+    }
+    &__contacts {
+      text-align: right;
+    }
+    &__services-inner {
+      text-align: right;
+    }
+  }
 }
 
 /* ------------ < 1200px ------------ */
