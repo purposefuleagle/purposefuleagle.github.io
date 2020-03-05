@@ -24,6 +24,7 @@
   // .header-top__logo
 
   &__logo {
+    flex-grow: 1;
   }
 
   // .header-top__logo-link
@@ -34,7 +35,18 @@
   // .header-top__icon-menu
 
   &__icon-menu {
+    flex-grow: 1;
+    text-align: right;
+  }
+
+  // .header-top__toggle
+
+  &__toggle {
     cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
   }
 
   // .header-top__icon
@@ -43,35 +55,10 @@
     width: rem(32px);
     height: rem(16px);
   }
-}
-
-.header {
-}
-.header-top {
-  // .header-top__wrapper
-
-  &__wrapper {
-  }
-
-  // .header-top__logo
-
-  &__logo {
-  }
-
-  // .header-top__logo-link
-
-  &__logo-link {
-  }
-
   // .header-top__services-inner
 
   &__services-inner {
     display: none;
-  }
-
-  // .header-top__services-link
-
-  &__services-link {
   }
 
   // .header-top__contacts
@@ -92,29 +79,4 @@
   &__feedback-inner {
     display: none;
   }
-
-  // .header-top__feedback-button
-
-  &__feedback-button {
-  }
-
-  // .header-top__icon-menu
-
-  &__icon-menu {
-  }
-
-  // .header-top__icon
-
-  &__icon {
-  }
-}
-.header-top--fixed {
-}
-.container {
-}
-.button {
-}
-.button--white {
-}
-.button--small {
 }
