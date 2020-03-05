@@ -44,6 +44,10 @@
     }
   }
   .promo {
+    padding-bottom: rem(40px);
+    &__wrapper {
+      min-height: calc(100vh - 88px);
+    }
     &__info {
       padding-top: rem(150px);
     }
@@ -92,6 +96,7 @@
     &__info {
       padding-top: rem(190px);
     }
+
     &__naming {
       font-size: rem(96px);
       line-height: rem(110px);
