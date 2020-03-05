@@ -1,5 +1,4 @@
 .services {
-  background-color: #ccc;
   padding-bottom: rem(32px);
 }
 .services {
@@ -28,6 +27,7 @@
     margin-bottom: rem(16px);
 
     display: flex;
+    align-items: center;
 
     .svg-icon {
       width: rem(48px);
@@ -62,5 +62,7 @@
 
   &__button {
     margin-top: rem(8px);
+    margin-left: auto;
+    margin-right: auto;
   }
 }

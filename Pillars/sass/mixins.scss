@@ -229,6 +229,7 @@ $rem-px-only: false !default;
     line-height: rem(21px);
     max-width: rem(244px);
     width: 100%;
+    border: 2px solid $secondary-color;
   }
   &--white {
     color: $secondary-color;
