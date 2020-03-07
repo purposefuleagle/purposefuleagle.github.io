@@ -4,8 +4,12 @@
 
 @media (min-width: $bp-small) {
   .header-top {
+    &--fixed {
+      min-height: rem(51px);
+    }
     &__wrapper {
       justify-content: center;
+      min-height: rem(51px);
     }
     &__logo {
       text-align: center;
@@ -20,9 +24,15 @@
       text-align: left;
     }
   }
+  .content {
+    padding-top: rem(51px);
+  }
   .promo {
     &__info {
       padding: rem(110px 0 30px);
+    }
+    &__wrapper {
+      min-height: calc(100vh - 51px);
     }
   }
   .services {
@@ -35,6 +45,49 @@
     &__text-description {
       font-size: rem(16px);
       line-height: rem(20px);
+    }
+  }
+  .feedback {
+    background: url(../img/feedback/feedback_bg.jpg) no-repeat center top;
+    background-size: cover;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba($secondary-color, 0.5);
+    }
+    &__description {
+      font-size: rem(20px);
+      line-height: rem(26px);
+    }
+    &__text {
+      background: none;
+      &::before {
+        background: none;
+      }
+    }
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__form {
+      max-width: rem(394px);
+      width: 100%;
+      margin-bottom: rem(20px);
+    }
+  }
+  .module-feedback {
+    &__body {
+      padding: rem(0 22px);
+    }
+    &__heading {
+      font-size: rem(16px);
+      line-height: rem(18px);
     }
   }
 }
@@ -94,6 +147,22 @@
   }
   .section {
     padding-top: rem(50px);
+  }
+  .feedback {
+    padding-top: rem(18px);
+    &__description {
+      font-size: rem(22px);
+      line-height: rem(28px);
+    }
+  }
+  .module-feedback {
+    &__heading {
+      font-size: rem(18px);
+      line-height: rem(20px);
+    }
+    &__body {
+      padding: rem(0 28px);
+    }
   }
 }
 
@@ -175,6 +244,21 @@
   .section-title {
     font-size: rem(48px);
     line-height: rem(56px);
+  }
+  .feedback {
+    padding-top: rem(48px);
+    &__description {
+      font-size: rem(24px);
+      line-height: rem(30px);
+    }
+    &__form {
+      margin-bottom: rem(32px);
+    }
+  }
+  .module-feedback {
+    &__body {
+      padding: rem(0 32px);
+    }
   }
 }
 

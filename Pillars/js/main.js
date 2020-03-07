@@ -1,216 +1,63 @@
-/* ------------ Add map ------------ */
+/* ------------  ------------ */
 
-let map;
-function initMap() {
-	/* Map position */
-	let myPosition = {
-		lat: 55.787622, lng: 37.603122
-	}
-	let myLocation = {
-		lat: 55.8094339, lng: 37.6626004
-	}
-	/* Map desing */
-	let desing = [
-		{
-			"featureType": "all",
-			"elementType": "labels.text.fill",
-			"stylers": [
-				{
-					"saturation": 36
-				},
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 40
-				}
-			]
-		},
-		{
-			"featureType": "all",
-			"elementType": "labels.text.stroke",
-			"stylers": [
-				{
-					"visibility": "on"
-				},
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 16
-				}
-			]
-		},
-		{
-			"featureType": "all",
-			"elementType": "labels.icon",
-			"stylers": [
-				{
-					"visibility": "off"
-				}
-			]
-		},
-		{
-			"featureType": "administrative",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 20
-				}
-			]
-		},
-		{
-			"featureType": "administrative",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 17
-				},
-				{
-					"weight": 1.2
-				}
-			]
-		},
-		{
-			"featureType": "landscape",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 20
-				}
-			]
-		},
-		{
-			"featureType": "poi",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 21
-				}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "geometry.fill",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 17
-				}
-			]
-		},
-		{
-			"featureType": "road.highway",
-			"elementType": "geometry.stroke",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 29
-				},
-				{
-					"weight": 0.2
-				}
-			]
-		},
-		{
-			"featureType": "road.arterial",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 18
-				}
-			]
-		},
-		{
-			"featureType": "road.local",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 16
-				}
-			]
-		},
-		{
-			"featureType": "transit",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 19
-				}
-			]
-		},
-		{
-			"featureType": "water",
-			"elementType": "geometry",
-			"stylers": [
-				{
-					"color": "#000000"
-				},
-				{
-					"lightness": 17
-				}
-			]
-		}
-	]
-	/* Map options */
-	let myOptions = {
-		center: myLocation,
-		zoom: 12,
-		styles: desing
-	}
-	/* New map */
-	map = new google.maps.Map(document.getElementById('map'), myOptions);
+// const arr = ['Denis', 'Ivan', 'Maks', 'Olga'];
+// // [5,4,4,4]
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   newArr.push(arr[i].length);
+// }
+// console.log(newArr);
 
-	/* Map marker */
-	let marker = new google.maps.Marker({
-		position: myPosition,
-		map: map,
-		icon: 'img/icons/mark.svg'
-	});
+// let newArr2 = [];
+// for (let i = 0; i < arr.length; i++) {
+//   newArr2.push(arr[i].toUpperCase());
+// }
+// console.log(newArr2);
 
+const names = ['Denis', 'Ivan', 'Maks', 'Olga'];
+
+function mapArray(arr, fn) {
+  const res = [];
+  for (let i = 0; i < arr.length; i++) {
+    res.push(fn(arr[i]));
+  }
+  return res;
 }
 
+function nameLength(el) {
+  // console.log(el);
+  return el.length;
+}
 
-// const array = [5, 4, 3, 2, 1];
-
-// for(let i = 0; i < array.length; i++) {
-// 	const it = array[i];
-// 	console.log(it);
+// function nameUpperCase(el) {
+//   // console.log(el);
+//   return el.toUpperCase();
 // }
 
-// array.forEach((it) => {	
-// 	console.log(it);
-// })
+// const result = mapArray(names, nameLength);
+// // console.log(result);
 
-// for (const it of array) {
-// 	console.log(it);
+// const result2 = mapArray(names, nameUpperCase);
+// // console.log(result2);
+
+// function greeting(firstName) {
+//   return function(lastName) {
+//     return `Hello ${firstName} ${lastName}`;
+//   };
 // }
+// const testGreeting = greeting('Denis');
 
-// const numbers = [5, 4, 3, 2, 1];
+function question(job) {
+  if (job === 'developer') {
+    return function(name) {
+      return `${name}, что такое JS?`;
+    };
+  } else if (job === 'teacher') {
+    return function(name) {
+      return `${name}, какой предмет вы ведете?`;
+    };
+  }
+}
 
-// numbers.find((it) => it % 2 === 0)
+const developerQuestion = question('developer');
+console.log(developerQuestion('Denis'));

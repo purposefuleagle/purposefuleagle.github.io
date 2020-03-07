@@ -1,12 +1,12 @@
-// .svg-icon {
-//   width: rem(48px);
-//   height: rem(48px);
+.svg-icon {
+  width: rem(32px);
+  height: rem(16px);
 
-// &--medium {
-//   height: rem(42px);
-// }
+  &--medium {
+    height: rem(42px);
+  }
 
-// &--small {
-//   height: rem(31px);
-// }
-// }
+  &--small {
+    height: rem(31px);
+  }
+}
