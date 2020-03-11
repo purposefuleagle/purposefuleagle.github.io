@@ -1,0 +1,63 @@
+.footer {
+  background: $secondary-color;
+  padding: rem(32px 0 40px);
+  // .footer__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(248px - 72px);
+  }
+
+  // .footer__socials-inner
+
+  &__socials-inner {
+    flex-basis: 100%;
+    margin-bottom: rem(35px);
+  }
+
+  // .footer__socials-link
+  &__socials-link {
+    display: inline-block;
+  }
+  &__socials-link:not(:last-child) {
+    margin-right: rem(24px);
+  }
+
+  // .footer__social-icon
+
+  &__social-icon {
+    width: rem(48px);
+    height: rem(48px);
+  }
+
+  // .footer__email-inner
+
+  &__email-inner {
+    flex-basis: 100%;
+    margin-bottom: rem(35px);
+  }
+
+  // .footer__email-link
+
+  &__email-link {
+  }
+
+  // .footer__callback-inner
+
+  &__callback-inner {
+    flex-basis: 100%;
+  }
+
+  // .footer__callback-number
+
+  &__callback-number {
+  }
+}
+.container {
+}
+.svg-icon {
+}

@@ -55,8 +55,8 @@
   }
 }
 .modal {
-  opacity: 0;
   display: none;
+  opacity: 0;
   transform: scale(0);
 
   &--active {
@@ -170,6 +170,7 @@
     -webkit-animation-fill-mode: both;
   }
   &__input {
+    text-decoration: none;
     background: none;
     border: 1px solid $border-color;
     display: block;
@@ -185,10 +186,7 @@
     z-index: 1;
 
     &:focus {
-      border-color: darken($placeholder-color, 10%);
-      background: $primary-color;
-    }
-    &:active {
+      text-decoration: none;
       border-color: darken($placeholder-color, 10%);
       background: $primary-color;
     }
