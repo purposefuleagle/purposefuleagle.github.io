@@ -6,7 +6,8 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
+  overflow-y: hidden;
   will-change: transform;
   transform: translateX(-103%);
   transition: all 130ms ease-in;
