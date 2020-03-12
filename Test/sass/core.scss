@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* ------------ Base style ------------ */
+
+* {
+	box-sizing:border-box;
+}
+*::before, *::after {
+	box-sizing: inherit;
+}
+html {
+	height: 100%;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+body {
+	font-family: $font;
+  line-height: $line-height;
+  font-size: $font-size;
+	min-width: 320px;
+	color: $primary-color;
+}
+input, textarea {
+  border: #666 1px solid;
+  outline: none;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+ul,ol {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+p {
+	margin:0;
+}
+h1,h2,h3,h4,h5 {
+	margin-top:0;
+	margin-bottom:0;
+	font-weight:normal;
+}
+a{
+	text-decoration: none;
+	&:hover{
+		text-decoration: none;
+	}
+}
+.container{
+	@include min-max(320px, 1140px, 30px);
+}
+.visually-hidden{
+	@include visually-hidden;
+}
+
+
+/* ------------ Footer bottom ------------ */
+
+// Прижимаем footer к низу, а header к верху
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.header{
+	flex: 0 0 auto;
+}
+.content{
+	flex: 1 0 auto;
+}
+.footer{
+	flex: 0 0 auto;
+}
+
+/* ------------ Adaptive image ------------ */
+
+.img-responsive {
+	@include adaptive-img;
+}
+
+/* ------------ Adaptive video ------------ */
+
+
+.video-responsive{
+	@include adaptive-video;
+}
+
+
+
+
+
+
+
+
+
+
