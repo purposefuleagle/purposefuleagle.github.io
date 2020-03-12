@@ -1,3 +1,24 @@
+/* ------------ Toggle menu ------------ */
+function toggleClassMenu() {
+  myMenu.classList.add('menu--animatable');
+  if (!mobileMenu.classList.contains('mobile-menu--active')) {
+    mobileMenu.classList.add('mobile-menu--active');
+  } else {
+    mobileMenu.classList.remove('mobile-menu--active');
+  }
+}
+
+function OnTransitionEnd() {
+  mobileMenu.classList.remove('mobile-menu--animatable');
+}
+
+const myMenu = document.querySelector('.header-top__toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeMenu = document.querySelector('.mobile-menu__close');
+mobileMenu.addEventListener('transitionend', OnTransitionEnd, false);
+closeMenu.addEventListener('click', toggleClassMenu, false);
+myMenu.addEventListener('click', toggleClassMenu, false);
+
 /* ------------  ------------ */
 
 // const arr = ['Denis', 'Ivan', 'Maks', 'Olga'];
