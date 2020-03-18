@@ -1,0 +1,103 @@
+.work {
+  // .work__list
+
+  &__list {
+    display: flex;
+    // justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  // .work__text
+
+  &__text {
+    opacity: 0;
+  }
+
+  // .work__item
+
+  &__item {
+    cursor: pointer;
+    transition: all 0.4s;
+    position: relative;
+    // flex-basis: 25%;
+    @include size(12, 3, 0px);
+    min-height: rem(350px);
+
+    &:hover {
+      .work__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        z-index: 2;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba($accent-color, 0.8);
+      }
+    }
+
+    &:nth-child(1) {
+      background: url(../img/works/work_1.jpg) no-repeat center top;
+    }
+    &:nth-child(2) {
+      background: url(../img/works/work_2.jpg) no-repeat center top;
+    }
+    &:nth-child(3) {
+      background: url(../img/works/work_3.jpg) no-repeat center top;
+    }
+    &:nth-child(4) {
+      background: url(../img/works/work_4.jpg) no-repeat center top;
+    }
+    &:nth-child(5) {
+      background: url(../img/works/work_5.jpg) no-repeat center top;
+    }
+    &:nth-child(6) {
+      background: url(../img/works/work_6.jpg) no-repeat center top;
+    }
+    &:nth-child(7) {
+      background: url(../img/works/work_7.jpg) no-repeat center top;
+    }
+    &:nth-child(8) {
+      background: url(../img/works/work_8.jpg) no-repeat center top;
+    }
+  }
+
+  // .work__img-inner
+
+  &__img-inner {
+  }
+
+  // .work__img
+
+  &__img {
+    max-width: rem(350px);
+    width: 100%;
+  }
+
+  // .work__title
+
+  &__title {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: rem(12px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  &__subtitle {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: rem(11px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

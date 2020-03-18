@@ -1,0 +1,130 @@
+.header {
+  position: relative;
+  background: url('../img/header/header-bg.jpg') no-repeat center top;
+  background-size: cover;
+  min-height: 100vh;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba($bg-color, 0.8);
+    z-index: 0;
+  }
+  // .header__top
+
+  &__top {
+    padding: rem(40px 0);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba($white, 0.2);
+  }
+
+  // .header__logo-inner
+
+  &__logo-inner {
+  }
+
+  // .header__logo
+
+  &__logo {
+  }
+
+  // .header__main-nav
+
+  &__main-nav {
+  }
+
+  // .header__body
+
+  &__body {
+    position: relative;
+    z-index: 2;
+  }
+
+  // .header__info
+
+  &__info {
+    text-align: center;
+    max-width: rem(737px);
+    margin: rem(110px auto);
+  }
+
+  // .header__title
+
+  &__title {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: rem(65px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: rem(10px);
+  }
+
+  // .header__subtitle
+
+  &__subtitle {
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: rem(22px);
+    line-height: 1.2;
+    color: $white;
+    margin-bottom: rem(85px);
+  }
+
+  // .header__button-inner
+
+  &__button-inner {
+  }
+
+  // .header__button
+
+  &__button {
+  }
+
+  &__toggle-menu {
+    display: none;
+  }
+  &__toggle-icon {
+    width: rem(32px);
+    height: rem(32px);
+    fill: $white;
+  }
+}
+.main-nav {
+  // .main-nav__list
+
+  &__list {
+    display: flex;
+  }
+
+  // .main-nav__item
+
+  &__item:not(:last-child) {
+    margin-right: rem(40px);
+  }
+
+  // .main-nav__link
+
+  &__link {
+    font-family: $font-secondary;
+    font-weight: 700;
+    font-size: rem(13px);
+    text-transform: uppercase;
+    color: rgba($white, 0.75);
+    transition: all 0.4s ease-in;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $accent-color;
+    }
+  }
+}

@@ -7,17 +7,121 @@
 /* ------------ < 992px ------------ */
 
 @media (max-width: $bp-large) {
+  .header {
+    &__title {
+      font-size: rem(55px);
+    }
+    &__subtitle {
+      font-size: rem(22px);
+      margin-bottom: rem(65px);
+    }
+  }
+  .main-nav {
+    &__item:not(:last-child) {
+      margin-right: rem(20px);
+    }
+  }
+  .features {
+    &__item {
+      @include size(12, 6, 60px);
+      max-width: rem(320px);
+      // flex-basis: 45%;
+    }
+  }
+  .work {
+    &__item {
+      @include size(12, 6, 0px);
+    }
+  }
+  .team {
+    &__item {
+      text-align: center;
+      @include size(12, 6, 30px);
+      margin-bottom: rem(30px);
+    }
+    &__img {
+      margin: rem(0 auto 15px);
+    }
+  }
+  .testimonials {
+    &__description {
+      font-size: rem(25px);
+    }
+  }
 }
 
 /* ------------ < 768px ------------ */
 
 // < 768px
 @media (max-width: $bp-medium) {
+  .main-nav {
+    display: none;
+  }
+  .header {
+    &__toggle-menu {
+      display: block;
+    }
+    &__title {
+      font-size: rem(45px);
+    }
+    &__subtitle {
+      font-size: rem(20px);
+    }
+  }
+  .features {
+    padding: rem(60px 0 30px);
+  }
+  .work {
+    &__item {
+      @include size(12, 6, 0px);
+    }
+  }
+  .team {
+    &__item {
+      @include size(12, 10, 30px);
+    }
+  }
+  .testimonials {
+    &__text {
+      @include size(12, 12, 0px);
+    }
+    &__img {
+      @include size(12, 12, 0px);
+    }
+  }
 }
 /* ------------ < 576px ------------ */
 
 // < 576px
 @media (max-width: $bp-small) {
+  .header {
+    &__title {
+      font-size: rem(35px);
+    }
+    &__subtitle {
+      font-size: rem(20px);
+    }
+  }
+  .features {
+    &__item {
+      max-width: rem(320px);
+      @include size(12, 12, 60px);
+      // flex-basis: 100%;
+    }
+    // &__item:nth-child(n + 4) {
+    //   margin-bottom: rem(40px);
+    // }
+  }
+  .work {
+    &__item {
+      @include size(12, 12, 0px);
+    }
+  }
+  .testimonials {
+    &__description {
+      font-size: rem(20px);
+    }
+  }
 }
 
 // /*==========  Mobile First  ==========*/

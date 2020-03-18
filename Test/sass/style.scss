@@ -1,13 +1,17 @@
 @charset "UTF-8";
 
-@import "normalize";
-@import "variables";
-@import "mixins";
-@import "fonts";
-@import "libs";
-@import "core";
+@import 'normalize';
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+@import 'libs';
+@import 'core';
 
-// @import "blocks/buttons";
-@import "blocks/header";
+@import 'blocks/button';
+@import 'blocks/header';
+@import 'blocks/features';
+@import 'blocks/work';
+@import 'blocks/team';
+@import 'blocks/testimonials';
 
-@import "media"
+@import 'media';
