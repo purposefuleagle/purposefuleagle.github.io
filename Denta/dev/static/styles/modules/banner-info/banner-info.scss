@@ -1,0 +1,28 @@
+.banner-info {
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -12%;
+    width: rem(372px);
+    height: rem(421px);
+    border-radius: 50%;
+    background: rgba($white, 0.7);
+    filter: blur(120px);
+  }
+
+  &__img-wrap {
+    position: absolute;
+    bottom: rem(-7px);
+    left: 35%;
+  }
+  &__img {
+    width: rem(515px);
+    height: rem(350px);
+  }
+  &__slider {
+    position: relative;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  @include button-reset();
+  font-family: $font;
+  font-weight: 500;
+  font-size: rem(18px);
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $accent-color;
+  border: 2px solid $accent-color;
+  border-radius: 2px;
+  padding: rem(13px 50px);
+  transition: all 0.4s ease-in;
+
+  &--small {
+    // width: 220px;
+    // height: 48px;
+    font-size: rem(16px);
+    line-height: 1.25;
+    padding: rem(12px 40px);
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $accent-color;
+      color: $white;
+    }
+  }
+  &--white {
+    font-size: rem(16px);
+    line-height: 1.25;
+    padding: rem(12px 40px);
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $white;
+      color: $accent-color;
+    }
+  }
+}

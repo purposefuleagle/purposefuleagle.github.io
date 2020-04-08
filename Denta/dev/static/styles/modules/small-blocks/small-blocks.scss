@@ -1,0 +1,12 @@
+@import 'location-map';
+@import 'address';
+@import 'schedule';
+@import 'title-section';
+@import 'scheme-treatment';
+
+.logo {
+  &__img {
+    width: rem(111px);
+    height: rem(40px);
+  }
+}

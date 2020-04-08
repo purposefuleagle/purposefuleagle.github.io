@@ -1,0 +1,89 @@
+.emergency-treatment {
+  position: relative;
+  overflow: hidden;
+  padding: rem(60px 0 95px);
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url(../images/general/Ellipse-full.svg) no-repeat;
+    background-size: 100%;
+    width: rem(1245px);
+    height: rem(648px);
+    top: 0;
+    left: rem(-219px);
+  }
+  &__title {
+    margin-bottom: rem(140px);
+  }
+  &__subtitle {
+    margin-bottom: rem(55px);
+    font-weight: 600;
+    font-size: rem(30px);
+    line-height: 1.2;
+    letter-spacing: rem(-2px);
+    color: rgba($white, 0.8);
+
+    span {
+      position: relative;
+      display: block;
+      padding-left: rem(75px);
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: rem(4px);
+        width: rem(50px);
+        background-color: rgba($white, 0.8);
+      }
+    }
+  }
+  &__description {
+    margin-bottom: rem(25px);
+    font-weight: 600;
+    font-size: rem(22px);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: right;
+    color: $white;
+  }
+  &__list {
+    margin-left: rem(90px);
+    margin-bottom: rem(150px);
+  }
+  &__item {
+    position: relative;
+    padding-left: rem(35px);
+    font-weight: 300;
+    font-size: rem(18px);
+    letter-spacing: 0.02em;
+    color: $white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(../images/general/close.svg) no-repeat;
+      background-size: 100%;
+      width: rem(18px);
+      height: rem(18px);
+    }
+  }
+  &__wrapper {
+    position: relative;
+  }
+  // &__icon {
+  //   position: absolute;
+  //   width: rem(1245px);
+  //   height: rem(748px);
+  //   // top: rem(-199px);
+  //   bottom: 0;
+  //   left: rem(-219px);
+  //   z-index: -1;
+  //   transform: rotate(-1deg);
+  // }
+}

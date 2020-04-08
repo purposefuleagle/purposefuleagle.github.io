@@ -1,0 +1,28 @@
+mixin icon(name, mod)
+	if(mod)
+		svg(class="svg-icon icon-" + name + ' ' + mod)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+	else
+		svg(class="svg-icon icon-" + name)
+			use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+
+mixin iconCustom(name, mod)
+	if(mod)
+		svg(class="svg-icon icon-" + name + ' ' + mod)
+			use(xlink:href="static/images/svg/symbol/sprite_custom.svg#" + name)
+	else
+		svg(class="svg-icon icon-" + name)
+			use(xlink:href="static/images/svg/symbol/sprite_custom.svg#" + name)
+
+
+//- mixin navLink(link, name, active)
+//- 	li.nav__item
+//- 		if(active)
+//- 			a(href=link).nav__link.nav__link--active=name
+//- 		else
+//- 			a(href=link).nav__link
+
+//- mixin navItem(className,classNameItem, ...items)
+//- 	div(class=className)
+//- 		each item in items
+//- 			div(class=classNameItem)=item

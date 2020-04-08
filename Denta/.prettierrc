@@ -1,0 +1,10 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "[pug]": {
+    "editor.formatOnSave": true,
+    "useTabs": true,
+    "tabWidth": 4
+  }
+}

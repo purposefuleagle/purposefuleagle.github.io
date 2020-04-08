@@ -1,0 +1,105 @@
+h1.title Pug - node template engine
+	#container.col
+		if youAreUsingPug
+			p You are amazing
+		else
+			p Get on it!
+		p.red.
+			Pug is a terse and simple templating language with a
+			strong focus on performance and powerful features.
+.user
+	if user.description
+		h2.green Description
+		p.description= user.description
+	else if authorised
+		h2.blue Description
+		p.description.
+			User has no description,
+			why not add one...
+	else
+		h2.red Description
+		p.description User has no description
+
+- const headingClasses = ['section-title', 'header__title']
+- const myStyles = {'color': 'red', 'background-color': 'blue'}
+- const myAttributes = {'src': 'img/myPhoto.jpg', 'alt': 'This is my photo'}
+
+
+	h2(class=headingClasses) Text
+	h2.small(class=headingClasses) TextSS
+
+	div(style=myStyles) It's a random block
+
+	img&attributes(myAttributes)
+	input(type="text" disabled)
+
+	h1(style='text-align: center; margin: 40px 0') For/Each Loop
+
+	//- - const names = ['Daniel', 'Roberto', 'Alex']
+	//- - const grades = {'Web Dev': 85, 'Software Design': 72}
+
+	//- each name, i in grades
+	//- 	p= `${name} - index: ${i}`
+
+	//- - const grades = {'Web Dev': 85, 'Software Design': 72}
+	- const grades = {}
+
+	for n, i in grades
+		p= `${n} - ${i}`
+	else
+		strong No values are here!
+
+	h2 My conditions
+	-let user = {name: "Domenic", loggedIn: false, lastLogin: 6}
+
+	if user.loggedIn
+		p
+			| Welcome back,
+			strong #{ user.name }
+	else if user.lastLogin < 10
+		p Your last login was #{ user.lastLogin } minutes ago
+		a(href='/login') Log In Again
+	else
+		a(href='/login') Log In 
+
+	//- Инверсия действий 
+	//- if !user.loggedIn
+	//- 	a(href='/login') Log In
+	//- else
+	//- 	p
+	//- 	| Welcome back,
+	//- 	strong #{ user.name }
+
+	h2 Case
+		//- orderStatus => Pending || In_Transit || Completed
+		- const orderStatus = 'Completed'
+
+		case orderStatus
+			when 'Pending'
+				p Your order has been placed and will be sent shortyly.
+			when 'In_transit'
+				p Your order is on the move - you should receive it soon!
+			when 'Completed'
+				p Your order has been completed.
+			default 
+				p Sorry! We aren't sure what happened with you order...
+
+	h2 Mixins in Pug
+
+		mixin comment(commentData)
+			.comment
+				if commentData.postedByAdmin
+					em (Posted by Admin)
+				.comment__date= commentData.date
+				.comment__author= commentData.author
+				.comment__text= commentData.text
+
+		- const c = {postedByAdmin: true, date: '04-02-2018', author: 'dcode', text: 'Hey mate great tutorials!'}
+		- const b = { date: '13-05-2020', author: 'arnold', text: 'I will be back'}
+		+comment(c)
+		+comment(b)
+		+comment(c)
+		+comment(b)
+
+
+

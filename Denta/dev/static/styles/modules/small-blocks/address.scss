@@ -1,0 +1,29 @@
+.address {
+  display: flex;
+  align-items: center;
+  &--theme-white {
+    .address {
+      &__icon {
+        fill: $white;
+      }
+      &__text {
+        color: $white;
+      }
+    }
+  }
+  &__icon {
+    @include same-size(rem(32px));
+  }
+  &__text {
+    margin-left: rem(7px);
+    font-size: rem(15px);
+    font-weight: 400;
+    line-height: 1.28;
+    color: $font-color;
+    span {
+      display: block;
+      font-size: rem(14px);
+      font-weight: 700;
+    }
+  }
+}

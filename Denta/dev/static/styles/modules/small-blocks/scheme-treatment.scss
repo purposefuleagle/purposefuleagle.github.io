@@ -1,0 +1,105 @@
+.scheme-treatment {
+  &__title {
+    margin-bottom: rem(30px);
+    font-weight: 600;
+    font-size: rem(25px);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $header-color;
+  }
+  &__list {
+    counter-reset: scheme;
+  }
+  &__item {
+    position: relative;
+    font-weight: 300;
+    font-size: rem(18px);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $primary-color;
+    max-width: rem(185px);
+    margin: 0 auto;
+    padding: rem(30px 12px 35px 17px);
+
+    border-right: 2px solid $font-color;
+    border-left: 2px solid $font-color;
+    border-top: 2px solid $font-color;
+
+    span {
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: $font-color;
+      }
+      &::before {
+        width: rem(25px);
+        height: rem(2px);
+        bottom: 0;
+        right: 0;
+      }
+      &::after {
+        width: rem(90px);
+        height: rem(2px);
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    &::before {
+      display: block;
+      margin-bottom: rem(30px);
+      counter-increment: scheme;
+      content: '0' counter(scheme) '.';
+      font-weight: 600;
+      font-size: rem(60px);
+      letter-spacing: -0.02em;
+      color: $accent-light-color;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: rem(38px);
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      background-color: $font-color;
+      width: rem(40px);
+      height: rem(2px);
+      bottom: 0;
+      right: rem(30px);
+      transform: rotate(90deg);
+    }
+  }
+  &__price {
+    position: relative;
+    padding-left: rem(60px);
+    margin: rem(75px auto 0);
+    font-variant-numeric: lining-nums;
+    max-width: rem(230px);
+    font-weight: 300;
+    font-size: rem(22px);
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: $font-color;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background: url(../images/general/diamond-group.svg) no-repeat;
+      background-size: 100%;
+      width: rem(31px);
+      height: rem(65px);
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

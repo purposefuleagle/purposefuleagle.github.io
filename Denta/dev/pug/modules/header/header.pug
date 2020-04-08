@@ -1,0 +1,80 @@
+header.header
+	.header__top
+		.container
+			.header__top-inner
+				.header__logo.logo
+					a(href="/").logo__link
+						img(src="static/images/general/logo.svg").logo__img
+				//- .header__company-info
+				.header__address.address.address--theme-white
+					+icon('pin', 'address__icon')
+					p.address__text #[span Адреса клиник] в Краснодаре
+				.header__location-map.location-map.location-map--theme-white
+					button.location-map__button Схема проезда
+				.header__schedule.schedule.schedule--theme-white
+					+icon('clock', 'schedule__icon')
+					p.schedule__text #[span Ежедневно] 9:00 – 21:00
+				//- .header__order-callback
+				.header__phone
+					a.header__phone-link(href="tel:73912346345")
+						+icon('phone', 'header__phone-icon')
+						span.header__phone-text +7 (3912) 34-63-45
+				.header__callback.callback
+					a(href="#").callback__button.button.button--small.button--white Заказать звонок
+				nav.header__main-nav.main-nav
+					.main-nav__toggle
+						+icon('hamburger', 'main-nav__toggle-icon')
+					ul.main-nav__list
+						li.main-nav__item
+							a.main-nav__link(href="#")
+								+icon('hamburger', 'main-nav__link-icon')
+								span.main-nav__link-text Услуги
+						li.main-nav__item
+							a.main-nav__link(href="#")
+								+icon('doctor', 'main-nav__link-icon')
+								span.main-nav__link-text Врачи
+						li.main-nav__item
+							a.main-nav__link(href="#")
+								+icon('price', 'main-nav__link-icon')
+								span.main-nav__link-text Цены
+	.header__banner
+		.container
+			.header__banner-inner
+				.header__banner-address.address
+					+icon('pin', 'address__icon')
+					p.address__text #[span Адреса клиник] в Краснодаре
+				.header__banner-location-map.location-map
+					button.location-map__button Схема проезда
+				.header__banner-schedule.schedule
+					+icon('clock', 'schedule__icon')
+					p.schedule__text #[span Ежедневно] 9:00 – 21:00
+			.header__banner-callback.callback
+				a(href="#").callback__button.button.button--small Заказать звонок
+			.header__banner-info.banner-info
+				.banner-info__img-wrap
+					img(src="static/images/content/banner/banner-block-family@2X.png").banner-info__img
+				.banner-info__slider.banner-slider
+					//- .banner-slider__navigation.banner-slider__navigation--prev
+					//- 	+icon('arrow_left', 'banner-slider__navigation-icon')
+					//- .banner-slider__navigation.banner-slider__navigation--next
+					//- 	+icon('arrow_right', 'banner-slider__navigation-icon')
+					.banner-slider__dots
+					.banner-slider__list.js-banner
+						.banner-slider__item
+							h1.banner-slider__title Лечим зубы #[br] как родным #[span гарантия до 7 лет]
+							p.banner-slider__discount скидка 5% в январе
+							ul.banner-slider__services-list
+								li.banner-slider__services-item бесплатная консультация детям до 14 лет  в любой клинике,
+								li.banner-slider__services-item взрослым – в филиале на ул. Шумяцкого
+						.banner-slider__item
+							h1.banner-slider__title Лечим зубы #[br] как родным #[span гарантия до 7 лет]
+							p.banner-slider__discount скидка 5% в январе
+							ul.banner-slider__services-list
+								li.banner-slider__services-item бесплатная консультация детям до 14 лет  в любой клинике,
+								li.banner-slider__services-item взрослым – в филиале на ул. Шумяцкого
+						.banner-slider__item
+							h1.banner-slider__title Лечим зубы #[br] как родным #[span гарантия до 7 лет]
+							p.banner-slider__discount скидка 5% в январе
+							ul.banner-slider__services-list
+								li.banner-slider__services-item бесплатная консультация детям до 14 лет  в любой клинике,
+								li.banner-slider__services-item взрослым – в филиале на ул. Шумяцкого	
