@@ -9,44 +9,27 @@
     color: $header-color;
   }
   &__list {
+    display: flex;
+    flex-wrap: wrap;
+    // margin: rem(0 -15px);
     counter-reset: scheme;
   }
   &__item {
+    @include size(12, 8, 30px);
     position: relative;
     font-weight: 300;
     font-size: rem(18px);
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: $primary-color;
-    max-width: rem(185px);
+    // max-width: rem(185px);
+
     margin: 0 auto;
-    padding: rem(30px 12px 35px 17px);
+    padding: rem(30px 11px 35px 17px);
 
     border-right: 2px solid $font-color;
     border-left: 2px solid $font-color;
     border-top: 2px solid $font-color;
-
-    span {
-      &::before,
-      &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        background-color: $font-color;
-      }
-      &::before {
-        width: rem(25px);
-        height: rem(2px);
-        bottom: 0;
-        right: 0;
-      }
-      &::after {
-        width: rem(90px);
-        height: rem(2px);
-        bottom: 0;
-        left: 0;
-      }
-    }
 
     &::before {
       display: block;
@@ -72,6 +55,27 @@
       bottom: 0;
       right: rem(30px);
       transform: rotate(90deg);
+    }
+  }
+  &__line {
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: $font-color;
+    }
+    &::before {
+      width: 13%;
+      height: rem(2px);
+      bottom: 0;
+      right: 0;
+    }
+    &::after {
+      width: 49%;
+      height: rem(2px);
+      bottom: 0;
+      left: 0;
     }
   }
   &__price {

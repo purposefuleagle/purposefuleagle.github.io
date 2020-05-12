@@ -3,19 +3,30 @@ section.emergency-treatment
 		h2.title-section.emergency-treatment__title Неотложное #[span лечение]
 		.emergency-treatment__wrapper
 			//- +iconCustom('Ellipse-full', 'emergency-treatment__icon')
-			h3.emergency-treatment__subtitle #[span Снимем боль] в кратчайшие сроки 
-			p.emergency-treatment__description Возможные причины
-			ul.emergency-treatment__list
-				li.emergency-treatment__item пульпит
-				li.emergency-treatment__item периодонтит
-				li.emergency-treatment__item гингивит
-				li.emergency-treatment__item парадонтоз
+			h3.emergency-treatment__subtitle #[span Снимем боль] в кратчайшие сроки
+			.emergency-treatment__inner
+				p.emergency-treatment__description Возможные причины
+				ul.emergency-treatment__list
+					li.emergency-treatment__item пульпит
+					li.emergency-treatment__item периодонтит
+					li.emergency-treatment__item гингивит
+					li.emergency-treatment__item парадонтоз
 		.scheme-treatment
 			h3.scheme-treatment__title Схема лечения 
 			ul.scheme-treatment__list
-				li.scheme-treatment__item #[span Диагностика (рентген, томограмма)]
-				li.scheme-treatment__item #[span Обезболивание] 
-				li.scheme-treatment__item #[span Вскрытие очага воспаления] 
-				li.scheme-treatment__item #[span Размещение лекарства] 
-				li.scheme-treatment__item #[span Установка временной пломбы]
-			p.scheme-treatment__price Стоимость пакета лечения #[span 4000 р.]
+				li.scheme-treatment__item 
+					span.scheme-treatment__text Диагностика (рентген, томограмма)
+					span.scheme-treatment__line
+				li.scheme-treatment__item 
+					span.scheme-treatment__text Обезболивание
+					span.scheme-treatment__line 
+				li.scheme-treatment__item 
+					span.scheme-treatment__text Вскрытие очага воспаления
+					span.scheme-treatment__line
+				li.scheme-treatment__item 
+					span.scheme-treatment__text Размещение лекарства
+					span.scheme-treatment__line 
+				li.scheme-treatment__item 
+					span.scheme-treatment__text Установка временной пломбы
+					span.scheme-treatment__line
+			p.scheme-treatment__price Стоимость пакета лечения #[span.scheme-treatment__text 4000 р.]

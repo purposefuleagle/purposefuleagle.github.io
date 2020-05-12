@@ -54,6 +54,16 @@
       height: rem(44px);
     }
   }
+  .emergency-treatment {
+    &__subtitle {
+      font-size: rem(35px);
+    }
+  }
+  .scheme-treatment {
+    &__item {
+      padding-right: rem(35px);
+    }
+  }
 }
 
 /* ------------ < 768px------------ */
@@ -151,6 +161,36 @@
     &--small {
       font-size: rem(18px);
       padding: rem(11px 35px);
+    }
+  }
+  .emergency-treatment {
+    &__subtitle {
+      margin-bottom: rem(145px);
+      color: rgba($font-color, 0.6);
+
+      span {
+        &::before {
+          background-color: rgba($font-color, 0.6);
+        }
+      }
+    }
+    &::before {
+      width: rem(857px);
+      height: rem(446px);
+      top: rem(330px);
+      left: rem(161px);
+    }
+  }
+  .scheme-treatment {
+    &__title {
+      text-align: left;
+    }
+    &__item {
+      margin-right: auto;
+      margin-left: 0;
+      &::before {
+        margin-bottom: rem(10px);
+      }
     }
   }
 }
@@ -324,6 +364,63 @@
     &--small {
       font-size: rem(15px);
       padding: rem(11px 17px);
+    }
+  }
+  .emergency-treatment {
+    &::before {
+      width: rem(1130px);
+      height: rem(590px);
+      left: rem(600px);
+      top: 0;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__inner {
+      display: flex;
+      flex-direction: column;
+    }
+    &__subtitle {
+      font-size: rem(45px);
+    }
+    &__description {
+      font-size: rem(28px);
+      text-align: left;
+    }
+    &__list {
+      margin-left: auto;
+    }
+    &__item {
+      font-size: rem(22px);
+    }
+  }
+  .scheme-treatment {
+    &__title {
+      text-align: left;
+    }
+    &__list {
+      justify-content: space-between;
+    }
+    &__item {
+      margin: 0;
+      @include size(12, 2, 0px);
+      &::before {
+        margin-bottom: rem(10px);
+      }
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &__price {
+      text-align: center;
+      font-size: rem(30px);
+      max-width: rem(800px);
+      width: 100%;
+
+      &::before {
+        left: 18%;
+      }
     }
   }
 }
